@@ -16574,7 +16574,7 @@ h3 {
 .banner__subtitle {
     font-size: 2.4rem;
     line-height: 3rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 3.2rem
 }
 
@@ -20011,7 +20011,7 @@ h3 {
 .vision__founder-postion {
     font-size: 1.6rem;
     line-height: 2rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 0.8rem
 }
 
@@ -20026,7 +20026,7 @@ h3 {
 .vision__founder-desc {
     font-size: 1.6rem;
     line-height: 2rem;
-    color: #000
+    color: #fff
 }
 
 @media screen and (max-width: 1279px) {
