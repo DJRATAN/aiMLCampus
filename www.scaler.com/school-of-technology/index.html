@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from www.scaler.com/school-of-technology/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2024 08:43:01 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
@@ -48,7 +46,30 @@
   <script src="../../assets-v2.scaler.com/packs/js/frontend/chatbot_fron_96cee637.54ba71.chunk.js"></script>
   <script src="../../assets-v2.scaler.com/packs/js/frontend/chatbot.f1f304.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const image = document.getElementById('zoomable-image');
+      const overlay = document.getElementById('overlay');
+      const closeBtn = document.getElementById('close-btn');
 
+      image.addEventListener('click', () => {
+        if (window.innerWidth <= 768) { // Check if the viewport width is less than or equal to 768px (mobile view)
+          overlay.classList.add('active');
+        }
+      });
+
+      closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('active');
+      });
+
+      // Optional: Close overlay when clicking outside the image
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay || e.target === closeBtn) {
+          overlay.classList.remove('active');
+        }
+      });
+    });
+  </script>
   <script>
     window.__SHOW_SST_CHATBOT_V2__ = "false";
   </script>
@@ -375,7 +396,7 @@
   </script>
   <script defer src="../../unpkg.com/%40dotlottie/player-component%401.0.0/dist/dotlottie-player.js"></script>
 
- 
+
   <div data-variant-key="sst-tech_landing-page_student-directory" data-variant-value="show_student_directory">
   </div>
 
@@ -406,12 +427,19 @@
         data-gtm-tracking-allowed="true" , data-gtm-element="Scaler vs Traditional"
         data-cy="scaler_vs_traditional_nav_link"
         onclick="window.trackGaEvent('header','nav-link','#scaler-vs-traditional')">
-        AiML Campus vs Traditional
+        AiML Campus vs Tech Education
       </a>
       <a href="#event" class="header__internal-links gtm-track-element" target="_self" data-gtm-allowed-actions="click"
         data-gtm-type="nav" data-action="smooth-scroll" data-gtm-tracking-allowed="true" , data-gtm-element="Curriculum"
         data-cy="curriculum_nav_link" onclick="window.trackGaEvent('header','nav-link','#curriculum')">
         Programme
+      </a>
+
+      <a href="#guidance" class="header__internal-links gtm-track-element" target="_self"
+        data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
+        data-gtm-tracking-allowed="true" , data-gtm-element="Instructors" data-cy="instructors_nav_link"
+        onclick="window.trackGaEvent('header','nav-link','#guidance')">
+        Instructors
       </a>
       <a href="#nset-preparation" class="header__internal-links gtm-track-element" target="_self"
         data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
@@ -419,13 +447,7 @@
         data-gtm-element="NSET Guide &lt;span class=&quot;header__new-badge&quot;&gt;New&lt;/span&gt;"
         data-cy="nset_guide_span_class_header__new_badge_new_span_nav_link"
         onclick="window.trackGaEvent('header','nav-link','#nset-preparation')">
-        NSET Guide <span class="header__new-badge">New</span>
-      </a>
-      <a href="#guidance" class="header__internal-links gtm-track-element" target="_self"
-        data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
-        data-gtm-tracking-allowed="true" , data-gtm-element="Instructors" data-cy="instructors_nav_link"
-        onclick="window.trackGaEvent('header','nav-link','#guidance')">
-        Instructors
+        Credentials
       </a>
       <a href="#outcomes" class="header__internal-links gtm-track-element" target="_self"
         data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
@@ -486,17 +508,17 @@
             data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-tracking-allowed="true"
             data-gtm-element="Admissions &amp; Fees" data-cy="admissions_fees_nav_link"
             onclick="window.trackGaEvent('header','nav-link','/school-of-technology/admission')">
-            Admissions & Fees
+            Admissions
           </a>
 
 
 
-          <a href="campus-life/index.html" class="header__external-links gtm-track-element " target="_blank"
-            data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-tracking-allowed="true"
+          <a href="#event" class="header__external-links gtm-track-element " data-gtm-allowed-actions="click"
+            data-gtm-type="nav" data-gtm-tracking-allowed="true"
             data-gtm-element="Student Life &lt;span class=&#39;header__new-badge&#39;&gt;New&lt;/span&gt;"
             data-cy="student_life_span_class_header__new_badge_new_span_nav_link"
-            onclick="window.trackGaEvent('header','nav-link','campus-life/index.html')">
-            Student Life <span class='header__new-badge'>New</span>
+            onclick="window.trackGaEvent('header','nav-link','#event')">
+            Specialization
           </a>
 
 
@@ -504,7 +526,7 @@
           <a href="events.html" class="header__external-links gtm-track-element " target="_blank"
             data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-tracking-allowed="true"
             data-gtm-element="Events" data-cy="events_nav_link"
-            onclick="window.trackGaEvent('header','nav-link','/school-of-technology/events')">
+            onclick="window.trackGaEvent('header','nav-link','evens.html)">
             Events
           </a>
 
@@ -542,7 +564,7 @@
               data-gtm-tracking-allowed="true" , data-gtm-element="Scaler vs Traditional"
               data-cy="scaler_vs_traditional_nav_link"
               onclick="window.trackGaEvent('header','nav-link','#scaler-vs-traditional')">
-              AiML Campus vs Traditional
+              AiML Campus vs Tech Education
             </a>
             <a href="#event" class="header__internal-links gtm-track-element" target="_self"
               data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
@@ -550,19 +572,20 @@
               onclick="window.trackGaEvent('header','nav-link','#curriculum')">
               Programme
             </a>
+
+            <a href="#guidance" class="header__internal-links gtm-track-element" target="_self"
+              data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
+              data-gtm-tracking-allowed="true" , data-gtm-element="Instructors" data-cy="instructors_nav_link"
+              onclick="window.trackGaEvent('header','nav-link','#guidance')">
+              Instructors
+            </a>
             <a href="#nset-preparation" class="header__internal-links gtm-track-element" target="_self"
               data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
               data-gtm-tracking-allowed="true" ,
               data-gtm-element="NSET Guide &lt;span class=&quot;header__new-badge&quot;&gt;New&lt;/span&gt;"
               data-cy="nset_guide_span_class_header__new_badge_new_span_nav_link"
               onclick="window.trackGaEvent('header','nav-link','#nset-preparation')">
-              NSET Guide <span class="header__new-badge">New</span>
-            </a>
-            <a href="#guidance" class="header__internal-links gtm-track-element" target="_self"
-              data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
-              data-gtm-tracking-allowed="true" , data-gtm-element="Instructors" data-cy="instructors_nav_link"
-              onclick="window.trackGaEvent('header','nav-link','#guidance')">
-              Instructors
+              Credentials
             </a>
             <a href="#outcomes" class="header__internal-links gtm-track-element" target="_self"
               data-gtm-allowed-actions="click" data-gtm-type="nav" data-action="smooth-scroll"
@@ -596,8 +619,7 @@
 
           <div class="download-content">
             <!-- removed hidden from below line to stop javascript -->
-            <a target="_blank"
-              href="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/072/588/original/SST-Prospectus_v2.pdf?1714489211"
+            <a target="_blank" href="../../assets-v2.scaler.com/packs/images/AiML Campus Brochure.pdf"
               rel="noopener noreferrer"
               class="header__brochure-button download-brochure-button download-content__cta--can-download hidden gtm-track-element"
               data-gtm-type="sst_cta" data-gtm-parent="Download Brochure" data-gtm-allowed-actions="click"
@@ -645,9 +667,6 @@
     <!-- Burger menu content -->
     <div class="header__burger">
       <div class="header__burger-content">
-
-
-
         <div class="header__nav-external header__nav-external-mobile">
 
 
@@ -665,17 +684,17 @@
             data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-tracking-allowed="true"
             data-gtm-element="Admissions &amp; Fees" data-cy="admissions_fees_nav_link"
             onclick="window.trackGaEvent('header','nav-link','/school-of-technology/admission')">
-            Admissions & Fees
+            Admissions
           </a>
 
 
 
-          <a href="campus-life/index.html" class="header__external-links gtm-track-element " target="_blank"
-            data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-tracking-allowed="true"
+          <a href="#event" class="header__external-links gtm-track-element " data-gtm-allowed-actions="click"
+            data-gtm-type="nav" data-gtm-tracking-allowed="true"
             data-gtm-element="Student Life &lt;span class=&#39;header__new-badge&#39;&gt;New&lt;/span&gt;"
             data-cy="student_life_span_class_header__new_badge_new_span_nav_link"
-            onclick="window.trackGaEvent('header','nav-link','campus-life/index.html')">
-            Student Life <span class='header__new-badge'>New</span>
+            onclick="window.trackGaEvent('header','nav-link','#event')">
+            Specialization
           </a>
 
 
@@ -683,7 +702,7 @@
           <a href="events.html" class="header__external-links gtm-track-element " target="_blank"
             data-gtm-allowed-actions="click" data-gtm-type="nav" data-gtm-tracking-allowed="true"
             data-gtm-element="Events" data-cy="events_nav_link"
-            onclick="window.trackGaEvent('header','nav-link','/school-of-technology/events')">
+            onclick="window.trackGaEvent('header','nav-link','events.html)">
             Events
           </a>
 
@@ -713,8 +732,7 @@
 
           <div class="download-content">
             <!-- removed hidden from below line to stop javascript -->
-            <a target="_blank"
-              href="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/072/588/original/SST-Prospectus_v2.pdf?1714489211"
+            <a target="_blank" href="../../assets-v2.scaler.com/packs/images/AiML Campus Brochure.pdf"
               rel="noopener noreferrer"
               class="header__brochure-button download-brochure-button download-content__cta--can-download hidden gtm-track-element"
               data-gtm-type="sst_cta" data-gtm-parent="Download Brochure" data-gtm-allowed-actions="click"
@@ -791,8 +809,7 @@
 
               <div class="download-content">
                 <!-- removed hidden from below line to stop javascript -->
-                <a target="_blank"
-                  href="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/072/588/original/SST-Prospectus_v2.pdf?1714489211"
+                <a target="_blank" href="../../assets-v2.scaler.com/packs/images/AiML Campus Brochure.pdf"
                   rel="noopener noreferrer"
                   class="banner__brochure-button download-brochure-button download-content__cta--can-download hidden gtm-track-element"
                   data-gtm-type="sst_cta" data-gtm-parent="Download Brochure" data-gtm-allowed-actions="click"
@@ -819,17 +836,6 @@
                 </a>
               </div>
             </div>
-            <!-- 
-        <div class="banner__closed">
-          Admissions Closed
-        </div>
-        <div class="banner__restart">
-          Opening for 2024 admissions, end of this year.
-        </div>
-        <div class="banner__commence-date">
-          Classes Commence :
-          <span>August, 2024</span>
-        </div>-->
             <div class="banner__deadline">
               <span>May Intake Closes On: </span>
               <span>15 May, 2024</span>
@@ -837,9 +843,7 @@
           </div>
           <div class="banner__showcase">
             <video preload="auto" class="video-embedding" width="720" height="540" muted autoplay loop playsinline>
-              <source
-                src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/071/807/original/Landing_Page_GIF.mp4?1713849939"
-                type="video/mp4">
+              <source src="../../assets-v2.scaler.com/packs/images/Training Video -3.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -1449,8 +1453,7 @@
           <div class="student-directory__content">
             <div class="student-directory__title">Discover More About &amp; AiML Campus</div>
             <div class="student-directory__description">For Detailed Information, Please Read Our Brochure.</div>
-            <a target="_blank"
-              href="https://sst-student-directory.notion.site/77edf959308d4c0685a2290f487ce48c?v=42554cbca23b4b72b571eae84586306b"
+            <a target="_blank" href="../../assets-v2.scaler.com/packs/images/AiML Campus Brochure.pdf"
               rel="noopener noreferrer" class="student-directory__directory_btn gtm-track-element"
               data-gtm-type="sst_cta" data-gtm-parent="Access Student Directory" data-gtm-tracking-allowed="true"
               data-gtm-allowed-actions="click">
@@ -1460,7 +1463,10 @@
               <i class="icon-chevron-right student-directory__cta-icon"></i>
             </a>
           </div>
-          <div class="student-directory__image"></div>
+          <div class="student-directory__image">
+            <img style="margin-bottom: -10px;" src="../../assets-v2.scaler.com/packs/images/sideImage.svg" width="450"
+              height="450" alt="">
+          </div>
         </div>
 
       </div>
@@ -1474,7 +1480,8 @@
         <div class="scaler-vs-traditional__container hide-in-mobile">
           <div class="scaler-vs-traditional__title-content">
             <div class="scaler-vs-traditional__title">
-              <span class="highlight">AiML Campus</span> <br> <b><i>vs</i></b> <br> Standard<br>Tech Education
+              <span class="highlight">AiML Campus</span> <br> <b><i>vs</i></b> <br> <strong>Standard<br>Tech
+                Education</strong>
             </div>
           </div>
           <div class="scaler-vs-traditional__compare-section">
@@ -1561,7 +1568,8 @@
               </div>
             </div>
             <div class="scaler-vs-traditional__traditional-education">
-              <div class="scaler-vs-traditional__traditional-education-title">Standard Tech Education</div>
+              <div class="scaler-vs-traditional__traditional-education-title"><strong>Standard Tech Education</strong>
+              </div>
               <div class="scaler-vs-traditional__table-traditional-item">
                 <img
                   src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/scalervstraditional/outdated-2d2a79bbf8b3595eb193b9e9b057b625808359d11e2067f066dfe2bebe3b4da4.svg.gz />
@@ -1801,39 +1809,38 @@
       <div class="sr-container ">
 
         <div class="event__container">
-          <div class="event__title">Specialization <span class='event__title--highlight'> Programme's</span></div>
+          <div class="event__title">Specialization Programme's</div>
           <div class="event__description">Enroll In Our Specialization Program To Gain In-depth Expertise And Advance
             Your Career In The Field Of Machine Learning.</div>
           <div class="event__cards">
 
             <div class="event-card event-card--single-card">
               <div class="event-card__display">
-                <img class="lazy-elem"
-                  data-src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/073/726/original/1920x608_LP_(5).webp?1715585715"
-                  width='100%' />
+                <img src="../../assets-v2.scaler.com/packs/images/vertex.svg" alt="">
               </div>
 
               <div class="event-card__status">
                 <img class="lazy-elem"
                   data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/globe-06-74079590d7c6ceb523b35cbd66d795c395d4e53130fbcb9fa939e6d6e35b17ab.svg.gz" />
-                Online Event
+                Hybrid Mode
               </div>
 
               <div class="event-card__info">
                 <div class="event-card__header">
-                  <span class="event-card__header event-card__header--title">SST Degree &amp; Outcomes Simplified</span>
+                  <span class="event-card__header event-card__header--title">Generative AI Modeling with <br>Vertex AI
+                    Studio</span>
 
                 </div>
 
                 <div class="event-card__desc">
                   <div class="event-card__point-wrapper">
                     <div class="event-card__bullets"></div>
-                    <div class="event-card__pointer">Live QA session</div>
+                    <div class="event-card__pointer">6 Month's Specialization</div>
                   </div>
                   <div class="event-card__desc event-card__desc--readmore">
                     <div class="event-card__point-wrapper">
                       <div class="event-card__bullets"></div>
-                      <div class="event-card__pointer">Details about the BITS degree</div>
+                      <div class="event-card__pointer">6 Month's Internship</div>
                     </div>
                     <div class="event-card__more-info">
                       <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="cta" ,
@@ -1848,20 +1855,15 @@
                   <div class="event-card__schedule event-card__schedule--set">
                     <img class="lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/calendar-date-167088b2d301e3cd36294403c07a0035d84ee5fdca517059d2a4ddc499df48d6.svg.gz" />
-                    15 May
+                    Batch 1 Start From 12 June 2024
                   </div>
                   <span class="event-card__seperator"></span>
-                  <div class="event-card__schedule event-card__schedule--set">
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-65ce5f68d06e774c05b7beb7de999586fff9b37e42a0826424fb52f9dad019bd.svg.gz" />
-                    5:00 PM - 6:30 PM IST
-                  </div>
+
                 </div>
                 <div class="card2">
                   <div class="event-card__btn gtm-track-element">
-                    <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="button" ,
-                      data-gtm-tracking-allowed="true" , data-gtm-element="Register for this event"
-                      class="gtm-track-element">
+                    <a href="events.html" data-gtm-type="button" , data-gtm-tracking-allowed="true" ,
+                      data-gtm-element="Register for this event" class="gtm-track-element">
                       Apply Now
                     </a>
                   </div>
@@ -1877,30 +1879,30 @@
             </div>
             <div class="event-card event-card--single-card">
               <div class="event-card__display">
-                <img src="../../assets-v2.scaler.com/packs/images/card1.svg" alt="">
+                <img src="../../assets-v2.scaler.com/packs/images/lama.svg" alt="">
               </div>
 
               <div class="event-card__status">
                 <img class="lazy-elem"
                   data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/globe-06-74079590d7c6ceb523b35cbd66d795c395d4e53130fbcb9fa939e6d6e35b17ab.svg.gz" />
-                Online Event
+                Hybrid Mode
               </div>
 
               <div class="event-card__info">
                 <div class="event-card__header">
-                  <span class="event-card__header event-card__header--title">SST Degree &amp; Outcomes Simplified</span>
+                  <span class="event-card__header event-card__header--title">AI Engineering Specialization</span>
 
                 </div>
 
                 <div class="event-card__desc">
                   <div class="event-card__point-wrapper">
                     <div class="event-card__bullets"></div>
-                    <div class="event-card__pointer">Live QA session</div>
+                    <div class="event-card__pointer">6 Month's Specialization</div>
                   </div>
                   <div class="event-card__desc event-card__desc--readmore">
                     <div class="event-card__point-wrapper">
                       <div class="event-card__bullets"></div>
-                      <div class="event-card__pointer">Details about the BITS degree</div>
+                      <div class="event-card__pointer">6 Month's Internship</div>
                     </div>
                     <div class="event-card__more-info">
                       <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="cta" ,
@@ -1915,20 +1917,15 @@
                   <div class="event-card__schedule event-card__schedule--set">
                     <img class="lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/calendar-date-167088b2d301e3cd36294403c07a0035d84ee5fdca517059d2a4ddc499df48d6.svg.gz" />
-                    15 May
+                    Batch 1 Start From 12 June 2024
                   </div>
                   <span class="event-card__seperator"></span>
-                  <div class="event-card__schedule event-card__schedule--set">
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-65ce5f68d06e774c05b7beb7de999586fff9b37e42a0826424fb52f9dad019bd.svg.gz" />
-                    5:00 PM - 6:30 PM IST
-                  </div>
+
                 </div>
                 <div class="card2">
                   <div class="event-card__btn gtm-track-element">
-                    <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="button" ,
-                      data-gtm-tracking-allowed="true" , data-gtm-element="Register for this event"
-                      class="gtm-track-element">
+                    <a href="events.html" data-gtm-type="button" , data-gtm-tracking-allowed="true" ,
+                      data-gtm-element="Register for this event" class="gtm-track-element">
                       Apply Now
                     </a>
                   </div>
@@ -1944,32 +1941,32 @@
             </div>
             <div class="event-card event-card--single-card">
               <div class="event-card__display">
-                <img class="lazy-elem"
-                  data-src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/073/726/original/1920x608_LP_(5).webp?1715585715"
-                  width='100%' />
+                <img src="../../assets-v2.scaler.com/packs/images/hugging.svg" alt="">
+
               </div>
 
               <div class="event-card__status">
                 <img class="lazy-elem"
                   data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/globe-06-74079590d7c6ceb523b35cbd66d795c395d4e53130fbcb9fa939e6d6e35b17ab.svg.gz" />
-                Online Event
+
+                Hybrid Mode
               </div>
 
               <div class="event-card__info">
                 <div class="event-card__header">
-                  <span class="event-card__header event-card__header--title">SST Degree &amp; Outcomes Simplified</span>
+                  <span class="event-card__header event-card__header--title">Blockchain Development Using LLM</span>
 
                 </div>
 
                 <div class="event-card__desc">
                   <div class="event-card__point-wrapper">
                     <div class="event-card__bullets"></div>
-                    <div class="event-card__pointer">Live QA session</div>
+                    <div class="event-card__pointer">6 Month's Specialization</div>
                   </div>
                   <div class="event-card__desc event-card__desc--readmore">
                     <div class="event-card__point-wrapper">
                       <div class="event-card__bullets"></div>
-                      <div class="event-card__pointer">Details about the BITS degree</div>
+                      <div class="event-card__pointer">6 Month's Internship</div>
                     </div>
                     <div class="event-card__more-info">
                       <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="cta" ,
@@ -1984,20 +1981,15 @@
                   <div class="event-card__schedule event-card__schedule--set">
                     <img class="lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/calendar-date-167088b2d301e3cd36294403c07a0035d84ee5fdca517059d2a4ddc499df48d6.svg.gz" />
-                    15 May
+                    Batch 1 Start From 12 June 2024
                   </div>
                   <span class="event-card__seperator"></span>
-                  <div class="event-card__schedule event-card__schedule--set">
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-65ce5f68d06e774c05b7beb7de999586fff9b37e42a0826424fb52f9dad019bd.svg.gz" />
-                    5:00 PM - 6:30 PM IST
-                  </div>
+
                 </div>
                 <div class="card2">
                   <div class="event-card__btn gtm-track-element">
-                    <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="button" ,
-                      data-gtm-tracking-allowed="true" , data-gtm-element="Register for this event"
-                      class="gtm-track-element">
+                    <a href="events.html" data-gtm-type="button" , data-gtm-tracking-allowed="true" ,
+                      data-gtm-element="Register for this event" class="gtm-track-element">
                       Apply Now
                     </a>
                   </div>
@@ -2018,32 +2010,33 @@
 
             <div class="event-card event-card--single-card">
               <div class="event-card__display">
-                <img class="lazy-elem"
-                  data-src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/073/726/original/1920x608_LP_(5).webp?1715585715"
-                  width='100%' />
+                <img src="../../assets-v2.scaler.com/packs/images/tenserflow.svg" alt="">
+
               </div>
 
               <div class="event-card__status">
                 <img class="lazy-elem"
                   data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/globe-06-74079590d7c6ceb523b35cbd66d795c395d4e53130fbcb9fa939e6d6e35b17ab.svg.gz" />
-                Online Event
+
+                Hybrid Mode
               </div>
 
               <div class="event-card__info">
                 <div class="event-card__header">
-                  <span class="event-card__header event-card__header--title">SST Degree &amp; Outcomes Simplified</span>
+                  <span class="event-card__header event-card__header--title">Full Stack Development Using Generative
+                    Ai</span>
 
                 </div>
 
                 <div class="event-card__desc">
                   <div class="event-card__point-wrapper">
                     <div class="event-card__bullets"></div>
-                    <div class="event-card__pointer">Live QA session</div>
+                    <div class="event-card__pointer">6 Month's Specialization</div>
                   </div>
                   <div class="event-card__desc event-card__desc--readmore">
                     <div class="event-card__point-wrapper">
                       <div class="event-card__bullets"></div>
-                      <div class="event-card__pointer">Details about the BITS degree</div>
+                      <div class="event-card__pointer">6 Month's Internship</div>
                     </div>
                     <div class="event-card__more-info">
                       <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="cta" ,
@@ -2058,20 +2051,15 @@
                   <div class="event-card__schedule event-card__schedule--set">
                     <img class="lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/calendar-date-167088b2d301e3cd36294403c07a0035d84ee5fdca517059d2a4ddc499df48d6.svg.gz" />
-                    15 May
+                    Batch 1 Start From 12 June 2024
                   </div>
                   <span class="event-card__seperator"></span>
-                  <div class="event-card__schedule event-card__schedule--set">
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-65ce5f68d06e774c05b7beb7de999586fff9b37e42a0826424fb52f9dad019bd.svg.gz" />
-                    5:00 PM - 6:30 PM IST
-                  </div>
+
                 </div>
                 <div class="card2">
                   <div class="event-card__btn gtm-track-element">
-                    <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="button" ,
-                      data-gtm-tracking-allowed="true" , data-gtm-element="Register for this event"
-                      class="gtm-track-element">
+                    <a href="events.html" data-gtm-type="button" , data-gtm-tracking-allowed="true" ,
+                      data-gtm-element="Register for this event" class="gtm-track-element">
                       Apply Now
                     </a>
                   </div>
@@ -2088,32 +2076,32 @@
             </div>
             <div class="event-card event-card--single-card">
               <div class="event-card__display">
-                <img class="lazy-elem"
-                  data-src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/073/726/original/1920x608_LP_(5).webp?1715585715"
-                  width='100%' />
+                <img src="../../assets-v2.scaler.com/packs/images/android.svg" alt="">
               </div>
 
               <div class="event-card__status">
                 <img class="lazy-elem"
                   data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/globe-06-74079590d7c6ceb523b35cbd66d795c395d4e53130fbcb9fa939e6d6e35b17ab.svg.gz" />
-                Online Event
+
+                Hybrid Mode
               </div>
 
               <div class="event-card__info">
                 <div class="event-card__header">
-                  <span class="event-card__header event-card__header--title">SST Degree &amp; Outcomes Simplified</span>
+                  <span class="event-card__header event-card__header--title">Android Development Using <br> Machine
+                    Learning</span>
 
                 </div>
 
                 <div class="event-card__desc">
                   <div class="event-card__point-wrapper">
                     <div class="event-card__bullets"></div>
-                    <div class="event-card__pointer">Live QA session</div>
+                    <div class="event-card__pointer">6 Month's Specialization</div>
                   </div>
                   <div class="event-card__desc event-card__desc--readmore">
                     <div class="event-card__point-wrapper">
                       <div class="event-card__bullets"></div>
-                      <div class="event-card__pointer">Details about the BITS degree</div>
+                      <div class="event-card__pointer">6 Month's Internship</div>
                     </div>
                     <div class="event-card__more-info">
                       <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="cta" ,
@@ -2128,20 +2116,15 @@
                   <div class="event-card__schedule event-card__schedule--set">
                     <img class="lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/calendar-date-167088b2d301e3cd36294403c07a0035d84ee5fdca517059d2a4ddc499df48d6.svg.gz" />
-                    15 May
+                    Batch 1 Start From 12 June 2024
                   </div>
                   <span class="event-card__seperator"></span>
-                  <div class="event-card__schedule event-card__schedule--set">
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-65ce5f68d06e774c05b7beb7de999586fff9b37e42a0826424fb52f9dad019bd.svg.gz" />
-                    5:00 PM - 6:30 PM IST
-                  </div>
+
                 </div>
                 <div class="card2">
                   <div class="event-card__btn gtm-track-element">
-                    <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="button" ,
-                      data-gtm-tracking-allowed="true" , data-gtm-element="Register for this event"
-                      class="gtm-track-element">
+                    <a href="events.html" data-gtm-type="button" , data-gtm-tracking-allowed="true" ,
+                      data-gtm-element="Register for this event" class="gtm-track-element">
                       Apply Now
                     </a>
                   </div>
@@ -2165,24 +2148,24 @@
               <div class="event-card__status">
                 <img class="lazy-elem"
                   data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/globe-06-74079590d7c6ceb523b35cbd66d795c395d4e53130fbcb9fa939e6d6e35b17ab.svg.gz" />
-                Online Event
+                Hybrid Mode
               </div>
 
               <div class="event-card__info">
                 <div class="event-card__header">
-                  <span class="event-card__header event-card__header--title">SST Degree &amp; Outcomes Simplified</span>
+                  <span class="event-card__header event-card__header--title">Generative Ai Automation</span>
 
                 </div>
 
                 <div class="event-card__desc">
                   <div class="event-card__point-wrapper">
                     <div class="event-card__bullets"></div>
-                    <div class="event-card__pointer">Live QA session</div>
+                    <div class="event-card__pointer">6 Month's Specialization</div>
                   </div>
                   <div class="event-card__desc event-card__desc--readmore">
                     <div class="event-card__point-wrapper">
                       <div class="event-card__bullets"></div>
-                      <div class="event-card__pointer">Details about the BITS degree</div>
+                      <div class="event-card__pointer">6 Month's Internship</div>
                     </div>
                     <div class="event-card__more-info">
                       <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="cta" ,
@@ -2197,20 +2180,15 @@
                   <div class="event-card__schedule event-card__schedule--set">
                     <img class="lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/calendar-date-167088b2d301e3cd36294403c07a0035d84ee5fdca517059d2a4ddc499df48d6.svg.gz" />
-                    15 May
+                    Batch 1 Start From 12 June 2024
                   </div>
                   <span class="event-card__seperator"></span>
-                  <div class="event-card__schedule event-card__schedule--set">
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-65ce5f68d06e774c05b7beb7de999586fff9b37e42a0826424fb52f9dad019bd.svg.gz" />
-                    5:00 PM - 6:30 PM IST
-                  </div>
+
                 </div>
                 <div class="card2">
                   <div class="event-card__btn gtm-track-element">
-                    <a href="https://www.scaler.com/event/sst-degree-outcomes-simplified" data-gtm-type="button" ,
-                      data-gtm-tracking-allowed="true" , data-gtm-element="Register for this event"
-                      class="gtm-track-element">
+                    <a href="events.html" data-gtm-type="button" , data-gtm-tracking-allowed="true" ,
+                      data-gtm-element="Register for this event" class="gtm-track-element">
                       Apply Now
                     </a>
                   </div>
@@ -2242,7 +2220,7 @@
         <div class="matriculation__container">
           <div class="matriculation__text">
             <div class="matriculation__title">
-              Admission Process &amp; Fees
+              Admission Enrollment Process
             </div>
           </div>
 
@@ -2273,7 +2251,7 @@
               <img class="lazy-elem matriculation__icon"
                 data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/file-05-a2cc7b9315f0541551241e5956bf0605153fb17829264ef97288b9410705c1cc.svg.gz"
                 width=20 height=20 />
-              Application Form
+              Apply Now
             </div>
             <img class="lazy-elem matriculation__arrow hide-in-mobile"
               data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/right-arrow-process-4fe8609ffcd09b8a6e531ecad34955b25e000fd4dca014c0d75f4f839e2b71ce.svg.gz"
@@ -2285,7 +2263,7 @@
               <img class="lazy-elem matriculation__icon"
                 data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/file-check-03-5fdda29251aa9154e5786da583a77f2dd7f590582ebd0d8c095ce51547279c91.svg.gz"
                 width=20 height=20 />
-              Entrance Test
+              Fill Form
             </div>
             <img class="lazy-elem matriculation__arrow hide-in-mobile"
               data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/right-arrow-process-4fe8609ffcd09b8a6e531ecad34955b25e000fd4dca014c0d75f4f839e2b71ce.svg.gz"
@@ -2297,7 +2275,7 @@
               <img class="lazy-elem matriculation__icon"
                 data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/users-02-light-b1f7f304b9bc73550fba097e2480f146175e8e71b2a3f7ae5b72992563f25d8a.svg.gz"
                 width=20 height=20 />
-              1:1 Interview
+              Payment
             </div>
             <img class="lazy-elem matriculation__arrow hide-in-mobile"
               data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/right-arrow-process-4fe8609ffcd09b8a6e531ecad34955b25e000fd4dca014c0d75f4f839e2b71ce.svg.gz"
@@ -2309,7 +2287,7 @@
               <img class="lazy-elem matriculation__icon"
                 data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/user-check-01-light-01f13ab25e47f404ab7c6b5bf1849c53abfd6d3692fee8e6318f33d58a9482a7.svg.gz"
                 width=20 height=20 />
-              Shortlisting
+              Submit
             </div>
             <img class="lazy-elem matriculation__arrow hide-in-mobile"
               data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/right-arrow-process-4fe8609ffcd09b8a6e531ecad34955b25e000fd4dca014c0d75f4f839e2b71ce.svg.gz"
@@ -2321,407 +2299,13 @@
               <img class="lazy-elem matriculation__icon"
                 data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-verified-02-27ec861026ba40899d0c06e56cac60c4412b97f415f31689b78ae47504f2b810.svg.gz"
                 width=20 height=20 />
-              Enrollment
+              Enrollment Done
             </div>
           </div>
         </div>
 
       </div>
     </section>
-
-
-    <section data-gtm-section="nset-preparation_section" data-gtm-element=nset-preparation_section
-      data-gtm-allowed-actions=scroll id=nset-preparation
-      class="section gtm-track-element nset-preparation nset-preparation--" data-cy="" data-variant-key=""
-      data-variant-value="" style="">
-      <div class="sr-container ">
-
-        <div class="nset-preparation__container nset-preparation__container--">
-          <div class="nset-preparation__new-tag">
-            Newly Added
-          </div>
-          <div class="nset-preparation__text">
-            <div class="nset-preparation__title nset-preparation__title--">
-              Ace the NSET, with our <span class="highlight--bg-dark">Recorded Prep Series</span> and be among the
-              toppers
-            </div>
-          </div>
-          <div class="nset-preparation__pitch-tag">
-            <img class="lazy-elem m-r-10 nset-preparation__arrow"
-              data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/trendup-da7e2b3f843c40e466ddce4373abdbf29433b364860958ef3a7c4ed6f8ac7518.svg.gz"
-              width="24" />
-            Top rated videos with &nbsp; <b>10,560</b> &nbsp; Views
-          </div>
-          <div class="nset-preparation__body nset-preparation__body--">
-
-            <div id="" data-id="" data-parent=""
-              class="modal-trigger nset-preparation__thumbnail hidden nset-preparation-content__cta--can-view gtm-track-element gtm-track-element"
-              data-gtm-allowed-actions="click" data-gtm-text="NSET preparation Roadmap for Maths &amp; Learning-Part 1"
-              data-gtm-type="button" data-gtm-parent="nset_preparation_roadmap_for_maths_learning_part_1"
-              data-gtm-section="nset_preparation_roadmap_for_maths_learning_part_1" data-action="modal-open"
-              data-target="nset_preparation_roadmap_for_maths_learning_part_1" data-gtm-tracking-allowed="true"
-              onclick="">
-
-              <div class="nset-preparation__video-thumbnail">
-                <img
-                  src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_2-921281ff454ea2be30073d09a10ec98bba5fbb90b9b45c559434cb7477b99fff.webp.gz" />
-
-                <div class="nset-preparation__video-title h4 bold m-t-10">NSET preparation Roadmap for Maths &amp;
-                  Learning-Part 1</div>
-                <div class="h5 m-t-5">By Sumeet Malik</div>
-                <div class="nset-preparation__video-stats h5">
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                      width="16" height="16" />
-                    90 Minutes
-                  </div>
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                      width="16" height="16" />
-                    1.3k Views
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            <div class="nset-preparation-button nset-preparation__button-wrapper">
-              <!-- removed hidden from below line to stop javascript -->
-
-              <a id="" data-id="" data-parent="" class="modal-trigger nset-preparation__thumbnail 
-  nset-preparation__thumbnail--locked nset-preparation-button nset-preparation-button-video-locked
-  nset-preparation-content__cta--cannot-view gtm-track-element
-   nset-preparation-button__submission nset-preparation-button__cta--unlock-view gtm-track-element gtm-track-element"
-                data-gtm-allowed-actions="click"
-                data-gtm-text="Unlock Video - NSET preparation Roadmap for Maths &amp; Learning-Part 1"
-                data-gtm-type="sst_cta" data-gtm-parent="Nset Preparation" data-gtm-section="waitlist-modal"
-                data-action="modal-open" data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
-
-
-                <div class="nset-preparation__video-thumbnail nset-preparation__video-thumbnail--locked">
-                  <img
-                    src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_2_locked-45efd519b453d2503957a2e079baeea8bd66393672f5fa35e495f040c3eca036.webp.gz" />
-
-                  <div class="nset-preparation__video-title h4 bold m-t-10">NSET preparation Roadmap for Maths &amp;
-                    Learning-Part 1</div>
-                  <div class="h5 m-t-5">By Sumeet Malik</div>
-                  <div class="nset-preparation__video-stats h5">
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                        width="16" height="16" />
-                      90 Minutes
-                    </div>
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                        width="16" height="16" />
-                      1.3k Views
-                    </div>
-                  </div>
-
-                </div>
-
-
-              </a>
-            </div>
-            <div id="" data-id="" data-parent=""
-              class="modal-trigger nset-preparation__thumbnail hidden nset-preparation-content__cta--can-view gtm-track-element gtm-track-element"
-              data-gtm-allowed-actions="click" data-gtm-text="NSET preparation Roadmap for Maths &amp; Learning-Part 2"
-              data-gtm-type="button" data-gtm-parent="nset_preparation_roadmap_for_maths_learning_part_2"
-              data-gtm-section="nset_preparation_roadmap_for_maths_learning_part_2" data-action="modal-open"
-              data-target="nset_preparation_roadmap_for_maths_learning_part_2" data-gtm-tracking-allowed="true"
-              onclick="">
-
-              <div class="nset-preparation__video-thumbnail">
-                <img
-                  src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_3-0a93d066696c980f89a71275dffec2f5b5c614651c087f2fb800cce7988f8477.webp.gz" />
-
-                <div class="nset-preparation__video-title h4 bold m-t-10">NSET preparation Roadmap for Maths &amp;
-                  Learning-Part 2</div>
-                <div class="h5 m-t-5">By Sumeet Malik</div>
-                <div class="nset-preparation__video-stats h5">
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                      width="" height="" />
-                    120 Minutes
-                  </div>
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                      width="" height="" />
-                    1.3k Views
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            <div class="nset-preparation-button nset-preparation__button-wrapper">
-              <!-- removed hidden from below line to stop javascript -->
-
-              <a id="" data-id="" data-parent="" class="modal-trigger nset-preparation__thumbnail 
-  nset-preparation__thumbnail--locked nset-preparation-button nset-preparation-button-video-locked
-  nset-preparation-content__cta--cannot-view gtm-track-element
-   nset-preparation-button__submission nset-preparation-button__cta--unlock-view gtm-track-element gtm-track-element"
-                data-gtm-allowed-actions="click"
-                data-gtm-text="Unlock Video - NSET preparation Roadmap for Maths &amp; Learning-Part 2"
-                data-gtm-type="sst_cta" data-gtm-parent="Nset Preparation" data-gtm-section="waitlist-modal"
-                data-action="modal-open" data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
-
-
-                <div class="nset-preparation__video-thumbnail nset-preparation__video-thumbnail--locked">
-                  <img
-                    src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_3_locked-f19ef9dde9460ff48a6e359c54e6949e3c39d1f797a10e631ea9a5bbe893501b.webp.gz" />
-
-                  <div class="nset-preparation__video-title h4 bold m-t-10">NSET preparation Roadmap for Maths &amp;
-                    Learning-Part 2</div>
-                  <div class="h5 m-t-5">By Sumeet Malik</div>
-                  <div class="nset-preparation__video-stats h5">
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                        width="" height="" />
-                      120 Minutes
-                    </div>
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                        width="" height="" />
-                      1.3k Views
-                    </div>
-                  </div>
-
-                </div>
-
-
-              </a>
-            </div>
-            <div id="" data-id="" data-parent=""
-              class="modal-trigger nset-preparation__thumbnail hidden nset-preparation-content__cta--can-view gtm-track-element gtm-track-element"
-              data-gtm-allowed-actions="click" data-gtm-text="Guide to SST NSET Math" data-gtm-type="button"
-              data-gtm-parent="guide_to_sst_nset_math" data-gtm-section="guide_to_sst_nset_math"
-              data-action="modal-open" data-target="guide_to_sst_nset_math" data-gtm-tracking-allowed="true" onclick="">
-
-              <div class="nset-preparation__video-thumbnail">
-                <img
-                  src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_4-3d46a191c63122a8176c7751ad0bd98e18fb829d2a86e73ff3c6f9f317b683a8.webp.gz" />
-
-                <div class="nset-preparation__video-title h4 bold m-t-10">Guide to SST NSET Math</div>
-                <div class="h5 m-t-5">By Sumeet Malik</div>
-                <div class="nset-preparation__video-stats h5">
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                      width="" height="" />
-                    120 Minutes
-                  </div>
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                      width="" height="" />
-                    2.2k Views
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            <div class="nset-preparation-button nset-preparation__button-wrapper">
-              <!-- removed hidden from below line to stop javascript -->
-
-              <a id="" data-id="" data-parent="" class="modal-trigger nset-preparation__thumbnail 
-  nset-preparation__thumbnail--locked nset-preparation-button nset-preparation-button-video-locked
-  nset-preparation-content__cta--cannot-view gtm-track-element
-   nset-preparation-button__submission nset-preparation-button__cta--unlock-view gtm-track-element gtm-track-element"
-                data-gtm-allowed-actions="click" data-gtm-text="Unlock Video - Guide to SST NSET Math"
-                data-gtm-type="sst_cta" data-gtm-parent="Nset Preparation" data-gtm-section="waitlist-modal"
-                data-action="modal-open" data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
-
-
-                <div class="nset-preparation__video-thumbnail nset-preparation__video-thumbnail--locked">
-                  <img
-                    src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_4_locked-1e0c4e0d2644d261bf43ce38650dd99ecf0437722c9033e2f51216204fd78d08.webp.gz" />
-
-                  <div class="nset-preparation__video-title h4 bold m-t-10">Guide to SST NSET Math</div>
-                  <div class="h5 m-t-5">By Sumeet Malik</div>
-                  <div class="nset-preparation__video-stats h5">
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                        width="" height="" />
-                      120 Minutes
-                    </div>
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                        width="" height="" />
-                      2.2k Views
-                    </div>
-                  </div>
-
-                </div>
-
-
-              </a>
-            </div>
-            <div id="" data-id="" data-parent=""
-              class="modal-trigger nset-preparation__thumbnail hidden nset-preparation-content__cta--can-view gtm-track-element gtm-track-element"
-              data-gtm-allowed-actions="click" data-gtm-text="Guide to SST NSET Learning Ability" data-gtm-type="button"
-              data-gtm-parent="guide_to_sst_nset_learning_ability" data-gtm-section="guide_to_sst_nset_learning_ability"
-              data-action="modal-open" data-target="guide_to_sst_nset_learning_ability" data-gtm-tracking-allowed="true"
-              onclick="">
-
-              <div class="nset-preparation__video-thumbnail">
-                <img
-                  src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_5-7f8c44731153610fd6acfe9664005e28c3f48d8e3b64e148b0bed228e9072406.webp.gz" />
-
-                <div class="nset-preparation__video-title h4 bold m-t-10">Guide to SST NSET Learning Ability</div>
-                <div class="h5 m-t-5">By Sumeet Malik</div>
-                <div class="nset-preparation__video-stats h5">
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                      width="" height="" />
-                    120 Minutes
-                  </div>
-                  <div>
-                    <img class="lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                      width="" height="" />
-                    1.2k Views
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            <div class="nset-preparation-button nset-preparation__button-wrapper">
-              <!-- removed hidden from below line to stop javascript -->
-
-              <a id="" data-id="" data-parent="" class="modal-trigger nset-preparation__thumbnail 
-  nset-preparation__thumbnail--locked nset-preparation-button nset-preparation-button-video-locked
-  nset-preparation-content__cta--cannot-view gtm-track-element
-   nset-preparation-button__submission nset-preparation-button__cta--unlock-view gtm-track-element gtm-track-element"
-                data-gtm-allowed-actions="click" data-gtm-text="Unlock Video - Guide to SST NSET Learning Ability"
-                data-gtm-type="sst_cta" data-gtm-parent="Nset Preparation" data-gtm-section="waitlist-modal"
-                data-action="modal-open" data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
-
-
-                <div class="nset-preparation__video-thumbnail nset-preparation__video-thumbnail--locked">
-                  <img
-                    src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/nset/nset_5_locked-210bc93956cdee5331587215c90fc6f7d8f2a1f5563d7bc780def7cbc59d9c8a.webp.gz" />
-
-                  <div class="nset-preparation__video-title h4 bold m-t-10">Guide to SST NSET Learning Ability</div>
-                  <div class="h5 m-t-5">By Sumeet Malik</div>
-                  <div class="nset-preparation__video-stats h5">
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/clock-white-5b42971d5752e600fbbe3e9af235b150ed6535485b04e10e5f943d974e85bce7.svg.gz"
-                        width="" height="" />
-                      120 Minutes
-                    </div>
-                    <div>
-                      <img class="lazy-elem"
-                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/eye-0a40c6fc2faafdeb8a9ff0b1718282c04a5205e68cd400d18756da9c597251f1.svg.gz"
-                        width="" height="" />
-                      1.2k Views
-                    </div>
-                  </div>
-
-                </div>
-
-
-              </a>
-            </div>
-          </div>
-          <div class="nset-preparation__more nset-preparation__more--">
-            <img class="lazy-elem nset-preparation__arrow"
-              data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/bell_simple_ringing-62c2132a79c72b63d31b0abda10fe0629397038cbd634bb322314fbd6e458800.svg.gz"
-              width="24" />
-            <div class="h4">More Videos Coming Soon</div>
-          </div>
-
-          <div class="nset-preparation-button nset-preparation__button-wrapper">
-            <!-- removed hidden from below line to stop javascript -->
-
-            <a id="" data-id="" data-parent=""
-              class="modal-trigger nset-preparation__unlock-button nset-preparation-button-locked nset-preparation-button__submission nset-preparation-button__cta--unlock-view gtm-track-element gtm-track-element"
-              data-gtm-allowed-actions="click" data-gtm-text="Login to Get Access" data-gtm-type="sst_cta"
-              data-gtm-parent="Nset Preparation" data-gtm-section="waitlist-modal" data-action="modal-open"
-              data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
-
-
-              <img class="lazy-elem nset-preparation__cta-icon"
-                data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/lock-176d8a33d2a6e4fb19a79975499eca369fe0dcaafd1296dca18c6fce28a80572.svg.gz" />
-              <div class="nset-preparation__cta-text">
-                Login to Get Access
-              </div>
-
-
-            </a>
-          </div>
-        </div>
-
-
-
-        <div id="nset_preparation_roadmap_for_maths_learning_part_1" class="sr-modal video-modal " data-gtm-section="">
-          <div class="sr-modal__content sr-modal__content--center ">
-            <div class="sr-modal__body ">
-
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V4G2UHThaus?enablejsapi=1"
-                width="100%" allowfullscreen frameborder="no" height="350px"></iframe>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div id="nset_preparation_roadmap_for_maths_learning_part_2" class="sr-modal video-modal " data-gtm-section="">
-          <div class="sr-modal__content sr-modal__content--center ">
-            <div class="sr-modal__body ">
-
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOiwMiTKiyI?enablejsapi=1"
-                width="100%" allowfullscreen frameborder="no" height="350px"></iframe>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div id="guide_to_sst_nset_math" class="sr-modal video-modal " data-gtm-section="">
-          <div class="sr-modal__content sr-modal__content--center ">
-            <div class="sr-modal__body ">
-
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2BZWxj90HS4?enablejsapi=1"
-                width="100%" allowfullscreen frameborder="no" height="350px"></iframe>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div id="guide_to_sst_nset_learning_ability" class="sr-modal video-modal " data-gtm-section="">
-          <div class="sr-modal__content sr-modal__content--center ">
-            <div class="sr-modal__body ">
-
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t3_s5y_Kj60?enablejsapi=1"
-                width="100%" allowfullscreen frameborder="no" height="350px"></iframe>
-
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
 
     <section data-gtm-section="certification_section" data-gtm-element=certification_section
       data-gtm-allowed-actions=scroll id=certification
@@ -2729,7 +2313,7 @@
       data-variant-value="" style="">
       <div class="sr-container ">
 
-        <div class="certification__container">
+        <div style="margin-top: -115px;" class="certification__container">
           <div class="certification__header">
             <div class="certification__title">
               Opportunities With AiML Campus
@@ -3504,6 +3088,127 @@
 
       </div>
     </section>
+    <section data-gtm-section="event__section" data-gtm-element=event__section data-gtm-allowed-actions=scroll id=event
+      class="section gtm-track-element event" data-cy="" data-variant-key="" data-variant-value="" style="">
+      <div class="sr-container ">
+        <section data-gtm-section="nset-preparation_section" data-gtm-element=nset-preparation_section
+          data-gtm-allowed-actions=scroll id=nset-preparation
+          class="section gtm-track-element nset-preparation nset-preparation--" data-cy="" data-variant-key=""
+          data-variant-value="" style="">
+          <div class="sr-container ">
+
+            <div class="macro-campus macro-campus-v2">
+              <div class="macro-campus__content">
+                <div class="macro-campus__title">
+                  <strong>
+                    Gain Prestigious Credentials
+                  </strong>
+                  And <strong>Recognition</strong>
+                </div>
+                <a href="campus-life/index.html" target="_blank" data-gtm-type="button" data-gtm-tracking-allowed="true"
+                  data-gtm-element="Explore Campus Life"
+                  class="macro-campus__cta-campus-life gtm-track-element hide-in-mobile">
+                  Explore Programme's
+                </a>
+              </div>
+              <div class="contai">
+                <div class="macro-campus__showcase image-container">
+
+                  <div class="image-container">
+                    <img id="zoomable-image" height="450" width="450"
+                      src="../../assets-v2.scaler.com/packs/images/AiML Campus Certificate.svg" alt="Zoomable Image">
+                  </div>
+                  <div id="overlay" class="overlay">
+                    <span id="close-btn" class="close-btn">&times;</span>
+                    <img id="fullscreen-image" class="fullscreen-image"
+                      src="../../assets-v2.scaler.com/packs/images/AiML Campus Certificate.svg" alt="Zoomable Image">
+                  </div>
+                </div>
+              </div>
+              <div class="macro-campus__highlights show-in-mobile">
+                <div class="macro-campus__highlight">
+                  <img class=" macro-campus__marker-image lazy-elem"
+                    data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
+                    width=20 height=20 />
+                  <div>Campus close to top tech companies</div>
+                </div>
+                <div class="macro-campus__highlight">
+                  <img class=" macro-campus__marker-image lazy-elem"
+                    data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
+                    width=20 height=20 />
+                  <div>Residential Campus</div>
+                </div>
+                <div class="macro-campus__highlight">
+                  <img class=" macro-campus__marker-image lazy-elem"
+                    data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
+                    width=20 height=20 />
+                  <div>Modern amenities</div>
+                </div>
+                <div class="macro-campus__highlight">
+                  <img class=" macro-campus__marker-image lazy-elem"
+                    data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
+                    width=20 height=20 />
+                  <div>Innovation from day one.</div>
+                </div>
+              </div>
+              <a href="campus-life/index.html" target="_blank" data-gtm-type="button" data-gtm-tracking-allowed="true"
+                data-gtm-element="Explore Campus Life"
+                class="macro-campus__cta-campus-life gtm-track-element show-in-mobile">
+                Explore Campus Life
+              </a>
+            </div>
+
+
+
+
+
+            <div id="nset_preparation_roadmap_for_maths_learning_part_2" class="sr-modal video-modal "
+              data-gtm-section="">
+              <div class="sr-modal__content sr-modal__content--center ">
+                <div class="sr-modal__body ">
+
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOiwMiTKiyI?enablejsapi=1"
+                    width="100%" allowfullscreen frameborder="no" height="350px"></iframe>
+
+                </div>
+              </div>
+            </div>
+
+
+
+            <div id="guide_to_sst_nset_math" class="sr-modal video-modal " data-gtm-section="">
+              <div class="sr-modal__content sr-modal__content--center ">
+                <div class="sr-modal__body ">
+
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2BZWxj90HS4?enablejsapi=1"
+                    width="100%" allowfullscreen frameborder="no" height="350px"></iframe>
+
+                </div>
+              </div>
+            </div>
+
+
+
+            <div id="guide_to_sst_nset_learning_ability" class="sr-modal video-modal " data-gtm-section="">
+              <div class="sr-modal__content sr-modal__content--center ">
+                <div class="sr-modal__body ">
+
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t3_s5y_Kj60?enablejsapi=1"
+                    width="100%" allowfullscreen frameborder="no" height="350px"></iframe>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+
+
+
+      </div>
+    </section>
+
 
 
     <section data-gtm-section="outcomes_section" data-gtm-element=outcomes_section data-gtm-allowed-actions=scroll
@@ -3666,79 +3371,62 @@
                   <img class="testimonial-card__profile-img lazy-elem"
                     data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/ankit_pangasa-fafa15f68ebcc074cd241e7d696e25177994c719436c2e5d8b4243cfa1fda0ad.webp"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Ankit Pangasa</div>
+                  <div class="testimonial-card__user-name">Sahil Momin</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Senior SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third google hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth google show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    Working at Google is a dream for all techies, and Scaler helped me realize this dream. Their course
-                    structure is impeccable and has helped me widen my knowledge horizons beyond just the basics. They
-                    have truly established that knowledge is not limited to the four walls of a classroom, and I am
-                    grateful for all that I have learned!
+                    I had an incredible experience at AiML Campus School of Machine Learning. The curriculum is
+                    well-structured and covers all the essential topics needed to excel in the field of AI and machine
+                    learning. The instructors are industry experts who are not only knowledgeable but also very
+                    approachable. They made complex concepts easy to understand and provided real-world applications
+                    that helped me grasp the material better.
                   </div>
-                  <a href="https://www.linkedin.com/posts/ankit-pangasa_coding-tech-interviews-activity-6983352812755693569-WyX8?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
+                  <a href="https://www.linkedin.com/in/sahil-momin-488909245" class="testimonial-card__linkedin">
                     <img class="testimonial-card__linkedin-icon lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
                     <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
                   </a>
                 </div>
               </div>
-
 
               <div class="testimonial-card__container">
                 <div class="testimonial-card__user-details">
                   <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/yash_vardhan_raizada-fa0e1ddd088f2c7343d396bda555e10575a5cbff55d24ba499ef989b8f693527.webp"
+                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/ankit_pangasa-fafa15f68ebcc074cd241e7d696e25177994c719436c2e5d8b4243cfa1fda0ad.webp"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Yash Vardhan Raizada</div>
+                  <div class="testimonial-card__user-name">Adarsh Pandey</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third microsoft hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth microsoft show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    Having all the necessary tools for learning is one thing, but genuinely knowing how to use them is a
-                    whole other story - and this bridge is something we often fail to cross properly when transitioning
-                    from our universities into the real world. Scaler has undoubtedly played a big role in helping me
-                    conquer complex CS concepts, and ultimately paved the way for my current position!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/yashvardhanraizada_microsoft-softwareengineer-softwareengineering-activity-6934533965974253569-k9Pd?utm_source=linkedin_share&amp;utm_medium=member_desktop_web"
-                    class="testimonial-card__linkedin">
+                    AiML Campus is a fantastic place to learn machine learning. The hands-on projects and assignments
+                    were challenging but extremely rewarding. The support from both the faculty and fellow students was
+                    tremendous. I appreciated the small class sizes which allowed for personalized attention and a
+                    collaborative learning environment. </div>
+                  <a href="https://www.linkedin.com/in/adarsh-pandey-304b7424a" class="testimonial-card__linkedin">
                     <img class="testimonial-card__linkedin-icon lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
                     <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
                   </a>
                 </div>
               </div>
-
 
               <div class="testimonial-card__container">
                 <div class="testimonial-card__user-details">
                   <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/abinay_bingumalla-f58acf89ada8960c97eb65e05a47413244b3a7a429014a0c363a5b9db7c1edfa.webp"
+                    data-src="https://media.licdn.com/dms/image/D5603AQE_DgXo5Ova2g/profile-displayphoto-shrink_800_800/0/1644057588533?e=1722470400&v=beta&t=CJvaTJsfM_8NYg83zi0Z44SSejS2QUno5l8ac04gW-g"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Abinay Bingumalla</div>
+                  <div class="testimonial-card__user-name">PAVAN KALYAN KOPPARAPU</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE II at</div>
-                  <div class="testimonial-card__company-name companies one-third microsoft hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth microsoft show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    I initially joined Scaler to brush up on my fundamentals but got the whole grand package instead.
-                    And it was easily the best decision I could have made for myself! I got a much-needed skill boost
-                    and developed a focused and disciplined mindset that helped me pave my way towards companies like
-                    Microsoft and Oracle.
+                    The AiML Campus School of Machine Learning exceeded my expectations in every way. The course
+                    material is up-to-date with the latest trends and technologies in AI. The online resources and labs
+                    are top-notch, making it easy to practice and apply what we learned in class.
                   </div>
-                  <a href="https://www.linkedin.com/posts/abinayb_gratitude-scaler-mentor-activity-6879686185539764224-awLo?utm_source=share&amp;utm_medium=member_desktop"
+                  <a href="https://www.linkedin.com/in/pavan-kalyan-kopparapu-a410ba231/"
                     class="testimonial-card__linkedin">
                     <img class="testimonial-card__linkedin-icon lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
@@ -3746,60 +3434,42 @@
                   </a>
                 </div>
               </div>
-
 
               <div class="testimonial-card__container">
                 <div class="testimonial-card__user-details">
                   <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/parth_dixit-0fd7df28e18a2b66194b1799d52dc055a909b776aa07d699b4eacc2f3dbad5f1.webp"
+                    data-src="https://media.licdn.com/dms/image/D4D03AQFtkZdgYi6ozw/profile-displayphoto-shrink_400_400/0/1716019578859?e=1722470400&v=beta&t=DpUtcgPVoo11GlcLNq4l-qoqCOvy2tj4UdMt0VaknV0"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Parth Dixit</div>
+                  <div class="testimonial-card__user-name">Om Dubey</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE I at</div>
-                  <div class="testimonial-card__company-name companies one-third amazon hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth amazon show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    I came across Scaler after a gap year post-college, which was nothing short of a blessing. Finally,
-                    being able to fill in the blanks in my knowledge that I couldn’t during college inspired a new
-                    confidence in me. With the backing of my fantastic mentors and instructors, I sat for and proudly
-                    laid claim to my position as a Software Engineer at Amazon, which is all I could have hoped for and
-                    then some!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/parth-dixit-240616157_motivation-scaler-tech-activity-6954673441723559936-NeF2?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
+                    Enrolling in AiML Campus was one of the best decisions I’ve made for my professional development.
+                    The instructors are passionate about teaching and are always willing to go the extra mile to help
+                    students succeed. </div>
+                  <a href="https://www.linkedin.com/in/om-dubey-a6770a24b/" class="testimonial-card__linkedin">
                     <img class="testimonial-card__linkedin-icon lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
                     <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
                   </a>
                 </div>
               </div>
-
 
               <div class="testimonial-card__container">
                 <div class="testimonial-card__user-details">
                   <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/dhruv_sethi-37b059fea785ae5cc6cec7cb6c9a8219aee8bc78a2e4ee9b2eb7cf1158c2613b.webp"
+                    data-src="https://media.licdn.com/dms/image/D4D03AQEN7N5BPT0hYw/profile-displayphoto-shrink_400_400/0/1689075339018?e=1722470400&v=beta&t=zj9MJlWXIUCyY4RXGHGQpEofExFSpHQYLvluZ9Q939g"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Dhruv sethi</div>
+                  <div class="testimonial-card__user-name">Raju Gunji</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third amazon hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth amazon show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    Reflecting back on life, I would have done many things differently. One of them being - I would have
-                    joined Scaler earlier! I received the best preparation one could ask for from my mentors, Nilesh
-                    Anand and Gopi Ram Bishnoi, which eventually led me to crack Amazon. I am extremely happy with the
-                    direction my life has taken post-Scaler, and I couldn’t have done it without the constant support
-                    from team Scaler at every step! 11/10 recommended!!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/--dhruv-sethi--_faang-sde-amazon-activity-6965558618431582209-ubCP?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
+                    The community at AiML Campus is incredibly supportive and inspiring. From the moment I joined, I
+                    felt welcomed and encouraged to push my limits. The peer discussions, study groups, and mentorship
+                    programs were extremely beneficial. </div>
+                  <a href="https://www.linkedin.com/in/raju-gunji-5b4105283/" class="testimonial-card__linkedin">
                     <img class="testimonial-card__linkedin-icon lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
                     <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
@@ -3808,240 +3478,14 @@
               </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/aniket_ranjan-73f78fc25391de9ff65b2ea9b5a80de7d2988e02db2517cb6f3a4b8994f5b5ca.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Aniket Ranjan</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third medianet hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth medianet show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    In my third year of college, I sometimes struggled to understand challenging technical concepts.
-                    Scaler helped me bridge this gap with their curriculum and guidance. Having a comprehensive
-                    understanding of the tech world helped me prepare for interviews. Kudos to Paridhi ma’am and Kshitij
-                    sir for their wonderful teachings!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/rampagee_feelingblessed-dsa-upskilling-activity-6961710596362833920-Exm6?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/jagyaseni_tripathy-d68909e6ad80ef01010f6da0a689119e068d696b6e5da592cd3c3a8b7bc0a34b.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Jagyaseni Tripathy</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third goldman hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth goldman show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I wasn&#39;t very efficient in CS due to a lack of sufficient exposure in my college. When I was in
-                    my 3rd year, I learned about Scaler. Since then, things have improved for the better. I found a
-                    specific direction and a regimen; as a result, I was able to land offers from Goldman Sachs , Amazon
-                    , Walmart!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/jagyasenitripathy_coding-dsa-softwaredeveloper-activity-6969583531459035136-cyRi?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/krishna_chaitanya-40d706da4dbaf3ff1d7e5c816f249d175d324ec1ab70212c7522e19896a5c593.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Krishna Chaitanya</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third walmart hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth walmart show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I used to be very unfamiliar with coding fundamentals back in my college. So when I decided to build
-                    on my coding skills and CS fundamentals, Scaler was my guiding light. My experience with them has
-                    taught me consistency, discipline, and adaptation, which are crucial characteristics that will
-                    always help one to succeed in the long run. For someone of my background to score offers from tech
-                    giants like Walmart speaks for itself!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/krishna-chaitanya-046151141_scaleracacademy-scalerexperience-placed-activity-6932710426249965571-LPhj?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/bhaskar_shaw-726a3af95943f363d9309fda372f08c801d94f7d2bd6201b870adea7ebef3269.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Bhaskar Shaw</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE II at</div>
-                  <div class="testimonial-card__company-name companies one-third walmart hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth walmart show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    My jump to IT wouldn’t have been half as smooth had it not been for excellent lessons from Kshitij
-                    Mishra and Rahul Yadav, or the outstanding mentorship from Nirav Akbari and Rishika Agarwal.
-                    Consistently practising problems every single day for 200+ days definitely paid off in the end, and
-                    I have Scaler to thank for supporting me in every way possible. They left no stone unturned, may it
-                    be a fantastic curriculum, personalised mentorship or ample placement opportunities.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/bhaskar-shaw-4a9112152_coding-scaler-motivation-activity-6971722873870716928-djh_?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/abirami_senthil-a414ea3e1f9f78ac1263bf032dc9e0af64f226f0a64da786006bb878e0d227e7.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Abirami Senthil</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Full Stack Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third zetwerk hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth zetwerk show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I truly cherish my journey to Zetwerk, and I could not have accomplished it without Scaler’s help.
-                    Their dedication towards each student is unparalleled, and the curriculum is industry standard,
-                    which helps one prepare for real-life challenges in the best way possible. Looking back at all that
-                    struggle and months of upskilling, I can confidently say that they are one of the best at what they
-                    do!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/activity-6878556053999644672-UlSp?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/chandrakanth_n-af453321ade849bad7c706a7793620c5ab5837ae20d4008b45ee26001cb24cc7.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Chandrakanth Nethi</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third swiggy hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth swiggy show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Scaler’s in-depth curriculum, teaching methodology and recruitment process were the highlights of
-                    the course for me. The things I have learned have helped not only me professionally, but on a
-                    personal level as well! All credit goes to Abhimanyu and Anshuman for creating an incredible and
-                    inclusive learning platform that takes into account everyone’s individual needs.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/chandrakanth-nethi_newjob-swiggy-scaler-activity-6877158300098682880-WQHF?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/arjit_agarwal-7b131ec0b46d1b94a6f35932426d827999779dc454866c5cecb8564775347f47.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Arjit Agarwal</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Full Stack Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third siemens hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth siemens show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I found Scaler to be a one-stop solution for my needs due to its extensive curriculum, excellent
-                    recruitment opportunities, diverse pool of learners, and highly-qualified tech instructors. In terms
-                    of learning, it truly bridged the gap between college and the real world for me, and I couldn’t have
-                    asked for more.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/arjit-agarwal-0213b522b_siemens-scaleracademy-scaler-activity-6985546672328065024-qE71?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/ishan_sarma-a8179952e44e0f4e9bc69859a6b8bffd75cfb2cf513c1af45a95ce60c5947aab.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Ishan Sarma</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE I at</div>
-                  <div class="testimonial-card__company-name companies one-third onmobile hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth onmobile show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Perhaps the biggest challenge of my journey was to find the right place that would give structure to
-                    my learning. Insufficient exposure to CS concepts had always left me feeling a void Scaler&#39;s
-                    course really helped in a way my college couldn’t. The course was very structured, and the
-                    instructors were pretty awesome. With Scaler’s help, I received the needed guidance and technical
-                    knowledge.
-                  </div>
-                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6984038171911053312/"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
 
             </div>
             <div class="testimonials__wrapper-inner hide-in-mobile">
@@ -4051,406 +3495,61 @@
                   <img class="testimonial-card__profile-img lazy-elem"
                     data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/ankit_pangasa-fafa15f68ebcc074cd241e7d696e25177994c719436c2e5d8b4243cfa1fda0ad.webp"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Ankit Pangasa</div>
+                  <div class="testimonial-card__user-name">Sahil Momin</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Senior SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third google hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth google show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    Working at Google is a dream for all techies, and Scaler helped me realize this dream. Their course
-                    structure is impeccable and has helped me widen my knowledge horizons beyond just the basics. They
-                    have truly established that knowledge is not limited to the four walls of a classroom, and I am
-                    grateful for all that I have learned!
+                    I had an incredible experience at AiML Campus School of Machine Learning. The curriculum is
+                    well-structured and covers all the essential topics needed to excel in the field of AI and machine
+                    learning. The instructors are industry experts who are not only knowledgeable but also very
+                    approachable. They made complex concepts easy to understand and provided real-world applications
+                    that helped me grasp the material better.
                   </div>
-                  <a href="https://www.linkedin.com/posts/ankit-pangasa_coding-tech-interviews-activity-6983352812755693569-WyX8?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
+                  <a href="https://www.linkedin.com/in/sahil-momin-488909245" class="testimonial-card__linkedin">
                     <img class="testimonial-card__linkedin-icon lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
                     <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
                   </a>
                 </div>
               </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/yash_vardhan_raizada-fa0e1ddd088f2c7343d396bda555e10575a5cbff55d24ba499ef989b8f693527.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Yash Vardhan Raizada</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third microsoft hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth microsoft show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Having all the necessary tools for learning is one thing, but genuinely knowing how to use them is a
-                    whole other story - and this bridge is something we often fail to cross properly when transitioning
-                    from our universities into the real world. Scaler has undoubtedly played a big role in helping me
-                    conquer complex CS concepts, and ultimately paved the way for my current position!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/yashvardhanraizada_microsoft-softwareengineer-softwareengineering-activity-6934533965974253569-k9Pd?utm_source=linkedin_share&amp;utm_medium=member_desktop_web"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/abinay_bingumalla-f58acf89ada8960c97eb65e05a47413244b3a7a429014a0c363a5b9db7c1edfa.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Abinay Bingumalla</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE II at</div>
-                  <div class="testimonial-card__company-name companies one-third microsoft hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth microsoft show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I initially joined Scaler to brush up on my fundamentals but got the whole grand package instead.
-                    And it was easily the best decision I could have made for myself! I got a much-needed skill boost
-                    and developed a focused and disciplined mindset that helped me pave my way towards companies like
-                    Microsoft and Oracle.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/abinayb_gratitude-scaler-mentor-activity-6879686185539764224-awLo?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/parth_dixit-0fd7df28e18a2b66194b1799d52dc055a909b776aa07d699b4eacc2f3dbad5f1.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Parth Dixit</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE I at</div>
-                  <div class="testimonial-card__company-name companies one-third amazon hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth amazon show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I came across Scaler after a gap year post-college, which was nothing short of a blessing. Finally,
-                    being able to fill in the blanks in my knowledge that I couldn’t during college inspired a new
-                    confidence in me. With the backing of my fantastic mentors and instructors, I sat for and proudly
-                    laid claim to my position as a Software Engineer at Amazon, which is all I could have hoped for and
-                    then some!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/parth-dixit-240616157_motivation-scaler-tech-activity-6954673441723559936-NeF2?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/dhruv_sethi-37b059fea785ae5cc6cec7cb6c9a8219aee8bc78a2e4ee9b2eb7cf1158c2613b.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Dhruv sethi</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third amazon hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth amazon show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Reflecting back on life, I would have done many things differently. One of them being - I would have
-                    joined Scaler earlier! I received the best preparation one could ask for from my mentors, Nilesh
-                    Anand and Gopi Ram Bishnoi, which eventually led me to crack Amazon. I am extremely happy with the
-                    direction my life has taken post-Scaler, and I couldn’t have done it without the constant support
-                    from team Scaler at every step! 11/10 recommended!!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/--dhruv-sethi--_faang-sde-amazon-activity-6965558618431582209-ubCP?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/aniket_ranjan-73f78fc25391de9ff65b2ea9b5a80de7d2988e02db2517cb6f3a4b8994f5b5ca.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Aniket Ranjan</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third medianet hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth medianet show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    In my third year of college, I sometimes struggled to understand challenging technical concepts.
-                    Scaler helped me bridge this gap with their curriculum and guidance. Having a comprehensive
-                    understanding of the tech world helped me prepare for interviews. Kudos to Paridhi ma’am and Kshitij
-                    sir for their wonderful teachings!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/rampagee_feelingblessed-dsa-upskilling-activity-6961710596362833920-Exm6?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/jagyaseni_tripathy-d68909e6ad80ef01010f6da0a689119e068d696b6e5da592cd3c3a8b7bc0a34b.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Jagyaseni Tripathy</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third goldman hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth goldman show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I wasn&#39;t very efficient in CS due to a lack of sufficient exposure in my college. When I was in
-                    my 3rd year, I learned about Scaler. Since then, things have improved for the better. I found a
-                    specific direction and a regimen; as a result, I was able to land offers from Goldman Sachs , Amazon
-                    , Walmart!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/jagyasenitripathy_coding-dsa-softwaredeveloper-activity-6969583531459035136-cyRi?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/krishna_chaitanya-40d706da4dbaf3ff1d7e5c816f249d175d324ec1ab70212c7522e19896a5c593.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Krishna Chaitanya</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third walmart hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth walmart show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I used to be very unfamiliar with coding fundamentals back in my college. So when I decided to build
-                    on my coding skills and CS fundamentals, Scaler was my guiding light. My experience with them has
-                    taught me consistency, discipline, and adaptation, which are crucial characteristics that will
-                    always help one to succeed in the long run. For someone of my background to score offers from tech
-                    giants like Walmart speaks for itself!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/krishna-chaitanya-046151141_scaleracacademy-scalerexperience-placed-activity-6932710426249965571-LPhj?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/bhaskar_shaw-726a3af95943f363d9309fda372f08c801d94f7d2bd6201b870adea7ebef3269.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Bhaskar Shaw</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE II at</div>
-                  <div class="testimonial-card__company-name companies one-third walmart hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth walmart show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    My jump to IT wouldn’t have been half as smooth had it not been for excellent lessons from Kshitij
-                    Mishra and Rahul Yadav, or the outstanding mentorship from Nirav Akbari and Rishika Agarwal.
-                    Consistently practising problems every single day for 200+ days definitely paid off in the end, and
-                    I have Scaler to thank for supporting me in every way possible. They left no stone unturned, may it
-                    be a fantastic curriculum, personalised mentorship or ample placement opportunities.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/bhaskar-shaw-4a9112152_coding-scaler-motivation-activity-6971722873870716928-djh_?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/abirami_senthil-a414ea3e1f9f78ac1263bf032dc9e0af64f226f0a64da786006bb878e0d227e7.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Abirami Senthil</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Full Stack Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third zetwerk hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth zetwerk show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I truly cherish my journey to Zetwerk, and I could not have accomplished it without Scaler’s help.
-                    Their dedication towards each student is unparalleled, and the curriculum is industry standard,
-                    which helps one prepare for real-life challenges in the best way possible. Looking back at all that
-                    struggle and months of upskilling, I can confidently say that they are one of the best at what they
-                    do!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/activity-6878556053999644672-UlSp?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/chandrakanth_n-af453321ade849bad7c706a7793620c5ab5837ae20d4008b45ee26001cb24cc7.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Chandrakanth Nethi</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third swiggy hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth swiggy show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Scaler’s in-depth curriculum, teaching methodology and recruitment process were the highlights of
-                    the course for me. The things I have learned have helped not only me professionally, but on a
-                    personal level as well! All credit goes to Abhimanyu and Anshuman for creating an incredible and
-                    inclusive learning platform that takes into account everyone’s individual needs.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/chandrakanth-nethi_newjob-swiggy-scaler-activity-6877158300098682880-WQHF?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/arjit_agarwal-7b131ec0b46d1b94a6f35932426d827999779dc454866c5cecb8564775347f47.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Arjit Agarwal</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Full Stack Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third siemens hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth siemens show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I found Scaler to be a one-stop solution for my needs due to its extensive curriculum, excellent
-                    recruitment opportunities, diverse pool of learners, and highly-qualified tech instructors. In terms
-                    of learning, it truly bridged the gap between college and the real world for me, and I couldn’t have
-                    asked for more.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/arjit-agarwal-0213b522b_siemens-scaleracademy-scaler-activity-6985546672328065024-qE71?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/ishan_sarma-a8179952e44e0f4e9bc69859a6b8bffd75cfb2cf513c1af45a95ce60c5947aab.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Ishan Sarma</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE I at</div>
-                  <div class="testimonial-card__company-name companies one-third onmobile hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth onmobile show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Perhaps the biggest challenge of my journey was to find the right place that would give structure to
-                    my learning. Insufficient exposure to CS concepts had always left me feeling a void Scaler&#39;s
-                    course really helped in a way my college couldn’t. The course was very structured, and the
-                    instructors were pretty awesome. With Scaler’s help, I received the needed guidance and technical
-                    knowledge.
-                  </div>
-                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6984038171911053312/"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-            <div class="testimonials__wrapper-inner hide-in-mobile">
 
               <div class="testimonial-card__container">
                 <div class="testimonial-card__user-details">
                   <img class="testimonial-card__profile-img lazy-elem"
                     data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/ankit_pangasa-fafa15f68ebcc074cd241e7d696e25177994c719436c2e5d8b4243cfa1fda0ad.webp"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Ankit Pangasa</div>
+                  <div class="testimonial-card__user-name">Adarsh Pandey</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Senior SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third google hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth google show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    Working at Google is a dream for all techies, and Scaler helped me realize this dream. Their course
-                    structure is impeccable and has helped me widen my knowledge horizons beyond just the basics. They
-                    have truly established that knowledge is not limited to the four walls of a classroom, and I am
-                    grateful for all that I have learned!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/ankit-pangasa_coding-tech-interviews-activity-6983352812755693569-WyX8?utm_source=share&amp;utm_medium=member_desktop"
+                    AiML Campus is a fantastic place to learn machine learning. The hands-on projects and assignments
+                    were challenging but extremely rewarding. The support from both the faculty and fellow students was
+                    tremendous. I appreciated the small class sizes which allowed for personalized attention and a
+                    collaborative learning environment. </div>
+                  <a href="https://www.linkedin.com/in/adarsh-pandey-304b7424a" class="testimonial-card__linkedin">
+                    <img class="testimonial-card__linkedin-icon lazy-elem"
+                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
+                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="testimonial-card__container">
+                <div class="testimonial-card__user-details">
+                  <img class="testimonial-card__profile-img lazy-elem"
+                    data-src="https://media.licdn.com/dms/image/D5603AQE_DgXo5Ova2g/profile-displayphoto-shrink_800_800/0/1644057588533?e=1722470400&v=beta&t=CJvaTJsfM_8NYg83zi0Z44SSejS2QUno5l8ac04gW-g"
+                    width="80" height="80" />
+                  <div class="testimonial-card__user-name">PAVAN KALYAN KOPPARAPU</div>
+                </div>
+
+                <div class="testimonial-card__review-container">
+                  <div class="testimonial-card__review">
+                    The AiML Campus School of Machine Learning exceeded my expectations in every way. The course
+                    material is up-to-date with the latest trends and technologies in AI. The online resources and labs
+                    are top-notch, making it easy to practice and apply what we learned in class. </div>
+                  <a href="https://www.linkedin.com/in/pavan-kalyan-kopparapu-a410ba231/"
                     class="testimonial-card__linkedin">
                     <img class="testimonial-card__linkedin-icon lazy-elem"
                       data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
@@ -4459,368 +3558,67 @@
                 </div>
               </div>
 
-
               <div class="testimonial-card__container">
                 <div class="testimonial-card__user-details">
                   <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/yash_vardhan_raizada-fa0e1ddd088f2c7343d396bda555e10575a5cbff55d24ba499ef989b8f693527.webp"
+                    data-src="https://media.licdn.com/dms/image/D4D03AQFtkZdgYi6ozw/profile-displayphoto-shrink_400_400/0/1716019578859?e=1722470400&v=beta&t=DpUtcgPVoo11GlcLNq4l-qoqCOvy2tj4UdMt0VaknV0"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Yash Vardhan Raizada</div>
+                  <div class="testimonial-card__user-name">Om Dubey</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third microsoft hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth microsoft show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    Having all the necessary tools for learning is one thing, but genuinely knowing how to use them is a
-                    whole other story - and this bridge is something we often fail to cross properly when transitioning
-                    from our universities into the real world. Scaler has undoubtedly played a big role in helping me
-                    conquer complex CS concepts, and ultimately paved the way for my current position!
+                    Enrolling in AiML Campus was one of the best decisions I’ve made for my professional development.
+                    The instructors are passionate about teaching and are always willing to go the extra mile to help
+                    students succeed. <a href="https://www.linkedin.com/in/om-dubey-a6770a24b/"
+                      class="testimonial-card__linkedin">
+                      <img class="testimonial-card__linkedin-icon lazy-elem"
+                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
+                      <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
+                    </a>
                   </div>
-                  <a href="https://www.linkedin.com/posts/yashvardhanraizada_microsoft-softwareengineer-softwareengineering-activity-6934533965974253569-k9Pd?utm_source=linkedin_share&amp;utm_medium=member_desktop_web"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
                 </div>
+
+
+
+
+
+
               </div>
 
-
               <div class="testimonial-card__container">
                 <div class="testimonial-card__user-details">
                   <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/abinay_bingumalla-f58acf89ada8960c97eb65e05a47413244b3a7a429014a0c363a5b9db7c1edfa.webp"
+                    data-src="https://media.licdn.com/dms/image/D4D03AQEN7N5BPT0hYw/profile-displayphoto-shrink_400_400/0/1689075339018?e=1722470400&v=beta&t=zj9MJlWXIUCyY4RXGHGQpEofExFSpHQYLvluZ9Q939g"
                     width="80" height="80" />
-                  <div class="testimonial-card__user-name">Abinay Bingumalla</div>
+                  <div class="testimonial-card__user-name">Raju Gunji</div>
                 </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE II at</div>
-                  <div class="testimonial-card__company-name companies one-third microsoft hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth microsoft show-in-tablet"></div>
-                </div>
+
                 <div class="testimonial-card__review-container">
                   <div class="testimonial-card__review">
-                    I initially joined Scaler to brush up on my fundamentals but got the whole grand package instead.
-                    And it was easily the best decision I could have made for myself! I got a much-needed skill boost
-                    and developed a focused and disciplined mindset that helped me pave my way towards companies like
-                    Microsoft and Oracle.
+                    The community at AiML Campus is incredibly supportive and inspiring. From the moment I joined, I
+                    felt welcomed and encouraged to push my limits. The peer discussions, study groups, and mentorship
+                    programs were extremely beneficial. <a href="https://www.linkedin.com/in/raju-gunji-5b4105283/"
+                      class="testimonial-card__linkedin">
+                      <img class="testimonial-card__linkedin-icon lazy-elem"
+                        data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
+                      <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
+                    </a>
                   </div>
-                  <a href="https://www.linkedin.com/posts/abinayb_gratitude-scaler-mentor-activity-6879686185539764224-awLo?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
                 </div>
-              </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/parth_dixit-0fd7df28e18a2b66194b1799d52dc055a909b776aa07d699b4eacc2f3dbad5f1.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Parth Dixit</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE I at</div>
-                  <div class="testimonial-card__company-name companies one-third amazon hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth amazon show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I came across Scaler after a gap year post-college, which was nothing short of a blessing. Finally,
-                    being able to fill in the blanks in my knowledge that I couldn’t during college inspired a new
-                    confidence in me. With the backing of my fantastic mentors and instructors, I sat for and proudly
-                    laid claim to my position as a Software Engineer at Amazon, which is all I could have hoped for and
-                    then some!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/parth-dixit-240616157_motivation-scaler-tech-activity-6954673441723559936-NeF2?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/dhruv_sethi-37b059fea785ae5cc6cec7cb6c9a8219aee8bc78a2e4ee9b2eb7cf1158c2613b.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Dhruv sethi</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third amazon hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth amazon show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Reflecting back on life, I would have done many things differently. One of them being - I would have
-                    joined Scaler earlier! I received the best preparation one could ask for from my mentors, Nilesh
-                    Anand and Gopi Ram Bishnoi, which eventually led me to crack Amazon. I am extremely happy with the
-                    direction my life has taken post-Scaler, and I couldn’t have done it without the constant support
-                    from team Scaler at every step! 11/10 recommended!!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/--dhruv-sethi--_faang-sde-amazon-activity-6965558618431582209-ubCP?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
 
 
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/aniket_ranjan-73f78fc25391de9ff65b2ea9b5a80de7d2988e02db2517cb6f3a4b8994f5b5ca.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Aniket Ranjan</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third medianet hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth medianet show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    In my third year of college, I sometimes struggled to understand challenging technical concepts.
-                    Scaler helped me bridge this gap with their curriculum and guidance. Having a comprehensive
-                    understanding of the tech world helped me prepare for interviews. Kudos to Paridhi ma’am and Kshitij
-                    sir for their wonderful teachings!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/rampagee_feelingblessed-dsa-upskilling-activity-6961710596362833920-Exm6?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/jagyaseni_tripathy-d68909e6ad80ef01010f6da0a689119e068d696b6e5da592cd3c3a8b7bc0a34b.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Jagyaseni Tripathy</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third goldman hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth goldman show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I wasn&#39;t very efficient in CS due to a lack of sufficient exposure in my college. When I was in
-                    my 3rd year, I learned about Scaler. Since then, things have improved for the better. I found a
-                    specific direction and a regimen; as a result, I was able to land offers from Goldman Sachs , Amazon
-                    , Walmart!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/jagyasenitripathy_coding-dsa-softwaredeveloper-activity-6969583531459035136-cyRi?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/krishna_chaitanya-40d706da4dbaf3ff1d7e5c816f249d175d324ec1ab70212c7522e19896a5c593.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Krishna Chaitanya</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Software Engineer at</div>
-                  <div class="testimonial-card__company-name companies one-third walmart hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth walmart show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I used to be very unfamiliar with coding fundamentals back in my college. So when I decided to build
-                    on my coding skills and CS fundamentals, Scaler was my guiding light. My experience with them has
-                    taught me consistency, discipline, and adaptation, which are crucial characteristics that will
-                    always help one to succeed in the long run. For someone of my background to score offers from tech
-                    giants like Walmart speaks for itself!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/krishna-chaitanya-046151141_scaleracacademy-scalerexperience-placed-activity-6932710426249965571-LPhj?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/bhaskar_shaw-726a3af95943f363d9309fda372f08c801d94f7d2bd6201b870adea7ebef3269.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Bhaskar Shaw</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE II at</div>
-                  <div class="testimonial-card__company-name companies one-third walmart hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth walmart show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    My jump to IT wouldn’t have been half as smooth had it not been for excellent lessons from Kshitij
-                    Mishra and Rahul Yadav, or the outstanding mentorship from Nirav Akbari and Rishika Agarwal.
-                    Consistently practising problems every single day for 200+ days definitely paid off in the end, and
-                    I have Scaler to thank for supporting me in every way possible. They left no stone unturned, may it
-                    be a fantastic curriculum, personalised mentorship or ample placement opportunities.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/bhaskar-shaw-4a9112152_coding-scaler-motivation-activity-6971722873870716928-djh_?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/abirami_senthil-a414ea3e1f9f78ac1263bf032dc9e0af64f226f0a64da786006bb878e0d227e7.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Abirami Senthil</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Full Stack Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third zetwerk hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth zetwerk show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I truly cherish my journey to Zetwerk, and I could not have accomplished it without Scaler’s help.
-                    Their dedication towards each student is unparalleled, and the curriculum is industry standard,
-                    which helps one prepare for real-life challenges in the best way possible. Looking back at all that
-                    struggle and months of upskilling, I can confidently say that they are one of the best at what they
-                    do!
-                  </div>
-                  <a href="https://www.linkedin.com/posts/activity-6878556053999644672-UlSp?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/chandrakanth_n-af453321ade849bad7c706a7793620c5ab5837ae20d4008b45ee26001cb24cc7.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Chandrakanth Nethi</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE at</div>
-                  <div class="testimonial-card__company-name companies one-third swiggy hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth swiggy show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Scaler’s in-depth curriculum, teaching methodology and recruitment process were the highlights of
-                    the course for me. The things I have learned have helped not only me professionally, but on a
-                    personal level as well! All credit goes to Abhimanyu and Anshuman for creating an incredible and
-                    inclusive learning platform that takes into account everyone’s individual needs.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/chandrakanth-nethi_newjob-swiggy-scaler-activity-6877158300098682880-WQHF?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/arjit_agarwal-7b131ec0b46d1b94a6f35932426d827999779dc454866c5cecb8564775347f47.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Arjit Agarwal</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">Full Stack Developer at</div>
-                  <div class="testimonial-card__company-name companies one-third siemens hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth siemens show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    I found Scaler to be a one-stop solution for my needs due to its extensive curriculum, excellent
-                    recruitment opportunities, diverse pool of learners, and highly-qualified tech instructors. In terms
-                    of learning, it truly bridged the gap between college and the real world for me, and I couldn’t have
-                    asked for more.
-                  </div>
-                  <a href="https://www.linkedin.com/posts/arjit-agarwal-0213b522b_siemens-scaleracademy-scaler-activity-6985546672328065024-qE71?utm_source=share&amp;utm_medium=member_desktop"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="testimonial-card__container">
-                <div class="testimonial-card__user-details">
-                  <img class="testimonial-card__profile-img lazy-elem"
-                    data-src="https://assets-v2.scaler.com/assets/programs/undergrad/webp/testimonials/ishan_sarma-a8179952e44e0f4e9bc69859a6b8bffd75cfb2cf513c1af45a95ce60c5947aab.webp"
-                    width="80" height="80" />
-                  <div class="testimonial-card__user-name">Ishan Sarma</div>
-                </div>
-                <div class="testimonial-card__company-details">
-                  <div class="testimonial-card__position">SDE I at</div>
-                  <div class="testimonial-card__company-name companies one-third onmobile hide-in-tablet"></div>
-                  <div class="testimonial-card__company-name companies one-fourth onmobile show-in-tablet"></div>
-                </div>
-                <div class="testimonial-card__review-container">
-                  <div class="testimonial-card__review">
-                    Perhaps the biggest challenge of my journey was to find the right place that would give structure to
-                    my learning. Insufficient exposure to CS concepts had always left me feeling a void Scaler&#39;s
-                    course really helped in a way my college couldn’t. The course was very structured, and the
-                    instructors were pretty awesome. With Scaler’s help, I received the needed guidance and technical
-                    knowledge.
-                  </div>
-                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6984038171911053312/"
-                    class="testimonial-card__linkedin">
-                    <img class="testimonial-card__linkedin-icon lazy-elem"
-                      data-src="https://assets-v2.scaler.com/assets/programs/undergrad/svg/linkedin-rounded-5111ee795424ab3643e3186b57491b80ee6d6f2842fa6f7f9dea6da9a8f3d6b5.svg">
-                    <div class="testimonial-card__linkedin-read-more">Read more on LinkedIn</div>
-                  </a>
-                </div>
               </div>
 
             </div>
           </div>
-        </div>
-        <a href="https://www.scaler.com/review" target="_blank" class="testimonials__know-more-btn">
-          View More Reviews
-        </a>
 
-      </div>
+
+        </div>
     </section>
 
 
@@ -4831,54 +3629,6 @@
 
         <div class="vicinity__container">
 
-          <div class="macro-campus macro-campus-v2">
-            <div class="macro-campus__content">
-              <div class="macro-campus__title">
-                Located in Bangalore: <span class='vicinity__bold'> The Silicon Valley of India </span>
-              </div>
-              <a href="campus-life/index.html" target="_blank" data-gtm-type="button" data-gtm-tracking-allowed="true"
-                data-gtm-element="Explore Campus Life"
-                class="macro-campus__cta-campus-life gtm-track-element hide-in-mobile">
-                Explore Campus Life
-              </a>
-            </div>
-            <div class="macro-campus__showcase yt-video-embedding">
-              <img class="macro-campus__video lazy-elem"
-                data-src=https://assets-v2.scaler.com/assets/programs/undergrad/webp/yt_thumbnails/campus-tour-thumbnail-899c4a33df9f4b2c03c1797ce38da0065c359df860bbf68560d912ad8dd000bc.webp
-                width=600 height=340 data-url="https://www.youtube.com/embed/4BK1NycsNwQ" />
-            </div>
-            <div class="macro-campus__highlights show-in-mobile">
-              <div class="macro-campus__highlight">
-                <img class=" macro-campus__marker-image lazy-elem"
-                  data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
-                  width=20 height=20 />
-                <div>Campus close to top tech companies</div>
-              </div>
-              <div class="macro-campus__highlight">
-                <img class=" macro-campus__marker-image lazy-elem"
-                  data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
-                  width=20 height=20 />
-                <div>Residential Campus</div>
-              </div>
-              <div class="macro-campus__highlight">
-                <img class=" macro-campus__marker-image lazy-elem"
-                  data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
-                  width=20 height=20 />
-                <div>Modern amenities</div>
-              </div>
-              <div class="macro-campus__highlight">
-                <img class=" macro-campus__marker-image lazy-elem"
-                  data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/check-square-broken-2c8f5a2ab097e5dc8793ae39415c2e92786097441cc1272fca9afba2215d7bb5.svg
-                  width=20 height=20 />
-                <div>Innovation from day one.</div>
-              </div>
-            </div>
-            <a href="campus-life/index.html" target="_blank" data-gtm-type="button" data-gtm-tracking-allowed="true"
-              data-gtm-element="Explore Campus Life"
-              class="macro-campus__cta-campus-life gtm-track-element show-in-mobile">
-              Explore Campus Life
-            </a>
-          </div>
 
 
           <div class="micro-campus">
@@ -5163,7 +3913,7 @@
                 data-action="accordion-toggle" data-target="faq-section-1" data-tracking="ga"
                 data-ga-action="accordion-toggle" data-ga-label="faq-section-1">
 
-                <div class="faq__question">Is this a Fully-Residential Program?</div>
+                <div class="faq__question">How does the 1-year program specialization work?</div>
                 <i data-gtm-parent="accordion_toggle_Is this a Fully-Residential Program?"
                   data-gtm-allowed-actions="click" data-gtm-type="accordion"
                   class="gtm-track-element icon-plus accordion-trigger__conditional--collapsed"></i>
@@ -5172,8 +3922,9 @@
               </button>
               <div class="accordion  faq__desc" id="faq-section-1" style="height: 0px;">
 
-                Yes. The Computer Science Programme at the Scaler School of Technology is a fully-residential, on-campus
-                programme in Bangalore.
+                After completing their specialization, students undergo a 6-month specialization and a 6-month
+                internship in their chosen field to apply their skills practically in a company.
+
 
               </div>
             </div>
@@ -5185,7 +3936,9 @@
                 data-action="accordion-toggle" data-target="faq-section-2" data-tracking="ga"
                 data-ga-action="accordion-toggle" data-ga-label="faq-section-2">
 
-                <div class="faq__question">Who can apply for the Scaler School of Technology’s UG Programme?</div>
+                <div class="faq__question">How many students are there per batch in the respective Specialization
+                  programs?
+                </div>
                 <i data-gtm-parent="accordion_toggle_Who can apply for the Scaler School of Technology’s UG Programme?"
                   data-gtm-allowed-actions="click" data-gtm-type="accordion"
                   class="gtm-track-element icon-plus accordion-trigger__conditional--collapsed"></i>
@@ -5194,8 +3947,8 @@
               </button>
               <div class="accordion  faq__desc" id="faq-section-2" style="height: 0px;">
 
-                The program is open to students who have completed their class 12th or are appearing for 12 finals in
-                2024 and are aged 20 or below.
+                The number of students per batch in each respective Specialization program is 45.
+
 
               </div>
             </div>
@@ -5207,7 +3960,8 @@
                 data-action="accordion-toggle" data-target="faq-section-3" data-tracking="ga"
                 data-ga-action="accordion-toggle" data-ga-label="faq-section-3">
 
-                <div class="faq__question">What is the selection process for Scaler School of Technology?</div>
+                <div class="faq__question">How can I apply to the Specialization Programmes at AiML Campus?
+                </div>
                 <i data-gtm-parent="accordion_toggle_What is the selection process for Scaler School of Technology?"
                   data-gtm-allowed-actions="click" data-gtm-type="accordion"
                   class="gtm-track-element icon-plus accordion-trigger__conditional--collapsed"></i>
@@ -5216,9 +3970,19 @@
               </button>
               <div class="accordion  faq__desc" id="faq-section-3" style="height: 0px;">
 
-                The candidates have to appear for the Scaler National Scholarship and Entrance Test. Those who qualify
-                the test will be eligible for a personal interview round. For complete details click <u><a
-                    class='faq-list__answer-link' href='admission/index.html'>here</a></u>.
+                To apply for our Specialization Programmes at AiML Campus, please follow these steps:
+                <ul>
+                  <li>Visit our official website and navigate to the "Admissions" section.</li>
+                  <li>Select the Specialization Programme you are interested in.</li>
+                  <li>Review the admission requirements and ensure you are in the form.</li>
+                  <li>Complete the online application form with accurate information..</li>
+                  <li>Submit And Pay the application fee</li>
+                  <li>Await notification regarding the status of your application.</li>
+                  <li>If accepted, follow the instructions provided for enrollment and further steps.</li>
+                </ul>For any additional queries or assistance with the application process, feel free to contact our
+                admissions office.
+
+                <u><a class='faq-list__answer-link' href='admission/index.html'>here</a></u>.
 
               </div>
             </div>
@@ -5230,8 +3994,8 @@
                 data-action="accordion-toggle" data-target="faq-section-4" data-tracking="ga"
                 data-ga-action="accordion-toggle" data-ga-label="faq-section-4">
 
-                <div class="faq__question">Will I be able to pursue a master&#39;s degree later, take competitive exams
-                  or apply for a visa later?</div>
+                <div class="faq__question">What can I expect from this Specialization Programme?
+                </div>
                 <i data-gtm-parent="accordion_toggle_Will I be able to pursue a master&#39;s degree later, take competitive exams or apply for a visa later?"
                   data-gtm-allowed-actions="click" data-gtm-type="accordion"
                   class="gtm-track-element icon-plus accordion-trigger__conditional--collapsed"></i>
@@ -5240,46 +4004,14 @@
               </button>
               <div class="accordion  faq__desc" id="faq-section-4" style="height: 0px;">
 
-                Formal degrees from reputed universities will enable our students to be eligible for the following, <ul>
-                  <li>Masters outside India via exams like GRE</li>
-                  <li>Getting a work visa for migrating abroad</li>
-                  <li>MBA in India and abroad via exams like CAT & GMAT</li>
-                  <li>Government Jobs like IAS, IPS via exams like UPSC</li>
-                </ul> <br /><br />Therefore, along with Scaler School of Technology's UG program, valued by top tech
-                companies, our students are advised to pursue a Bachelor's and Master's degree in parallel to ensure
-                they have more flexibility with their career outcomes. <br /><br />By doing this, we want to bring the
-                best of both worlds together. The UG Program will ensure our students have access to the latest
-                curriculum, practical experience, and the opportunity to pursue a 1-year tech internship that ensures
-                they are set up for success in Computer Science in India & abroad. <br /><br />On the other hand, our
-                students will also have the opportunity to apply to an online Bachelor of Science in Computer Science by
-                BITS Pilani which is an Institute of Eminence recognized by the University Grants Commission (UGC).
-                Since its establishment in 1964, BITS Pilani has remained one of the most prestigious universities in
-                India. They offer an online Bachelors of Science (B.Sc.) in Computer Science, designed and delivered by
-                BITS Pilani exclusively on Coursera. This online degree program runs independently with Scaler School of
-                Technology's residential undergraduate program, and students can pursue both in parallel. More details
-                on the Degree Program are available <a class='link'
-                  href='https://www.coursera.org/degrees/bachelor-of-science-computer-science-bits'
-                  target='_blank'>here</a>. <br /><br />It's important to note that admission to the degree program is
-                solely at the discretion of BITS Pilani. Students will have to complete all requirements as set by BITS
-                Pilani for the grant of the degree in the BITS Degree Program. <br /><br />As per Regulation 22 of the
-                UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, all undergraduate
-                and postgraduate degrees, awarded through Open and Distance Learning mode and/or Online mode by Indian
-                Higher Educational Institutions, recognised by UGC, are treated as equivalent to the corresponding
-                awards of the degrees/diplomas offered through conventional mode. <br /><br />Students also have the
-                opportunity to apply for an online Master of Science in Computer Science from Woolf, which is accredited
-                by reputable organizations such as the European Credit Transfer System (ECTS) and CES. Woolf is heralded
-                as the world's first global collegiate higher education institution, dedicated to expanding access to
-                academic excellence. It leverages technology and a global network of member colleges to offer accredited
-                degrees, aiming to bridge the gap between talent and opportunity on a worldwide scale​. Woolf being a
-                foreign institute is not recognised by UGC/AICTE, however the masters degree awarded upon successful
-                completion of the program will be accredited under European Credit Transfer and Accumulation System
-                (ECTS), a widely recognised accreditation system accepted by universities & organisations in the US,
-                Europe, Canada, and numerous other countries. Enrolment of a learner into the masters program will be
-                subject to the discretion of Woolf, and the final decision to award the degree rests with Woolf.
-                <br /><br />These industry-recognized degrees enable our graduates to explore job opportunities with
-                leading technology companies worldwide, eligibility for exams like GRE, GMAT, CAT, Civil Services exams
-                and qualify for government jobs and further studies both within India and abroad.
-
+                Our Specialization Programme offers:
+                <ul>
+                  <li>Certification accredited by MACUL and recognized by AICTSD.</li>
+                  <li>One-year specialization followed by a six-month internship in a reputable company.</li>
+                  <li>Endorsement certificates from respective companies.</li>
+                  <li>Guidance from experienced faculty and industry experts.</li>
+                  <li>Enhanced career prospects and networking opportunities.</li>
+                </ul>
               </div>
             </div>
 
@@ -5290,7 +4022,8 @@
                 data-action="accordion-toggle" data-target="faq-section-5" data-tracking="ga"
                 data-ga-action="accordion-toggle" data-ga-label="faq-section-5">
 
-                <div class="faq__question">What is the fee structure of the 4-year programme?</div>
+                <div class="faq__question">What is the minimum eligibility required to enroll?
+                </div>
                 <i data-gtm-parent="accordion_toggle_What is the fee structure of the 4-year programme?"
                   data-gtm-allowed-actions="click" data-gtm-type="accordion"
                   class="gtm-track-element icon-plus accordion-trigger__conditional--collapsed"></i>
@@ -5299,19 +4032,20 @@
               </button>
               <div class="accordion  faq__desc" id="faq-section-5" style="height: 0px;">
 
-                The complete details on the fee structure including hostel and mess details are available <u><a
-                    class='faq-list__answer-link' href='admission/index.html'>here</a></u>.
+                The minimum eligibility requirement for enrollment includes a background in major computer science
+                fields.
+                <u><a class='faq-list__answer-link' href='admission/index.html'>here</a></u>.
 
               </div>
             </div>
 
           </div>
-
+          <!-- 
           <a href="#faq" class="faq__read-more-btn">
             Read all FAQs
-          </a>
+          </a> -->
 
-          <a href="https://interviewbit.typeform.com/to/HQECIci7" target="_blank" class="faq__contact-btn">
+          <a href="contact.html" target="_blank" class="faq__contact-btn">
             Have more questions? Contact Us
           </a>
         </div>
@@ -5544,22 +4278,9 @@
     window.addEventListener('touchstart', loadClarity);
   </script>
 
-  <!-- <script type="text/javascript">
-  (function (k) {
-      (function (w, d, s, o, f, js, fjs) {
-        w[o] = w[o] || function () {
-          (w[o].q = w[o].q || []).push(arguments)
-        };
-        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-        js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-      }(window, document, 'script', '_hw', 'https://app.threado.com/widget.js'));
-      _hw('init', { appId: 86353, minimized: true, token: k });
-      _hw('modal', { appId: 86353, instance: 'chat-modal', minimized: true, token: k, alignment: 'right' });
-    })('80c9f074b6f14325bf83d351591623e6');
-</script>
- -->
+
+  -->
 </body>
 
-<!-- Mirrored from www.scaler.com/school-of-technology/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2024 08:43:18 GMT -->
 
 </html>

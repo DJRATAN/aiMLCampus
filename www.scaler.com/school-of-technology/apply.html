@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apply - AiML Campus</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="/images/favicon-16x16.png" rel="icon" type="image/x-icon" />
+    <link
+      href="/images/favicon-32x32.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="./css/apply.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"
+          ><a href="/#"><img src="/images/aiML.jpg" alt="" /></a
+        ></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"
+              ><a href="/#"><img src="/images/aiML.jpg" alt="" /></a
+            ></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="/#">Home</a></li>
+            <li><a href="/#Aboutus">About us</a></li>
+            <li><a href="/#Programmes">Programmes</a></li>
+            <li><a href="/#News">News</a></li>
+            <li><a href="/#Blog">Blogs</a></li>
+            <li><a href="/Course_Info.html">Careers</a></li>
+            <li><a href="/#Contact">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+          <div class="searchBox"></div>
+        </div>
+      </div>
+    </nav>
+    <section id="hero">
+      <div class="container text-center heading-section">
+        <h1 class="h2 text-center pt-5">Apply Now</h1>
+        <!-- <p>The step towards becoming a skilled Software Developer!</p> -->
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="shadow px-5 py-5">
+          <form id="apply-form">
+            <section id="apply-form-general-info">
+              <h2 class="h4 font-weight-bold mb-4">1. General Information</h2>
+              <div class="d-flex flex-column gap-3">
+                <div class="row gy-1">
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <label class="mb-0" for="firstname">Name</label>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <input
+                      name="firstname"
+                      id="firstname"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <input
+                      name="lastname"
+                      id="lastname"
+                      class="form-control"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="email">Email</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="phone">Phone</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="phone"
+                      id="phone"
+                      class="form-control"
+                      placeholder="Phone"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <label>Gender</label>
+                  </div>
+                  <div class="col-lg-4 d-flex gap-5">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="male"
+                      />
+                      <label class="form-check-label" for="male"> Male </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="male"
+                      />
+                      <label class="form-check-label" for="female">
+                        Female
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="dateOfBirth">Date of birth</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="dateOfBirth"
+                      id="dateOfBirth"
+                      class="form-control"
+                      placeholder="DD/MM/YYYY"
+                    />
+                  </div>
+                </div> -->
+                <div class="row gy-2">
+                  <div class="col-12 col-md-12 col-lg-3">
+                    <label class="mb-0">Location</label>
+                  </div>
+                  <div class="col-12 col-md-3 col-lg-2">
+                    <input
+                      name="country"
+                      class="form-control"
+                      placeholder="Country"
+                    />
+                  </div>
+                  <div class="col-12 col-md-3 col-lg-2">
+                    <input
+                      name="state"
+                      class="form-control"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div class="col-12 col-md-3 col-lg-2">
+                    <input
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                    />
+                  </div>
+                  <div class="col-12 col-md-3 col-lg-2">
+                    <input
+                      name="pincode"
+                      class="form-control"
+                      placeholder="Pincode"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr />
+            <section id="apply-form-professional-qualification">
+              <h2 class="h4 font-weight-bold mb-4">
+                2. Professional Qualification
+              </h2>
+              <div class="d-flex flex-column gap-3">
+                <!-- <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="yearsOfExperience"
+                      >Total years of experience</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="yearsOfExperience"
+                      id="yearsOfExperience"
+                      class="form-control"
+                      placeholder="Years of experience"
+                    />
+                  </div>
+                </div> -->
+                <!-- <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="currentOrganization"
+                      >Current Organization</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="currentOrganization"
+                      id="currentOrganization"
+                      class="form-control"
+                      placeholder="Current Organization"
+                    />
+                  </div>
+                </div> -->
+                <!-- <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="industry">Industry</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      id="industry"
+                      name="industry"
+                      class="form-control"
+                      placeholder="Industry"
+                    />
+                  </div>
+                </div> -->
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="linkedInURL">LinkedIn URL</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="linkedInURL"
+                      id="linkedInURL"
+                      class="form-control"
+                      placeholder="LinkedIn URL"
+                    />
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="programmingLanguage"
+                      >Programming Language Known</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <select
+                      class="form-select"
+                      aria-label="Programming language known"
+                      name="programmingLanguage"
+                      id="programmingLanguage"
+                    >
+                      <option disabled selected>select language</option>
+                      <option value="java">Java</option>
+                      <option value="c">C</option>
+                      <option value="c++">C++</option>
+                      <option value="python">Python</option>
+                      <option value="javascript">JavaScript</option>
+                      <option value="php">PhP</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="experience"
+                      >Coding Experience (in years)</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="experience"
+                      id="experience"
+                      class="form-control"
+                      placeholder="Experience"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr />
+            <section id="apply-form-educational-qualification">
+              <h2 class="h4 font-weight-bold mb-4">
+                3. Educational Qualification
+              </h2>
+              <div class="d-flex flex-column gap-3">
+                <!-- <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="heighestQualification"
+                      >Heighest Qualification</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="heighestQualification"
+                      id="heighestQualification"
+                      class="form-control"
+                      placeholder="Heighest Qualification"
+                    />
+                  </div>
+                </div> -->
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="degreeOfSpecialisation"
+                      >Name Of Degree</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      name="degreeOfSpecialisation"
+                      id="degreeOfSpecialisation"
+                      class="form-control"
+                      placeholder="Name Of Degree"
+                    />
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="nameOfInstitute"
+                      >University Name</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      id="nameOfInstitute"
+                      name="nameOfInstitute"
+                      class="form-control"
+                      placeholder="Enter your University name"
+                    />
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="graduationYear"
+                      >Graduation Year</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      id="graduationYear"
+                      name="graduationYear"
+                      class="form-control"
+                      placeholder="Graduation Year"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label class="mb-0" for="percentage">Percentage</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      id="percentage"
+                      name="percentage"
+                      class="form-control"
+                      placeholder="Percentage"
+                    />
+                  </div>
+                </div> -->
+              </div>
+            </section>
+            <!-- <hr /> -->
+            <!-- <section id="apply-form-documents ">
+              <h2 class="h4 font-weight-bold mb-4">4. Documents (Optional)</h2>
+              <div class="d-flex flex-column gap-3">
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label for="studentCertificate"
+                      >Upload Student Certificates</label
+                    >
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="studentCertificate"
+                      name="studentCertificate"
+                    />
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label for="studentGovtID">Upload Govt ID</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="studentGovtID"
+                      name="studentGovtID"
+                    />
+                  </div>
+                </div>
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label for="studentMarksheet">Upload Marksheet</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="studentMarksheet"
+                      name="studentMarksheet"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section> -->
+            <!-- <hr /> -->
+            <!-- <section id="apply-form-payment">
+              <h2 class="h4 font-weight-bold mb-4">5. Payment</h2>
+              <div class="d-flex flex-column gap-3">
+                <div class="row gy-2">
+                  <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                    <label for="paymentProof">Upload Payment proof</label>
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-4 col-lg-3">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="paymentProof"
+                      name="paymentProof"
+                      multiple
+                    />
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="">
+                      <img
+                        class="img-thumbnail"
+                        src=""
+                        alt="UPI QR code"
+                      />
+                    </div>
+                    <div class="py-2">
+                      <p><b>UPI ID: </b>abc@okaxix</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section> -->
+            <!-- <hr /> -->
+            <div id="form-success" class="text-success"></div>
+            <div id="form-error" class="text-danger"></div>
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="/js/firebase.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+  </body>
+</html>

@@ -5818,7 +5818,7 @@ li.open[data-parent]:not(.hidden-search) {
 }
 
 .academy-button.primary {
-    background-color: #0245b9;
+    background-color: #370909;
     color: #ffffff;
     -webkit-box-shadow: 0 0.5rem 2.3rem 0 rgba(0, 65, 202, 0.5);
     box-shadow: 0 0.5rem 2.3rem 0 rgba(0, 65, 202, 0.5);
@@ -5827,7 +5827,7 @@ li.open[data-parent]:not(.hidden-search) {
 
 .academy-button.primary.is-inverted {
     background-color: inherit;
-    color: #0245b9;
+    color: #370909;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
@@ -5835,7 +5835,7 @@ li.open[data-parent]:not(.hidden-search) {
 }
 
 .academy-button.primary.is-inverted:hover {
-    background-color: #0245b9;
+    background-color: #370909;
     color: #ffffff
 }
 
@@ -9206,8 +9206,8 @@ h3 {
     font-size: 2.4rem;
     cursor: pointer;
     text-align: center;
-    color: #0245b9;
-    border: 0.1rem solid #0245b9;
+    color: #370909;
+    border: 0.1rem solid #370909;
     border-radius: 1.2rem;
     padding: 1.6rem 3.2rem;
     background-color: #ffffff
@@ -9559,7 +9559,7 @@ h3 {
 }
 
 .header__internal-links--active {
-    color: #0245b9;
+    color: #370909;
     font-weight: 600
 }
 
@@ -9646,7 +9646,7 @@ h3 {
 .header__new-badge {
     padding: 0.2rem 0.8rem;
     border-radius: 3.2rem;
-    background: linear-gradient(95deg, #0245b9 14.64%, rgba(0, 140, 255, 0.75) 96.7%);
+    background: linear-gradient(95deg, #370909 14.64%, rgba(0, 140, 255, 0.75) 96.7%);
     font-size: 1.2rem;
     margin-left: 0.3rem;
     font-weight: 600;
@@ -9742,7 +9742,7 @@ h3 {
     font-size: 2.4rem;
     cursor: pointer;
     text-align: center;
-    color: #0245b9;
+    color: #370909;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     font-size: 2rem;
@@ -9869,31 +9869,8 @@ h3 {
 
 
 
-.event-card__header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding-top: 0.4rem;
-    gap: 0.4rem
-}
 
-.event-card__header--title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #1a2c47;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1
-}
+
 
 .event-card__desc {
     margin-top: -0.5rem;
@@ -9932,7 +9909,7 @@ h3 {
 }
 
 .event-card__more-info {
-    color: #0245b9;
+    color: #370909;
     white-space: nowrap
 }
 
@@ -10361,7 +10338,7 @@ h3 {
 .sticky-cta__download_button {
     padding: 1.6rem 1rem;
     border-radius: 1.2rem;
-    background: #0245b9;
+    background: #370909;
     color: #ffffff
 }
 
@@ -11673,6 +11650,7 @@ h3 {
     font-family: 'Montserrat', normal;
     text-align: center;
     color: #ffffff;
+    max-width: 700px;
     font-family: 'Montserrat', normal;
     margin-bottom: 2.4rem;
     font-size: 4rem
@@ -12996,7 +12974,7 @@ h3 {
 }
 
 .news-card__link {
-    color: #0245b9;
+    color: #370909;
     text-decoration: underline
 }
 
@@ -13440,7 +13418,7 @@ h3 {
     position: relative;
     left: calc(100% - 4rem);
     top: -3.2rem;
-    color: #0245b9;
+    color: #370909;
     font-size: 1.4rem;
     line-height: 1.8rem;
     cursor: pointer
@@ -13669,7 +13647,7 @@ h3 {
 }
 
 .waitlist-form__otp-btn--enabled {
-    background-color: #0245b9;
+    background-color: #370909;
     cursor: pointer
 }
 
@@ -14220,7 +14198,7 @@ h3 {
 }
 
 .waitlist-form__waitlist-callback--academic {
-    background-color: #0245b9
+    background-color: #370909
 }
 
 .waitlist-form__waitlist-callback--application {
@@ -15469,7 +15447,6 @@ h3 {
     color: #1a2c47;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1
 }
@@ -15511,7 +15488,7 @@ h3 {
 }
 
 .event-card__more-info {
-    color: #0245b9;
+    color: #370909;
     white-space: nowrap
 }
 
@@ -15795,7 +15772,7 @@ h3 {
     gap: 0.8rem;
     cursor: pointer;
     border-radius: 1.2rem;
-    color: #0245b9
+    color: #370909
 }
 
 .video-library__videos {
@@ -16238,12 +16215,11 @@ h3 {
 }
 
 .highlight--bg-dark {
-    color: #73b9ff
+    color: #DBDBDB
 }
 
 .nset-preparation {
     background: #370909;
-    padding: 5.6rem 0
 }
 
 .nset-preparation--admission {
@@ -16295,7 +16271,7 @@ h3 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #0245b9;
+    background: #370909;
     color: #ffffff;
     border-radius: 3.6rem;
     min-width: 15.5rem;
@@ -16399,7 +16375,7 @@ h3 {
 }
 
 .nset-preparation__title--admission .highlight--bg-dark {
-    color: #0245b9
+    color: #370909
 }
 
 .nset-preparation__video-title {
@@ -16474,7 +16450,7 @@ h3 {
     align-items: center;
     font-size: 2rem;
     margin-top: 4.5rem;
-    background: #0245b9;
+    background: #370909;
     border-radius: 0.8rem;
     padding: 1.8rem;
     color: #ffffff;
@@ -16549,7 +16525,7 @@ h3 {
 }
 
 .banner__title span {
-    color: #73b9ff
+    color: #DBDBDB
 }
 
 @media screen and (max-width: 767px) {
@@ -16703,7 +16679,7 @@ h3 {
 .banner__commence-date span,
 .banner__deadline span {
     font-weight: 600;
-    color: #73b9ff
+    color: #DBDBDB
 }
 
 @media screen and (max-width: 1279px) {
@@ -16724,7 +16700,7 @@ h3 {
 .banner__restart {
     font-weight: 400;
     font-size: 2rem;
-    color: #73b9ff;
+    color: #DBDBDB;
     text-align: center
 }
 
@@ -17060,8 +17036,8 @@ h3 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: -webkit-gradient(linear, left top, right top, from(#0245b9), color-stop(#370909), to(#0245b9));
-    background: linear-gradient(to right, #0245b9, #370909, #0245b9)
+    background: -webkit-gradient(linear, left top, right top, from(#370909), color-stop(#370909), to(#370909));
+    background: linear-gradient(to right, #370909, #370909, #370909)
 }
 
 @media screen and (max-width: 767px) {
@@ -17149,7 +17125,6 @@ h3 {
 .student-directory {
     font-family: 'Montserrat', normal;
     background-color: #370909;
-    padding-bottom: 8rem
 }
 
 @media screen and (max-width: 767px) {
@@ -17167,7 +17142,6 @@ h3 {
     align-items: center;
     overflow: hidden;
     color: #ffffff;
-    border-radius: 1.8rem;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -17259,7 +17233,7 @@ h3 {
     width: -moz-fit-content;
     width: fit-content;
     border-radius: 0.8rem;
-    color: #0245b9;
+    color: #370909;
     font-weight: 600;
     background-color: #ffffff
 }
@@ -17287,26 +17261,12 @@ h3 {
     font-size: 2rem
 }
 
-.student-directory__image {
-    height: 26.2rem;
-    width: 35rem;
-    background-image: url(https://assets-v2.scaler.com/assets/programs/undergrad/webp/student-directory-desktop-ea710444dcf23aa2bde156ad264e24a176b6f4bf141f0a0fd6e72af9ec45d589.webp);
-    background-size: cover;
-    background-position: center
-}
 
-@media screen and (max-width: 767px) {
-    .student-directory__image {
-        background-image: url(https://assets-v2.scaler.com/assets/programs/undergrad/webp/student-directory-mobile-d1b986c1e5484282c813d396149c4fba7a58aecfea472414b8d3f214e8c88c67.webp);
-        height: 15.2rem;
-        width: 20.8rem
-    }
-}
 
 #scaler-vs-traditional {
     padding-top: 4.8rem;
     padding-bottom: 1.8rem;
-    background: #E6F4FF
+    background: #FFF3F1
 }
 
 #scaler-vs-traditional1 {
@@ -17748,7 +17708,7 @@ h3 {
 
 .future {
     padding: 11.2rem 0;
-    background-color: #e6f2ff
+    background-color: #FFF3F1
 }
 
 @media screen and (max-width: 767px) {
@@ -17835,7 +17795,7 @@ h3 {
 }
 
 .cta {
-    background-color: #e6f2ff;
+    background-color: #FFF3F1;
     color: #1a2c47
 }
 
@@ -18320,6 +18280,64 @@ h3 {
     }
 }
 
+.image-container {
+    position: relative;
+  }
+  
+  #zoomable-image {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .overlay {
+      visibility: hidden;
+    }
+  
+    .overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+.contai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 @media screen and (max-width: 767px) {
     .matriculation__button {
         -webkit-box-ordinal-group: 4;
@@ -18332,7 +18350,7 @@ h3 {
 .matriculation__title {
     font-size: 4rem;
     font-weight: 600;
-    color: #9abffe
+    color: #fff
 }
 
 @media screen and (max-width: 1279px) {
@@ -18480,7 +18498,7 @@ h3 {
 
 .guidance {
     padding: 11.2rem 0;
-    background-color: #e6f2ff;
+    background-color: #FFF3F1;
     color: #1a2c47
 }
 
@@ -18863,8 +18881,8 @@ h3 {
     font-size: 2.4rem;
     cursor: pointer;
     text-align: center;
-    color: #0245b9;
-    border: 0.1rem solid #0245b9;
+    color: #370909;
+    border: 0.1rem solid #370909;
     border-radius: 1.2rem;
     padding: 1.6rem 3.2rem;
     width: -webkit-fit-content;
@@ -19466,7 +19484,7 @@ h3 {
     align-items: center;
     font-size: 1.6rem;
     line-height: 3rem;
-    color: #73b9ff;
+    color: #DBDBDB;
     gap: 1.6rem
 }
 
@@ -19812,8 +19830,8 @@ h3 {
     font-size: 2.4rem;
     cursor: pointer;
     text-align: center;
-    color: #0245b9;
-    border: 0.1rem solid #0245b9;
+    color: #370909;
+    border: 0.1rem solid #370909;
     border-radius: 1.2rem;
     padding: 1.6rem 3.2rem;
     width: -webkit-fit-content;
@@ -19868,7 +19886,7 @@ h3 {
 .faq__contact-btn {
     font-size: 2.4rem;
     line-height: 3rem;
-    color: #0245b9
+    color: #370909
 }
 
 @media screen and (max-width: 767px) {
@@ -20061,7 +20079,7 @@ h3 {
 }
 
 .event {
-    padding: 11.2rem 0;
+    padding: 6.2rem 0;
     background-color: #370909
 }
 
