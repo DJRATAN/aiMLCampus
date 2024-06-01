@@ -4546,7 +4546,7 @@ li.open[data-parent]:not(.hidden-search) {
     font-size: 1.4rem;
     font-weight: normal;
     text-align: left;
-    color: #324766;
+    color: #370909;
     margin-top: 1rem
 }
 
@@ -4579,7 +4579,7 @@ li.open[data-parent]:not(.hidden-search) {
     margin: 0.5rem 0 2rem 0;
     font-size: 1.4rem;
     text-align: left;
-    color: #324766
+    color: #370909
 }
 
 @media screen and (max-width: 767px) {
@@ -4885,7 +4885,7 @@ li.open[data-parent]:not(.hidden-search) {
 
 .alumni__grad {
     font-size: 1.4rem;
-    color: #324766;
+    color: #370909;
     margin-bottom: 2rem
 }
 
@@ -4923,7 +4923,7 @@ li.open[data-parent]:not(.hidden-search) {
     font-size: 1.4rem;
     font-weight: normal;
     text-align: left;
-    color: #324766;
+    color: #370909;
     margin-top: 1.3rem
 }
 
@@ -4931,7 +4931,7 @@ li.open[data-parent]:not(.hidden-search) {
     margin: 0.5rem 0 2rem 0;
     font-size: 1.4rem;
     text-align: left;
-    color: #324766
+    color: #370909
 }
 
 .alumni__bottom-btn {
@@ -10378,7 +10378,7 @@ h3 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border: 0.1rem solid #324766;
+    border: 0.1rem solid #370909;
     border-radius: 1.6rem;
     -webkit-box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.08);
     box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.08);
@@ -10432,7 +10432,7 @@ h3 {
     .glance-card__wrapper {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        border: 0.1rem solid #324766;
+        border: 0.1rem solid #370909;
         border-radius: 0.8rem
     }
 }
@@ -19050,7 +19050,7 @@ h3 {
 
 .faq__content--active {
     border: none;
-    background: #324766;
+    background: #370909;
     padding-bottom: 1.4rem
 }
 
