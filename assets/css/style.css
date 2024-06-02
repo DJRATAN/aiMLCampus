@@ -3594,7 +3594,7 @@ li.open[data-parent]:not(.hidden-search) {
 }
 
 .contextual-request-callback-form__date-time .sr-select__option:hover {
-    background: #e6efff
+    background: #FFF3F1
 }
 
 .contextual-request-callback-form__date-time-dropdown {
@@ -10409,11 +10409,7 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
-    .glance-card.active {
-        
-     
-        
-    }
+    .glance-card.active {}
 }
 
 .glance-card__wrapper {
@@ -10845,7 +10841,6 @@ h3 {
 @media screen and (max-width: 767px) {
     .legacy-card__content {
         font-size: 1.4rem
-
     }
 }
 
@@ -11154,7 +11149,7 @@ h3 {
 
 .micro-campus__image {
     -ms-flex-negative: 0;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     overflow: hidden
 }
 
@@ -11335,7 +11330,7 @@ h3 {
 
 .hostel__image {
     -ms-flex-negative: 0;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     overflow: hidden
 }
 
@@ -11797,10 +11792,12 @@ h3 {
         height: auto
     }
 }
-.testimonial-card__profile-img{
+
+.testimonial-card__profile-img {
     border: none;
     border-radius: 50%;
 }
+
 @media screen and (max-width: 1279px) {
     .testimonial-card__profile-img {
         width: 5.6rem;
@@ -11999,6 +11996,7 @@ h3 {
     min-width: 23.5rem;
     border: 0.1rem solid #d6dee5
 }
+
 .mentor-card__container2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12020,6 +12018,7 @@ h3 {
     min-width: 23.5rem;
     border: 0.1rem solid #d6dee5
 }
+
 .mentor-card__container2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12041,6 +12040,7 @@ h3 {
     max-width: 25%;
     border: 0.1rem solid #d6dee5
 }
+
 @media screen and (max-width: 1279px) {
     .mentor-card__container {
         border-radius: 1.2rem
@@ -12129,7 +12129,7 @@ h3 {
 }
 
 .mentor-card__project,
-.mentor-card__prev-company { 
+.mentor-card__prev-company {
     background: #FFF3F1;
     color: #370909;
     margin-left: -1.6rem;
@@ -13006,7 +13006,7 @@ h3 {
     padding: 3.2rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1; 
+    flex: 1;
 }
 
 .waitlist-form__content--success {
@@ -13138,7 +13138,7 @@ h3 {
 }
 
 .waitlist-form__grad-year .sr-select--focused .sr-select__option:hover {
-    background: #e6efff
+    background: #FFF3F1
 }
 
 .waitlist-form__grad-year .sr-select input .sr-select__input {
@@ -13536,6 +13536,7 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 4rem;
+     
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 38.5rem
@@ -13589,7 +13590,8 @@ h3 {
 .footer__copyright {
     font-size: 2rem;
     text-align: center;
-    padding-bottom: 2.4rem
+    padding: 0 2rem;
+    margin-top: -75px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -13600,8 +13602,16 @@ h3 {
 
 @media screen and (max-width: 767px) {
     .footer__copyright {
-        font-size: 1.6rem
+        font-size: 1.5rem
     }
+
+    .footer-items__content {
+        line-height: 0.5rem;
+        
+    }
+
+
+
 }
 
 @media screen and (max-width: 1279px) {
@@ -14793,7 +14803,7 @@ h3 {
 .event-card__btn:hover {
     -webkit-transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
     transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-    
+
 }
 
 .event-card__btn {
@@ -16038,7 +16048,7 @@ h3 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 2.4rem; 
+    font-size: 2.4rem;
     text-align: center;
     border-radius: 1.6rem;
     background: -webkit-gradient(linear, left top, right top, from(#370909), to(#370909));
@@ -16796,7 +16806,7 @@ h3 {
 }
 
 .scaler-vs-traditional__mobile-table-header-row {
-    background: #E6EFFF;
+
     padding-left: 1.6rem;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
@@ -16818,6 +16828,7 @@ h3 {
     font-weight: 400;
     font-size: 1.4rem;
     color: #61738E;
+    text-align: left;
     border-right: 0.1rem solid #D6DEE5;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
@@ -16844,6 +16855,7 @@ h3 {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
     color: #1A2C47;
+    text-align: left;
     font-weight: 400;
     font-size: 1.4rem;
     min-height: 5.6rem;
@@ -17550,15 +17562,15 @@ h3 {
 
 .image-container {
     position: relative;
-  }
-  
-  #zoomable-image {
+}
+
+#zoomable-image {
     cursor: pointer;
     max-width: 100%;
     height: auto;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -17571,32 +17583,32 @@ h3 {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  .fullscreen-image {
+}
+
+.fullscreen-image {
     max-width: 100%;
     max-height: 100%;
-  }
-  
-  .close-btn {
+}
+
+.close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 30px;
     color: white;
     cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .overlay {
-      visibility: hidden;
+        visibility: hidden;
     }
-  
+
     .overlay.active {
-      visibility: visible;
-      opacity: 1;
+        visibility: visible;
+        opacity: 1;
     }
-  }
+}
 
 .contai {
     display: flex;
@@ -18318,7 +18330,7 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 7rem; 
+    gap: 7rem;
 }
 
 @media screen and (max-width: 1279px) {
@@ -18408,8 +18420,8 @@ h3 {
 }
 
 .curriculum__graph-container {
-      border-radius: 1.6rem;
-     min-width: 91.9rem
+    border-radius: 1.6rem;
+    min-width: 91.9rem
 }
 
 @media screen and (max-width: 1279px) {
