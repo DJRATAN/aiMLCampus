@@ -2954,7 +2954,9 @@
 
 @media screen and (max-width: 767px) {
     .mission__blocks {
-        padding: 3rem
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -2994,7 +2996,8 @@
 
 @media screen and (max-width: 767px) {
     .mission__content {
-        z-index: 1
+        z-index: 1;
+        min-width: 250px;
     }
 }
 

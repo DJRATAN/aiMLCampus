@@ -48,6 +48,42 @@
       border-radius: 0.8rem;
       width: 100%;
     }
+
+    @media only screen and (max-width: 550px) {
+      .sr-container {
+        margin-top: 12px;
+      }
+
+       
+
+      .examination__container {
+        margin-top: 42px;
+      }
+
+      .examination__more-info {
+        padding-top: 72px;
+
+      }
+
+      .timeline__container {
+        margin-top: 72px;
+
+      }
+
+      .card3 {
+        min-width: 350px !important;
+        background-color: yellow;
+      }
+
+      .scholarship__container {
+        margin-top: 68px;
+      }
+
+      .financing__container {
+        margin-top: 68px;
+
+      }
+    }
   </style>
 
   <link rel="stylesheet" media="all"
@@ -71,17 +107,29 @@
     #navLinks1 {
       display: inline !important;
     }
+
     #navLinks {
       display: none;
     }
-  } header{
-      margin-bottom: -25px;
-    }
+  }
+
+  header {
+    margin-bottom: -25px;
+  }
+
+  .waitlist-form__banner {
+    background-color: #fff;
+  }
+
+  .waitlist-form__logo {
+    opacity: 1.5;
+  }
 </style>
+
 <body>
 
 
-  <header style="background-color: #f8f9fa; padding: 10px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+  <header style="background-color: #f8f9fa; padding: 1px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
     <div class="headerClass"
       style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
       <div class="logo">
@@ -107,7 +155,15 @@
       </nav>
     </div>
   </header>
-
+  <header style="display: none;" id="main-site-header" class="header scaler-branding scaler-academy-header dsml-header"
+    data-gtm-section="header">
+    <div class="header__container">
+      <div class="header__burger-button">
+        <div class="burger">
+        </div>
+      </div>
+    </div>
+  </header>
   <div id="nv-undergrad-admission-page">
 
     <section data-gtm-section="banner_section" data-gtm-element=banner_section data-gtm-allowed-actions=scroll id=banner
@@ -119,11 +175,11 @@
 
           <br>
           <div class="banner__header">
-            <div class="banner__title">
+            <div class="banner__title" style="text-align: center;">
               Enrollment Process
             </div>
 
-            <div class="banner__desc">
+            <div class="banner__desc" style="text-align: justify; padding: 0 2rem;">
               The AiML Campus School of Machine Learning invites applications from individuals passionate about Machine
               Learning and Artificial Intelligence. Our enrollment process ensures a comprehensive evaluation to select
               the most promising candidates for our program.
@@ -142,7 +198,7 @@
 
     <section data-gtm-section="examination_section" data-gtm-element=examination_section data-gtm-allowed-actions=scroll
       id=examination class="section gtm-track-element examination" data-cy="" data-variant-key="" data-variant-value=""
-      style="margin-top: -25px;">
+      style="margin-top: -55px;">
       <div class="sr-container ">
 
         <div class="examination__container">
@@ -197,7 +253,7 @@
             </div>
           </div>
 
-          <div class="examination__more-info">
+          <div style="margin-top: -75px;" class="examination__more-info">
             <b>1 Apply Now:</b> Click on the "Apply Now" button to access the application form. Carefully fill out all
             required fields with accurate and up-to-date information, including your personal details, academic
             background, and relevant work experience. <br> <br> <b>2 Confirmation Email:</b> Upon submission, you will
@@ -220,7 +276,7 @@
 
     <section data-gtm-section="timeline_section" data-gtm-element=timeline_section data-gtm-allowed-actions=scroll
       id=timeline class="section gtm-track-element timeline" data-cy="" data-variant-key="" data-variant-value=""
-      style="margin-top: -125px;">
+      style="margin-top: -155px;">
       <div class="sr-container ">
 
         <div class="timeline__container">
@@ -492,7 +548,7 @@
               <thead>
                 <tr>
                   <th colspan="2" class="timeline-table__header">
-                    May Intake
+                    Intake
                   </th>
                 </tr>
               </thead>
@@ -500,15 +556,15 @@
               <tbody>
                 <tr>
                   <td class="timeline-table__row-info">
-                    Entrance Test Date
+                    Intake Months
                   </td>
                   <td class="timeline-table__row-info-bold">
-                    19th May
+                    June Intake
                   </td>
                 </tr>
                 <tr>
                   <td class="timeline-table__row-info">
-                    Application Fee
+                    Programme Fee
                   </td>
                   <td class="timeline-table__row-info-bold">
                     ₹ 4500/-
@@ -516,105 +572,38 @@
                 </tr>
                 <tr>
                   <td class="timeline-table__row-info">
-                    Commencement
+                    Specialization Programme
                   </td>
                   <td class="timeline-table__row-info-bold">
-                    Aug 2024
-                  </td>
-                </tr>
-              </tbody>
-
-              <tfoot>
-                <tr>
-                  <td class="timeline-table__footer">
-                    Deadline:
-                    <span class="timeline-table__footer-bold">
-                      15th May, 11:59 PM
-                      <span>
-                  </td>
-
-                  <td class="timeline-table__row-btn">
-                    <div class="timeline-table__btn--disable">
-                      Apply Now
-                    </div>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-            <table class="timeline-table show-in-mobile timeline-table--active">
-
-              <thead>
-                <tr>
-                  <th colspan="2" class="timeline-table__header">
-                    June 1 Intake
-                  </th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td class="timeline-table__row-info">
-                    Entrance Test Date
-                  </td>
-                  <td class="timeline-table__row-info-bold">
-                    9th June
+                    Android Development Using Machine Learning
                   </td>
                 </tr>
                 <tr>
                   <td class="timeline-table__row-info">
-                    Application Fee
+                    Fill Form
                   </td>
                   <td class="timeline-table__row-info-bold">
-                    ₹ 4500/-
-                  </td>
-                </tr>
-                <tr>
-                  <td class="timeline-table__row-info">
-                    Commencement
-                  </td>
-                  <td class="timeline-table__row-info-bold">
-                    Aug 2024
-                  </td>
-                </tr>
-              </tbody>
-
-              <tfoot>
-                <tr>
-                  <td class="timeline-table__footer">
-                    Deadline:
-                    <span class="timeline-table__footer-bold">
-                      5th June, 11:59 PM
-                      <span>
-                  </td>
-
-                  <td class="timeline-table__row-btn">
                     <a id="" data-id="" data-parent=""
-                      class="modal-trigger waitlist__submission gtm-track-element  gtm-track-element"
+                      class="modal-trigger waitlist__submission gtm-track-element timeline-table__btn gtm-track-element"
                       data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button"
                       data-gtm-parent="waitlist-modal" data-gtm-section="waitlist-modal" data-action="modal-open"
                       data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
-
                       <div class="waitlist__btn">
                         <div class="waitlist__btn-text">
                           Apply Now
                         </div>
-                        <img class="lazy-elem"
-                          data-src=https://assets-v2.scaler.com/assets/programs/undergrad/svg/arrow-right-7fd240bd8420506ed72d266f5ad5c5ec547e4b71b2faff3b403ada355de4e786.svg.gz
-                          width=24 height=24 />
                       </div>
-
                     </a>
                   </td>
                 </tr>
-              </tfoot>
+              </tbody>
             </table>
-
             <table class="timeline-table show-in-mobile timeline-table--deactive">
 
               <thead>
                 <tr>
                   <th colspan="2" class="timeline-table__header">
-                    June 2 Intake
+                    Intake
                   </th>
                 </tr>
               </thead>
@@ -622,15 +611,15 @@
               <tbody>
                 <tr>
                   <td class="timeline-table__row-info">
-                    Entrance Test Date
+                    Intake Months
                   </td>
                   <td class="timeline-table__row-info-bold">
-                    30th June
+                    June Intake
                   </td>
                 </tr>
                 <tr>
                   <td class="timeline-table__row-info">
-                    Application Fee
+                    Programme Fee
                   </td>
                   <td class="timeline-table__row-info-bold">
                     ₹ 4500/-
@@ -638,31 +627,253 @@
                 </tr>
                 <tr>
                   <td class="timeline-table__row-info">
-                    Commencement
+                    Specialization Programme
                   </td>
                   <td class="timeline-table__row-info-bold">
-                    Aug 2024
+                    Blockchain Development Using Large Language Model
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Fill Form
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    <a id="" data-id="" data-parent=""
+                      class="modal-trigger waitlist__submission gtm-track-element timeline-table__btn gtm-track-element"
+                      data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button"
+                      data-gtm-parent="waitlist-modal" data-gtm-section="waitlist-modal" data-action="modal-open"
+                      data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
+                      <div class="waitlist__btn">
+                        <div class="waitlist__btn-text">
+                          Apply Now
+                        </div>
+                      </div>
+                    </a>
                   </td>
                 </tr>
               </tbody>
+            </table>
+            <table class="timeline-table show-in-mobile timeline-table--deactive">
 
-              <tfoot>
+              <thead>
                 <tr>
-                  <td class="timeline-table__footer">
-                    Deadline:
-                    <span class="timeline-table__footer-bold">
-                      26th June, 11:59 PM
-                      <span>
-                  </td>
+                  <th colspan="2" class="timeline-table__header">
+                    Intake
+                  </th>
+                </tr>
+              </thead>
 
-                  <td class="timeline-table__row-btn">
-                    <div class="timeline-table__btn--disable">
-                      Apply Now
-                    </div>
+              <tbody>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Intake Months
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    June Intake
                   </td>
                 </tr>
-              </tfoot>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Programme Fee
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    ₹ 4500/-
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Specialization Programme
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    Full Stack Development Using Generative Ai
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Fill Form
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    <a id="" data-id="" data-parent=""
+                      class="modal-trigger waitlist__submission gtm-track-element timeline-table__btn gtm-track-element"
+                      data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button"
+                      data-gtm-parent="waitlist-modal" data-gtm-section="waitlist-modal" data-action="modal-open"
+                      data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
+                      <div class="waitlist__btn">
+                        <div class="waitlist__btn-text">
+                          Apply Now
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
             </table>
+            <table class="timeline-table show-in-mobile timeline-table--deactive">
+
+              <thead>
+                <tr>
+                  <th colspan="2" class="timeline-table__header">
+                    Intake
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Intake Months
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    June Intake
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Programme Fee
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    ₹ 4500/-
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Specialization Programme
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    Generative AI Modeling with Vertex AI Studio
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Fill Form
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    <a id="" data-id="" data-parent=""
+                      class="modal-trigger waitlist__submission gtm-track-element timeline-table__btn gtm-track-element"
+                      data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button"
+                      data-gtm-parent="waitlist-modal" data-gtm-section="waitlist-modal" data-action="modal-open"
+                      data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
+                      <div class="waitlist__btn">
+                        <div class="waitlist__btn-text">
+                          Apply Now
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="timeline-table show-in-mobile timeline-table--deactive">
+
+              <thead>
+                <tr>
+                  <th colspan="2" class="timeline-table__header">
+                    Intake
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Intake Months
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    June Intake
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Programme Fee
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    ₹ 4500/-
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Specialization Programme
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    AI Engineering Specialization
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Fill Form
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    <a id="" data-id="" data-parent=""
+                      class="modal-trigger waitlist__submission gtm-track-element timeline-table__btn gtm-track-element"
+                      data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button"
+                      data-gtm-parent="waitlist-modal" data-gtm-section="waitlist-modal" data-action="modal-open"
+                      data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
+                      <div class="waitlist__btn">
+                        <div class="waitlist__btn-text">
+                          Apply Now
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="timeline-table show-in-mobile timeline-table--deactive">
+
+              <thead>
+                <tr>
+                  <th colspan="2" class="timeline-table__header">
+                    Intake
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Intake Months
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    June Intake
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Programme Fee
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    ₹ 4500/-
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Specialization Programme
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    Generative Ai Automation
+                  </td>
+                </tr>
+                <tr>
+                  <td class="timeline-table__row-info">
+                    Fill Form
+                  </td>
+                  <td class="timeline-table__row-info-bold">
+                    <a id="" data-id="" data-parent=""
+                      class="modal-trigger waitlist__submission gtm-track-element timeline-table__btn gtm-track-element"
+                      data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button"
+                      data-gtm-parent="waitlist-modal" data-gtm-section="waitlist-modal" data-action="modal-open"
+                      data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
+                      <div class="waitlist__btn">
+                        <div class="waitlist__btn-text">
+                          Apply Now
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
           </div>
           <div class="fees__table-desc">
             <ul>
@@ -683,7 +894,7 @@
 
     <section data-gtm-section="scholarship_section" data-gtm-element=scholarship_section data-gtm-allowed-actions=scroll
       id=scholarship class="section gtm-track-element scholarship" data-cy="" data-variant-key="" data-variant-value=""
-      style="margin-top: -225px;">
+      style="margin-top: -155px;">
       <div class="sr-container ">
 
         <div class="scholarship__container">
@@ -693,85 +904,34 @@
             </div>
 
           </div>
-
-          <div class="scholarship__cards-container">
-
-            <div class="scholarship-card__wrapper">
-              <div class="scholarship-card">
-
-
-
-                <div class="scholarship-card__content">
-                  <div class="scholarship-card__title">
-                    Mumbai Office
-                  </div>
-
-                  <i class="scholarship-card__toggle icon-chevron-down show-in-mobile"></i>
-
-                  <div class="scholarship-card__desc  hide-in-mobile">
-                    <div class="scholarship-card__info">
-                      Level 1 & 3A,<br>
-                      First International Financial Centre,<br>
-                      Plot Nos. C-54 & C-55 G Block Road,<br>
-                      Bandra Kurla Complex,<br>
-                      Bandra East, Mumbai, Maharashtra 400051, India<br>
-
-                    </div>
-                    <div class="scholarship-card__subtitle" style="color: #370909;">
-                      Contact: info@aimlcampus.com
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="scholarship-card__desc-mobile scholarship-card__desc-mobile--inactive show-in-mobile">
-                <div class="scholarship-card__info">
-                </div>
-
-              </div>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
+            <!-- Card 1: Mumbai Office -->
+            <div class="card3"
+              style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; min-width: 450px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+              <h3 style="font-size: 3rem; font-weight: 800; color: #333;">Mumbai Office</h3>
+              <p style="margin: 10px 0 0; color: #555;">
+                Level 1 & 3A,<br>
+                First International Financial Centre,<br>
+                Plot Nos. C-54 & C-55 G Block Road,<br>
+                Bandra Kurla Complex,<br>
+                Bandra East, Mumbai, Maharashtra 400051, India
+              </p>
+              <p style="margin: 10px 0 0; color: #555;"><strong>Contact:</strong> info@aimlcampus.com</p>
             </div>
 
-
-
-            <div class="scholarship-card__wrapper">
-              <div class="scholarship-card">
-
-
-
-                <div class="scholarship-card__content">
-                  <div class="scholarship-card__title">
-                    Bangalore Office
-                  </div>
-
-                  <i class="scholarship-card__toggle icon-chevron-down show-in-mobile"></i>
-
-                  <div class="scholarship-card__desc  hide-in-mobile">
-                    <div class="scholarship-card__info">
-                      Co-Working Space<br>
-                      Level 6, Tower E & Level 10 <br>
-                      Tower C, Helios Business Park <br>
-                      Wing C, No. 150 Outer Ring Road <br>
-                      Kadubeesanahalli, Bangalore, Karnataka 560103, India <br>
-                    </div>
-
-                    <div class="scholarship-card__subtitle" style="color: #370909;">
-                      Contact: info@aimlcampus.com
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="scholarship-card__desc-mobile scholarship-card__desc-mobile--inactive show-in-mobile">
-                <div class="scholarship-card__info">
-                </div>
-
-              </div>
+            <!-- Card 2: Bangalore Office -->
+            <div class="card3"
+              style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; min-width: 450px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+              <h3 style="font-size: 3rem; font-weight: 800; margin: 0; color: #333;">Bangalore Office</h3>
+              <p style="margin: 10px 0 0; color: #555;">
+                Co-Working Space<br>
+                Level 6, Tower E & Level 10<br>
+                Tower C, Helios Business Park<br>
+                Wing C, No. 150 Outer Ring Road<br>
+                Kadubeesanahalli, Bangalore, Karnataka 560103, India
+              </p>
+              <p style="margin: 10px 0 0; color: #555;"><strong>Contact:</strong> info@aimlcampus.com</p>
             </div>
-
-
           </div>
           <div style="font-weight: 400; color: black; font-size: large; text-align: justify;">
             Hybrid mode learning at AiML Campus School of Machine Learning sounds intriguing! It likely combines
@@ -792,7 +952,7 @@
 
     <section data-gtm-section="financing_section" data-gtm-element=financing_section data-gtm-allowed-actions=scroll
       id=financing class="section gtm-track-element financing" data-cy="" data-variant-key="" data-variant-value=""
-      style="margin-top: -125px;">
+      style="margin-top: -155px;">
       <div class="sr-container ">
 
         <div class="financing__container">
@@ -926,10 +1086,9 @@
       </div>
   </div>
   </section>
-
-  <section data-gtm-section="guidance_section" data-gtm-element=guidance_section data-gtm-allowed-actions=scroll
-    id=guidance class="section gtm-track-element guidance" data-cy="" data-variant-key="" data-variant-value=""
-    style="padding: 0;">
+  <section style="display: none;" data-gtm-section="guidance_section" data-gtm-element=guidance_section
+    data-gtm-allowed-actions=scroll id=guidance class="section gtm-track-element guidance" data-cy=""
+    data-variant-key="" data-variant-value="" style="">
     <div class="sr-container ">
       <div class="guidance-super-mentor__container">
         <div class="guidance-super-mentor__section">
@@ -945,17 +1104,11 @@
   <div id="waitlist-modal" class="sr-modal form-flow waitlist-form  " data-gtm-section="">
     <div class="sr-modal__content sr-modal__content--center ">
       <div class="sr-modal__body ">
-
         <div class="form-flow__modes" data-success-action="application_process" data-success-view="">
           <div class="form-flow__mode form-flow__mode--active" data-mode="waitlist-login-mobile">
-
             <div class="waitlist-form__container">
-
-
-
-              <div class="waitlist-form__banner" style="background-color: white; !important;">
-                <img src="./assets/images/apply.svg" class="waitlist-form__logo" style="opacity:  1.5; !important" />
-
+              <div class="waitlist-form__banner">
+                <img src="./assets/images/apply.svg" class="waitlist-form__logo" />
               </div>
               <div class="waitlist-form__content">
                 <div
@@ -1001,7 +1154,6 @@
       </div>
     </div>
   </div>
-
 </body>
 <script src="./assets/js/vendors_frontend/acad_cefd32ed.1ed515.chunk.js"></script>
 <script src="./assets/js/vendors_frontend/acad_02ffa7d5.349e5e.chunk.js"></script>

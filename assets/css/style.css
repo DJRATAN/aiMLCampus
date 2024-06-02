@@ -10410,7 +10410,9 @@ h3 {
 
 @media screen and (max-width: 767px) {
     .glance-card.active {
-        background-color: #012665
+        
+     
+        
     }
 }
 
@@ -10518,7 +10520,7 @@ h3 {
 }
 
 .glance-card__content-mobile {
-    color: #799cd1;
+    color: #000;
     -webkit-transition: 0.5s ease-out;
     transition: 0.5s ease-out
 }
@@ -10786,7 +10788,8 @@ h3 {
 
 @media screen and (max-width: 767px) {
     .legacy-card {
-        padding: 1.2rem
+        padding: 1.2rem;
+        min-height: 25px;
     }
 }
 
@@ -10842,6 +10845,7 @@ h3 {
 @media screen and (max-width: 767px) {
     .legacy-card__content {
         font-size: 1.4rem
+
     }
 }
 
