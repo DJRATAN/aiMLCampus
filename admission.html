@@ -38,37 +38,26 @@
 
 
 
-  <script src="../../../assets-v2.scaler.com/packs/js/vendors_frontend/acad_3115b6b0.44b638.chunk.js"></script>
-  <script src="../../../assets-v2.scaler.com/packs/js/vendors_frontend/acad_f0cdce7a.5c1f7a.chunk.js"></script>
-  <script src="../../../assets-v2.scaler.com/packs/js/vendors_frontend/acad_d81ad509.8f32cf.chunk.js"></script>
-  <script src="../../../assets-v2.scaler.com/packs/js/vendors_frontend/chat_99bf75b7.9e9664.chunk.js"></script>
-  <script src="../../../assets-v2.scaler.com/packs/js/frontend/academy_admi_63dab0ce.ddb9db.chunk.js"></script>
-  <script src="../../../assets-v2.scaler.com/packs/js/frontend/chatbot_fron_a5228c32.2222eb.chunk.js"></script>
-  <script src="../../../assets-v2.scaler.com/packs/js/frontend/chatbot_fron_96cee637.983873.chunk.js"></script>
-  <script src="../../../assets-v2.scaler.com/packs/js/frontend/chatbot.f92ca7.js"></script>
-
-<style>
-  .timeline-table{
-    font-size: 2.4rem;
-    border-collapse: collapse;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 0 0.3rem #370909;
-    box-shadow: 0 0 0 0.3rem #370909 !important;
-    border-radius: 0.8rem;
-    width: 100%;
-  }
-</style>
+  <style>
+    .timeline-table {
+      font-size: 2.4rem;
+      border-collapse: collapse;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 0 0.3rem #370909;
+      box-shadow: 0 0 0 0.3rem #370909 !important;
+      border-radius: 0.8rem;
+      width: 100%;
+    }
+  </style>
 
   <link rel="stylesheet" media="all"
     href="https://assets-v2.scaler.com/assets/master/products/programs/undergrad/pages/admission-6b1551f03223fdfbec63a8543f46eb473070509345d4ee50cea3bbe01552d056.css.gz" />
-  <link rel="stylesheet" media="screen" href="../../../assets-v2.scaler.com/packs/css/frontend/base.906e3d.css" />
+  <link rel="stylesheet" media="screen" href="./assets/css/frontend/base.906e3d.css" />
 
-  <link rel="stylesheet" media="screen" href="../../../assets-v2.scaler.com/packs/css/frontend/styles.22dfba.css" />
+  <link rel="stylesheet" media="screen" href="./assets/css/frontend/styles.22dfba.css" />
 
-  <link rel="stylesheet" media="screen"
-    href="../../../assets-v2.scaler.com/packs/css/vendors_frontend/acad_d81ad509.c652af.css" />
-  <link rel="stylesheet" media="screen"
-    href="../../../assets-v2.scaler.com/packs/css/frontend/chatbot_fron_96cee637.69689a.css" />
+  <link rel="stylesheet" media="screen" href="./assets/css/vendors_frontend/acad_d81ad509.c652af.css" />
+  <link rel="stylesheet" media="screen" href="./assets/css/frontend/chatbot_fron_96cee637.69689a.css" />
 
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -78,55 +67,46 @@
 
 </head>
 <style>
-  .headerClass {
-    color: #370909;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1180px;
-    margin: auto;
-    margin-bottom: -10px;
-  }
-
-  @media only screen and (max-width: 1200px) {
-    .headerClass {
-      max-width: 980px;
+  @media only screen and (max-width: 550px) {
+    #navLinks1 {
+      display: inline !important;
     }
-  }
-
-  @media only screen and (max-width: 4500px) {
-    .headerClass {
-      max-width: 700px;
+    #navLinks {
+      display: none;
     }
-  }
-
-  @media only screen and (max-width: 720px) {
-    .headerClass {
-      max-width: 500px;
+  } header{
+      margin-bottom: -25px;
     }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .headerClass {
-      max-width: 350px;
-    }
-  }
 </style>
-
 <body>
 
 
-
-  <header>
-    <div class="headerClass">
-      <div class="logo"><img style="height: 75px; height: 75px;" src="./assets/images/logo2.svg" alt=""></div>
-      <div class="homeBtn"><a href="index.html">
-          <p><strong>Home</strong></p>
-        </a></div>
+  <header style="background-color: #f8f9fa; padding: 10px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+    <div class="headerClass"
+      style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo">
+        <img src="./assets/images/logo2.svg" alt="" style="height: 75px; width: 175px; vertical-align: middle;">
+      </div>
+      <nav>
+        <ul id="navLinks" style="list-style-type: none; margin: 0; padding: 0;">
+          <li style="display: inline-block; margin-right: 20px;"><a href="index.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Home</a></li>
+          <li style="display: inline-block; margin-right: 20px;"><a href="admission.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Admissions</a></li>
+          <li style="display: inline-block; margin-right: 20px;"><a href="events.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Grad Day</a></li>
+          <li style="display: inline-block;"><a href="contact.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Contact Us</a></li>
+          <li style="display: inline-block;"><a href="about.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">About Us</a></li>
+        </ul>
+        <ul id="navLinks1" style="display: none; margin: 0; padding: 0;">
+          <li style="display: inline-block; margin-right: 20px;"><a href="index.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Home</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-
-
 
   <div id="nv-undergrad-admission-page">
 
@@ -299,24 +279,19 @@
 
 
                   <td class="timeline-table__row-btn">
-
-
                     <a id="" data-id="" data-parent=""
                       class="modal-trigger waitlist__submission gtm-track-element timeline-table__btn gtm-track-element"
                       data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button"
                       data-gtm-parent="waitlist-modal" data-gtm-section="waitlist-modal" data-action="modal-open"
                       data-target="waitlist-modal" data-gtm-tracking-allowed="true" onclick="">
-
                       <div class="waitlist__btn">
-
                         <div class="waitlist__btn-text">
                           Apply Now
                         </div>
-
-
                       </div>
-
                     </a>
+
+
                   </td>
 
                 </tr>
@@ -716,7 +691,7 @@
             <div class="scholarship__title">
               <span class='highlight'>We are located</span>
             </div>
- 
+
           </div>
 
           <div class="scholarship__cards-container">
@@ -842,118 +817,206 @@
 
       </div>
     </section>
-    
-  <section data-gtm-section="footer_section" data-gtm-element=footer_section data-gtm-allowed-actions=scroll id=footer
-  class="section gtm-track-element footer" data-cy="" data-variant-key="" data-variant-value="" style="">
-  <div class="sr-container ">
 
-    <div class="footer__container">
-      <div class="footer__branding">
-        <div class="footer__logo">
-          <img src="./assets/images/footer logo.svg" alt="not loaded">
-          <div class="location" style="color: #fff;">
-            <h2 class=" " style="font-weight: 600;  margin-bottom: 2rem;"> Mumbai Office </h1>
-              <p style="margin: 0; ">Level 1 & 3A,</p>
-              <p style="margin: 0; ">First International Financial Centre,</p>
-              <p style="margin: 0; ">Plot Nos. C-54 & C-55 G Block Road,</p>
-              <p style="margin: 0; ">Bandra Kurla Complex,</p>
-              <p style="margin: 0; ">Bandra East, Mumbai, Maharashtra 400051, India
-              </p>
-              <br>
-              <h4 style="margin: 0; " class=" ">Contact: info@aimlcampus.com</h4>
-              <br><br>
-              <h2 class=" "style="font-weight: 600;  margin-bottom: 2rem;"> Bangalore Office </h1>
-                <p style="margin: 0; " class=" ">Co-Working Space</p>
-                <p style="margin: 0; " class=" ">Level 6, Tower E & Level 10</p>
-                <p style="margin: 0; " class=" ">Tower C, Helios Business Park</p>
-                <p style="margin: 0; " class=" ">Wing C, No. 150 Outer Ring Road</p>
-                <p style="margin: 0; " class=" ">Kadubeesanahalli, Bangalore, Karnataka 560103, India
-                </p>
-                <br>
-                <h4 style="margin: 0; " class=" ">Contact: info@aimlcampus.com</h4>
-                <br><br>
+    <section data-gtm-section="footer_section" data-gtm-element=footer_section data-gtm-allowed-actions=scroll id=footer
+      class="section gtm-track-element footer" data-cy="" data-variant-key="" data-variant-value="" style="">
+      <div class="sr-container ">
+
+        <div class="footer__container">
+          <div class="footer__branding">
+            <div class="footer__logo">
+              <img src="./assets/images/footer logo.svg" alt="not loaded">
+              <div class="location" style="color: #fff;">
+                <h2 class=" " style="font-weight: 600;  margin-bottom: 2rem;"> Mumbai Office </h1>
+                  <p style="margin: 0; ">Level 1 & 3A,</p>
+                  <p style="margin: 0; ">First International Financial Centre,</p>
+                  <p style="margin: 0; ">Plot Nos. C-54 & C-55 G Block Road,</p>
+                  <p style="margin: 0; ">Bandra Kurla Complex,</p>
+                  <p style="margin: 0; ">Bandra East, Mumbai, Maharashtra 400051, India
+                  </p>
+                  <br>
+                  <h4 style="margin: 0; " class=" ">Contact: info@aimlcampus.com</h4>
+                  <br><br>
+                  <h2 class=" " style="font-weight: 600;  margin-bottom: 2rem;"> Bangalore Office </h1>
+                    <p style="margin: 0; " class=" ">Co-Working Space</p>
+                    <p style="margin: 0; " class=" ">Level 6, Tower E & Level 10</p>
+                    <p style="margin: 0; " class=" ">Tower C, Helios Business Park</p>
+                    <p style="margin: 0; " class=" ">Wing C, No. 150 Outer Ring Road</p>
+                    <p style="margin: 0; " class=" ">Kadubeesanahalli, Bangalore, Karnataka 560103, India
+                    </p>
+                    <br>
+                    <h4 style="margin: 0; " class=" ">Contact: info@aimlcampus.com</h4>
+                    <br><br>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="footer__coloumn">
+
+            <div class="footer-items">
+              <h3 class="footer-items__heading" style="color: #fff;">
+                Our Programme
+              </h3>
+
+              <div class="footer-items__content">
+                <a class="footer-items__link>">Android Development Using Machine
+                  Learning</a>
+
+                <a class="footer-items__link>">Blockchain Development
+                  Using Large Language Model</a>
+                <a class="footer-items__link>">Full Stack Development Using
+                  Generative Ai</a>
+                <a class="footer-items__link>">Generative AI Modeling with Vertex AI
+                  Studio</a>
+                <a class="footer-items__link>">AI Engineering Specialization</a>
+                <a class="footer-items__link>">Generative Ai Automation</a>
+              </div>
+            </div>
+
+
+
+            <div class="footer__social">
+              <h3 class="footer-items__heading" style="color: #fff;">
+                Follow us on
+              </h3>
+
+              <div class="footer-items__social">
+                <a class="footer-items__link" target="_blank"
+                  href="https://www.facebook.com/people/Aiml-Campus/61558682807070/">
+                  <img src="./assets/images/icons8-facebook.svg" width=20 height=20 />
+                </a>
+                <a class="footer-items__link" target="_blank" href="https://www.youtube.com/@aimlcampus">
+                  <img src="./assets/images/icons8-youtube.svg" width=20 height=20 />
+                </a>
+                <a class="footer-items__link" target="_blank" href="https://www.linkedin.com/company/aiml-campus">
+                  <img src="./assets/images/icons8-linkedin.svg" width=20 height=20 />
+                </a>
+                <a class="footer-items__link" target="_blank" href="https://x.com/Aimlcampus">
+                  <img src="./assets/images/icons8-twitter.svg" width=20 height=20 />
+                </a>
+                <a class="footer-items__link" target="_blank" href="https://www.instagram.com/aimlcampus/">
+                  <img src="./assets/images/icons8-instagram.svg" width=20 height=20 />
+                </a>
+
+                </a>
+              </div>
+            </div>
+
+
+            <div class="footer-items">
+              <h3 class="footer-items__heading" style="color: #fff;">
+                Company
+              </h3>
+
+              <div class="footer-items__content">
+                <a class="footer-items__link>"
+                  href="https://medium.com/@aimlcampus/aiml-campus-school-of-machine-learning-418f3d7d1685"
+                  target="_blank">Blog</a>
+                <a class="footer-items__link>" href="about.html" target="_blank">About us</a>
+                <a class="footer-items__link>" href="contact.html" target="_blank">Contact Us</a>
+                <a class="footer-items__link>" href="carreer.html" target="_blank">Careers</a>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
+      <div class="footer__copyright">
+        ©️ 2024 AiML Campus School of Machine Learning All Rights Reserved.
+      </div>
+  </div>
+  </section>
 
-      <div class="footer__coloumn">
-
-        <div class="footer-items">
-          <h3 class="footer-items__heading" style="color: #fff;">
-            Our Programme
-          </h3>
-
-          <div class="footer-items__content">
-            <a class="footer-items__link>"  >Android Development Using Machine
-              Learning</a>
-
-            <a class="footer-items__link>"  >Blockchain Development
-              Using Large Language Model</a>
-            <a class="footer-items__link>"  >Full Stack Development Using
-              Generative Ai</a>
-            <a class="footer-items__link>"  >Generative AI Modeling with Vertex AI
-              Studio</a>
-            <a class="footer-items__link>" >AI Engineering Specialization</a>
-            <a class="footer-items__link>"  >Generative Ai Automation</a>
+  <section data-gtm-section="guidance_section" data-gtm-element=guidance_section data-gtm-allowed-actions=scroll
+    id=guidance class="section gtm-track-element guidance" data-cy="" data-variant-key="" data-variant-value=""
+    style="padding: 0;">
+    <div class="sr-container ">
+      <div class="guidance-super-mentor__container">
+        <div class="guidance-super-mentor__section">
+          <div class="guidance-super-mentor__cards">
+            <div class="super-mentor-card__container">
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div id="waitlist-modal" class="sr-modal form-flow waitlist-form  " data-gtm-section="">
+    <div class="sr-modal__content sr-modal__content--center ">
+      <div class="sr-modal__body ">
+
+        <div class="form-flow__modes" data-success-action="application_process" data-success-view="">
+          <div class="form-flow__mode form-flow__mode--active" data-mode="waitlist-login-mobile">
+
+            <div class="waitlist-form__container">
 
 
 
-        <div class="footer__social">
-          <h3 class="footer-items__heading" style="color: #fff;">
-            Follow us on
-          </h3>
+              <div class="waitlist-form__banner" style="background-color: white; !important;">
+                <img src="./assets/images/apply.svg" class="waitlist-form__logo" style="opacity:  1.5; !important" />
 
-          <div class="footer-items__social">
-            <a class="footer-items__link" target="_blank"
-              href="https://www.facebook.com/people/Aiml-Campus/61558682807070/">
-              <img src="./assets/images/icons8-facebook.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://www.youtube.com/@aimlcampus">
-              <img src="./assets/images/icons8-youtube.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://www.linkedin.com/company/aiml-campus">
-              <img src="./assets/images/icons8-linkedin.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://x.com/Aimlcampus">
-              <img src="./assets/images/icons8-twitter.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://www.instagram.com/aimlcampus/">
-              <img src="./assets/images/icons8-instagram.svg" width=20 height=20 />
-            </a>
+              </div>
+              <div class="waitlist-form__content">
+                <div
+                  style="font-family: Nunito, Roboto, Arial,sans-serif; display: flex; justify-content: center; align-items: center; background-color: #f2f2f2;">
 
-            </a>
-          </div>
-        </div>
-
-
-        <div class="footer-items">
-          <h3 class="footer-items__heading"style="color: #fff;">
-            Company
-          </h3>
-
-          <div class="footer-items__content">
-            <a class="footer-items__link>"
-              href="https://medium.com/@aimlcampus/aiml-campus-school-of-machine-learning-418f3d7d1685"
-              target="_blank">Blog</a>
-            <a class="footer-items__link>" href="about.html" target="_blank">About us</a>
-            <a class="footer-items__link>" href="contact.html" target="_blank">Contact Us</a>
-            <a class="footer-items__link>" href="carreer.html" target="_blank">Careers</a>
+                  <form id="apply-form"
+                    style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h2><strong>Apply Now</strong></h2>
+                    <p><b>Fill The Form</b></p>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required
+                      style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                    <input type="email" id="email" name="email" placeholder="Email" required
+                      style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" required
+                      style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                    <select id="courses" name="courses" required
+                      style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                      <option value="" disabled selected>Choose Specialization</option>
+                      <option value="Generative AI Modeling with Vertex AI Studio">Generative AI
+                        Modeling with Vertex AI Studio</option>
+                      <option value="AI Engineering Specialization">AI Engineering Specialization
+                      </option>
+                      <option value="Blockchain Development Using LLM">Blockchain Development
+                        Using LLM</option>
+                      <option value="Full Stack Development Using Generative Ai">Full Stack
+                        Development Using Generative Ai</option>
+                      <option value="Android Development Using Machine Learning">Android
+                        Development Using Machine Learning</option>
+                      <option value="Generative Ai Automation">Generative Ai Automation</option>
+                    </select>
+                    <input type="text" id="collegeName" name="collegeName" placeholder="College Name" required
+                      style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                    <button type="submit"
+                      style="width: 100%; padding: 10px; margin: 10px 0; background-color: #370909; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+                    <div id="form-error" style="color: red; margin-top: 10px;"></div>
+                    <div id="form-success" style="color: green; margin-top: 10px;"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer__copyright">
-    ©️ 2024 AiML Campus School of Machine Learning All Rights Reserved.
-  </div>
-  </div>
-</section>
-
-  </div>
 
 </body>
+<script src="./assets/js/vendors_frontend/acad_cefd32ed.1ed515.chunk.js"></script>
+<script src="./assets/js/vendors_frontend/acad_02ffa7d5.349e5e.chunk.js"></script>
+<script src="./assets/js/vendors_frontend/acad_0f9c819e.60871c.chunk.js"></script>
+<script src="./assets/js/vendors_frontend/base.9c5184.chunk.js"></script>
+<script src="./assets/js/frontend/academy_admi_2db9c899.35a4a5.chunk.js"></script>
+<script src="./assets/js/frontend/academy_land_304652ed.901dc6.chunk.js"></script>
+<script src="./assets/js/frontend/base.163d3b.js"></script>
+<script src="./assets/js/vendors_frontend/acad_43d0cc1e.bd147a.chunk.js"></script>
+<script src="./assets/js/vendors_frontend/prog_d1adc7c4.400b85.chunk.js"></script>
+<script src="./assets/js/frontend/programs_lan_903d58f7.7c3bed.chunk.js"></script>
+<script src="./assets/js/frontend/programs_landing/undergrad.a12cd0.js"></script>
+
+<script type="module" src="./assets/js/firebase.js"></script>
+<!-- Replace <PACKAGE> with the name of the Firebase SDK component you need, such as auth, database, etc. -->
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-<PACKAGE>.js"></script>
 
 </html>

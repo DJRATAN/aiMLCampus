@@ -52,355 +52,316 @@
 
 </head>
 <style>
-  .headerClass {
-    color: #370909;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1180px;
-    margin: auto;
-    margin-bottom: -10px;
-  }
+  @media only screen and (max-width: 550px) {
+    #navLinks1 {
+      display: inline !important;
+    }
 
-  @media only screen and (max-width: 1200px) {
-    .headerClass {
-      max-width: 980px;
+    #navLinks {
+      display: none;
     }
   }
 
-  @media only screen and (max-width: 1000px) {
-    .headerClass {
-      max-width: 700px;
-    }
-  }
-
-  @media only screen and (max-width: 720px) {
-    .headerClass {
-      max-width: 500px;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .headerClass {
-      max-width: 350px;
-    }
+  header {
+    margin-bottom: -25px;
   }
 </style>
 
 <body>
 
-
-  <header id="main-site-header" class="header scaler-branding scaler-academy-header dsml-header"
-    data-gtm-section="header">
-
-
-
-    <header>
-      <div class="headerClass">
-        <div class="logo"><img style="height: 75px; height: 75px;" src="./assets/images/logo2.svg" alt=""></div>
-        <div class="homeBtn"><a href="index.html">
-            <p><strong>Home</strong></p>
-          </a></div>
+  <header style="background-color: #f8f9fa; padding: 10px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+    <div class="headerClass"
+      style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo">
+        <img src="./assets/images/logo2.svg" alt="" style="height: 75px; width: 175px; vertical-align: middle;">
       </div>
-    </header>
+      <nav>
+        <ul id="navLinks" style="list-style-type: none; margin: 0; padding: 0;">
+          <li style="display: inline-block; margin-right: 20px;"><a href="index.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Home</a></li>
+          <li style="display: inline-block; margin-right: 20px;"><a href="admission.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Admissions</a></li>
+          <li style="display: inline-block; margin-right: 20px;"><a href="events.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Grad Day</a></li>
+          <li style="display: inline-block;"><a href="contact.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Contact Us</a></li>
+          <li style="display: inline-block;"><a href="about.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">About Us</a></li>
+        </ul>
+        <ul id="navLinks1" style="display: none; margin: 0; padding: 0;">
+          <li style="display: inline-block; margin-right: 20px;"><a href="index.html"
+              style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
 
 
 
+  <div id="contact-page">
+    <div>
 
-    <div id="contact-page">
-      <div>
+      <img src="./assets/images/Contact Us.svg" alt="">
 
-        <img src="./assets/images/Contact Us.svg" alt="">
+    </div>
 
-      </div>
+    <div class="contact" style="">
+      <div class="contact__col1">
+        <div class="location">
+          <h2 class=" "> Mumbai Office </h1>
+            <p class=" ">Level 1 & 3A,</p>
+            <p class=" ">First International Financial Centre,</p>
+            <p class=" ">Plot Nos. C-54 & C-55 G Block Road,</p>
+            <p class=" ">Bandra Kurla Complex,</p>
+            <p class=" ">Bandra East, Mumbai, Maharashtra 400051, India
+            </p>
+            <br>
+            <h4 class=" ">Contact: info@aimlcampus.com</h4>
+            <br><br>
+            <h2 class=" "> Bangalore Office </h1>
+              <p class=" ">Co-Working Space</p>
 
-      <div class="contact" style="">
-        <div class="contact__col1">
-          <div class="location">
-            <h2 class=" "> Mumbai Office </h1>
-              <p class=" ">Level 1 & 3A,</p>
-              <p class=" ">First International Financial Centre,</p>
-              <p class=" ">Plot Nos. C-54 & C-55 G Block Road,</p>
-              <p class=" ">Bandra Kurla Complex,</p>
-              <p class=" ">Bandra East, Mumbai, Maharashtra 400051, India
+              <p class=" ">Level 6, Tower E & Level 10</p>
+              <p class=" ">Tower C, Helios Business Park</p>
+              <p class=" ">Wing C, No. 150 Outer Ring Road</p>
+              <p class=" ">Kadubeesanahalli, Bangalore, Karnataka 560103, India
               </p>
               <br>
               <h4 class=" ">Contact: info@aimlcampus.com</h4>
               <br><br>
-              <h2 class=" "> Bangalore Office </h1>
-                <p class=" ">Co-Working Space</p>
+        </div>
+        <div class="hide-in-mobile">
+          <h3 style="margin-bottom: -30px;">Follow us on</h3>
+          <div class="social" style="display: flex; margin-left: -15px;">
+            <div class="social__items">
 
-                <p class=" ">Level 6, Tower E & Level 10</p>
-                <p class=" ">Tower C, Helios Business Park</p>
-                <p class=" ">Wing C, No. 150 Outer Ring Road</p>
-                <p class=" ">Kadubeesanahalli, Bangalore, Karnataka 560103, India
-                </p>
-                <br>
-                <h4 class=" ">Contact: info@aimlcampus.com</h4>
-                <br><br>
-          </div>
-          <div class="hide-in-mobile">
-            <h3 style="margin-bottom: -30px;">Follow us on</h3>
-            <div class="social" style="display: flex; margin-left: -15px;">
-              <div class="social__items">
+              <a target="_blank" class="social__link" href="https://www.instagram.com/aimlcampus/"><img
+                  class="social__icon"
+                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-insta-251a46dd26dd4775830c98920fcb1d6d38f0f0a4f1369281720ad99f7521e146.svg.gz' /></a>
+            </div>
+            <div class="social__items">
 
-                <a target="_blank" class="social__link" href="https://www.instagram.com/aimlcampus/"><img
-                    class="social__icon"
-                    src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-insta-251a46dd26dd4775830c98920fcb1d6d38f0f0a4f1369281720ad99f7521e146.svg.gz' /></a>
-              </div>
-              <div class="social__items">
+              <a target="_blank" class="social__link" href="https://x.com/Aimlcampus"> <img class="social__icon"
+                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-twitter-e5c5f644fa9a109d42575849340da73d9e1205c7e29a6204366ca1c9a612cf3f.svg.gz' /></a>
+            </div>
+            <div class="social__items">
 
-                <a target="_blank" class="social__link" href="https://x.com/Aimlcampus"> <img class="social__icon"
-                    src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-twitter-e5c5f644fa9a109d42575849340da73d9e1205c7e29a6204366ca1c9a612cf3f.svg.gz' /></a>
-              </div>
-              <div class="social__items">
+              <a target="_blank" class="social__link" href="https://www.linkedin.com/company/aiml-campus"> <img
+                  class="social__icon"
+                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-linkedin-1bdc8843bb2bc6d872f4ab1bb14104f970d5eb346f0d0ced6721456904bd6a3b.svg.gz' /></a>
+            </div>
+            <div class="social__items">
 
-                <a target="_blank" class="social__link" href="https://www.linkedin.com/company/aiml-campus"> <img
-                    class="social__icon"
-                    src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-linkedin-1bdc8843bb2bc6d872f4ab1bb14104f970d5eb346f0d0ced6721456904bd6a3b.svg.gz' /></a>
-              </div>
-              <div class="social__items">
+              <a target="_blank" class="social__link"
+                href="https://www.facebook.com/people/Aiml-Campus/61558682807070/"> <img class="social__icon"
+                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-fb-34bd3cb72772a6ff51c4efa2b2398ac5202b49d1f78db3aa27bdd1fb2bcc064a.svg.gz' /></a>
+            </div>
+            <div class="social__items">
 
-                <a target="_blank" class="social__link"
-                  href="https://www.facebook.com/people/Aiml-Campus/61558682807070/"> <img class="social__icon"
-                    src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-fb-34bd3cb72772a6ff51c4efa2b2398ac5202b49d1f78db3aa27bdd1fb2bcc064a.svg.gz' /></a>
-              </div>
-              <div class="social__items">
-
-                <a target="_blank" class="social__link" href="https://www.youtube.com/@aimlcampus"><img
-                    class="social__icon"
-                    src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-youtube-b818729983251963264c6d82aaf3991e101f27b75196e0d7d4674ea75c67eb80.svg.gz' /></a>
-              </div>
+              <a target="_blank" class="social__link" href="https://www.youtube.com/@aimlcampus"><img
+                  class="social__icon"
+                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-youtube-b818729983251963264c6d82aaf3991e101f27b75196e0d7d4674ea75c67eb80.svg.gz' /></a>
             </div>
           </div>
         </div>
-        <div class="contact__col2">
+      </div>
+      <div class="contact__col2">
 
 
-          <div class="query-form-heading">
+        <div class="query-form-heading">
 
-            <div class="section-header ">
-              <div class="section-header__content">
-                <h2 class="section-header__title">
-                  Any other Queries?
-                </h2>
-              </div>
-
+          <div class="section-header ">
+            <div class="section-header__content">
+              <h2 class="section-header__title">
+                Any other Queries?
+              </h2>
             </div>
 
           </div>
-          <div class="query">
-            <form action="https://www.scaler.com/contact_us_mail" accept-charset="UTF-8" method="post"><input
-                name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token"
-                value="XdEUCCJRt8ziCtDfm0sR3kHdIjMbWLRR8NEKYHBHEjfJOrGaBH9Uylg9f5+/s4MZtkel6jII9hSNjjz9cr39qw==" />
-              <div class="query__name">
-                <label>Full Name</label><br>
-                <input name="name" id="name" type="text" required>
-              </div>
-              <div class="query__row">
-                <div class="query__child">
-                  <label>Email</label><br>
-                  <input name="email" id="email" type="email" required>
-                </div>
-                <div class="query__child">
-                  <label>Phone Number</label><br>
-                  <input name="phone_number" id="phone_number" type="tel" pattern="[0-9-+]{1,20}" required>
-                </div>
-              </div>
-              <div class="query__msg">
-                <label>Message</label><br>
-                <textarea name="message" id="message" required></textarea>
-              </div>
 
-              <div class="recaptcha-row">
-                <div class="recaptcha-override">
-                  <script src="../../www.recaptcha.net/recaptcha/api.js" async defer></script>
-                  <div data-sitekey="6LfMr8IUAAAAAKEfUZhQWzeODfjC7ffXRnrMdlYd" class="g-recaptcha "></div>
-                  <noscript>
-                    <div>
-                      <div style="width: 302px; height: 422px; position: relative;">
-                        <div style="width: 302px; height: 422px; position: absolute;">
-                          <iframe
-                            src="https://www.recaptcha.net/recaptcha/api/fallback?k=6LfMr8IUAAAAAKEfUZhQWzeODfjC7ffXRnrMdlYd"
-                            name="ReCAPTCHA"
-                            style="width: 302px; height: 422px; border-style: none; border: 0; overflow: hidden;">
-                          </iframe>
-                        </div>
-                      </div>
-                      <div style="width: 300px; height: 60px; border-style: none;
-                bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
-                background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                          style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
-                  margin: 10px 25px; padding: 0px; resize: none;">
-                </textarea>
-                      </div>
-                    </div>
-                  </noscript>
-
-                </div>
-                <br />
-                <div>
-                  <input style="color: #370909; border-color: #370909; background-color: transparent;" type="submit"
-                    value="Submit" class="submitBtn is-rounded uppercase bold"
-                    onmouseover="this.style.color='#fff'; this.style.backgroundColor='#370909'; this.style.borderColor='#fff';"
-                    onmouseout="this.style.color='#370909'; this.style.backgroundColor='transparent'; this.style.borderColor='#370909';">
-                </div>
+        </div>
+        <div class="query">
+          <form id="contactForm" action="contactForm"
+            style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <h2><strong>Contact Us</strong></h2>
+            <p><b>Send Us a Message</b></p>
+            <div class="query__name">
+              <label>Full Name</label><br>
+              <input name="name" id="name" type="text" required>
+            </div>
+            <div class="query__row">
+              <div class="query__child">
+                <label>Email</label><br>
+                <input name="email" id="email" type="email" required>
               </div>
-
-            </form>
-          </div>
-          <div class="show-in-mobile">
-            <div class="social">
-              <div class="social__items">
-                <img class="social__icon"
-                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-insta-251a46dd26dd4775830c98920fcb1d6d38f0f0a4f1369281720ad99f7521e146.svg.gz' />
-                <a target="_blank" class="social__link" href="https://www.instagram.com/scaler_official/">Instagram</a>
+              <div class="query__child">
+                <label>Phone Number</label><br>
+                <input name="phone_number" id="phone_number" type="tel" required>
               </div>
-              <div class="social__items">
-                <img class="social__icon"
-                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-twitter-e5c5f644fa9a109d42575849340da73d9e1205c7e29a6204366ca1c9a612cf3f.svg.gz' />
-                <a target="_blank" class="social__link" href="https://twitter.com/scaler_official">Twitter</a>
-              </div>
-              <div class="social__items">
-                <img class="social__icon"
-                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-linkedin-1bdc8843bb2bc6d872f4ab1bb14104f970d5eb346f0d0ced6721456904bd6a3b.svg.gz' />
-                <a target="_blank" class="social__link"
-                  href="https://www.linkedin.com/school/scaleracademy">LinkedIn</a>
-              </div>
-              <div class="social__items">
-                <img class="social__icon"
-                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-fb-34bd3cb72772a6ff51c4efa2b2398ac5202b49d1f78db3aa27bdd1fb2bcc064a.svg.gz' />
-                <a target="_blank" class="social__link" href="https://www.facebook.com/scalerofficial">Facebook</a>
-              </div>
-              <div class="social__items">
-                <img class="social__icon"
-                  src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-youtube-b818729983251963264c6d82aaf3991e101f27b75196e0d7d4674ea75c67eb80.svg.gz' />
-                <a target="_blank" class="social__link"
-                  href="https://www.youtube.com/scaler?sub_confirmation=1">YouTube</a>
-              </div>
+            </div>
+            <div class="query__msg">
+              <label>Message</label><br>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit"
+              style="width: 100%; padding: 10px; margin: 10px 0; background-color: #370909; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            <div id="form-error" style="color: red; margin-top: 10px;"></div>
+            <div id="form-success" style="color: green; margin-top: 10px;"></div>
+          </form>
+        </div>
+        <div class="show-in-mobile">
+          <div class="social">
+            <div class="social__items">
+              <img class="social__icon"
+                src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-insta-251a46dd26dd4775830c98920fcb1d6d38f0f0a4f1369281720ad99f7521e146.svg.gz' />
+              <a target="_blank" class="social__link" href="https://www.instagram.com/scaler_official/">Instagram</a>
+            </div>
+            <div class="social__items">
+              <img class="social__icon"
+                src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-twitter-e5c5f644fa9a109d42575849340da73d9e1205c7e29a6204366ca1c9a612cf3f.svg.gz' />
+              <a target="_blank" class="social__link" href="https://twitter.com/scaler_official">Twitter</a>
+            </div>
+            <div class="social__items">
+              <img class="social__icon"
+                src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-linkedin-1bdc8843bb2bc6d872f4ab1bb14104f970d5eb346f0d0ced6721456904bd6a3b.svg.gz' />
+              <a target="_blank" class="social__link" href="https://www.linkedin.com/school/scaleracademy">LinkedIn</a>
+            </div>
+            <div class="social__items">
+              <img class="social__icon"
+                src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-fb-34bd3cb72772a6ff51c4efa2b2398ac5202b49d1f78db3aa27bdd1fb2bcc064a.svg.gz' />
+              <a target="_blank" class="social__link" href="https://www.facebook.com/scalerofficial">Facebook</a>
+            </div>
+            <div class="social__items">
+              <img class="social__icon"
+                src='https://assets-v2.scaler.com/assets/scaler/svg/contact-icon-youtube-b818729983251963264c6d82aaf3991e101f27b75196e0d7d4674ea75c67eb80.svg.gz' />
+              <a target="_blank" class="social__link"
+                href="https://www.youtube.com/scaler?sub_confirmation=1">YouTube</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
 
 
-   
+
   <section data-gtm-section="footer_section" data-gtm-element=footer_section data-gtm-allowed-actions=scroll id=footer
-  class="section gtm-track-element footer" data-cy="" data-variant-key="" data-variant-value="" style="">
-  <div class="sr-container ">
+    class="section gtm-track-element footer" data-cy="" data-variant-key="" data-variant-value="" style="">
+    <div class="sr-container ">
 
-    <div class="footer__container">
-      <div class="footer__branding">
-        <div class="footer__logo">
-          <img src="./assets/images/footer logo.svg" alt="not loaded">
-          <div class="location" style="color: #fff;">
-            <h2 class=" " style="font-weight: 600;  margin-bottom: 2rem;"> Mumbai Office </h1>
-              <p style="margin: 0; ">Level 1 & 3A,</p>
-              <p style="margin: 0; ">First International Financial Centre,</p>
-              <p style="margin: 0; ">Plot Nos. C-54 & C-55 G Block Road,</p>
-              <p style="margin: 0; ">Bandra Kurla Complex,</p>
-              <p style="margin: 0; ">Bandra East, Mumbai, Maharashtra 400051, India
-              </p>
-              <br>
-              <h4 style="margin: 0; " class=" ">Contact: info@aimlcampus.com</h4>
-              <br><br>
-              <h2 class=" "style="font-weight: 600;  margin-bottom: 2rem;"> Bangalore Office </h1>
-                <p style="margin: 0; " class=" ">Co-Working Space</p>
-                <p style="margin: 0; " class=" ">Level 6, Tower E & Level 10</p>
-                <p style="margin: 0; " class=" ">Tower C, Helios Business Park</p>
-                <p style="margin: 0; " class=" ">Wing C, No. 150 Outer Ring Road</p>
-                <p style="margin: 0; " class=" ">Kadubeesanahalli, Bangalore, Karnataka 560103, India
+      <div class="footer__container">
+        <div class="footer__branding">
+          <div class="footer__logo">
+            <img src="./assets/images/footer logo.svg" alt="not loaded">
+            <div class="location" style="color: #fff;">
+              <h2 class=" " style="font-weight: 600;  margin-bottom: 2rem;"> Mumbai Office </h1>
+                <p style="margin: 0; ">Level 1 & 3A,</p>
+                <p style="margin: 0; ">First International Financial Centre,</p>
+                <p style="margin: 0; ">Plot Nos. C-54 & C-55 G Block Road,</p>
+                <p style="margin: 0; ">Bandra Kurla Complex,</p>
+                <p style="margin: 0; ">Bandra East, Mumbai, Maharashtra 400051, India
                 </p>
                 <br>
                 <h4 style="margin: 0; " class=" ">Contact: info@aimlcampus.com</h4>
                 <br><br>
+                <h2 class=" " style="font-weight: 600;  margin-bottom: 2rem;"> Bangalore Office </h1>
+                  <p style="margin: 0; " class=" ">Co-Working Space</p>
+                  <p style="margin: 0; " class=" ">Level 6, Tower E & Level 10</p>
+                  <p style="margin: 0; " class=" ">Tower C, Helios Business Park</p>
+                  <p style="margin: 0; " class=" ">Wing C, No. 150 Outer Ring Road</p>
+                  <p style="margin: 0; " class=" ">Kadubeesanahalli, Bangalore, Karnataka 560103, India
+                  </p>
+                  <br>
+                  <h4 style="margin: 0; " class=" ">Contact: info@aimlcampus.com</h4>
+                  <br><br>
+            </div>
           </div>
+
         </div>
 
-      </div>
+        <div class="footer__coloumn">
 
-      <div class="footer__coloumn">
+          <div class="footer-items">
+            <h3 class="footer-items__heading" style="color: #fff;">
+              Our Programme
+            </h3>
 
-        <div class="footer-items">
-          <h3 class="footer-items__heading" style="color: #fff;">
-            Our Programme
-          </h3>
+            <div class="footer-items__content">
+              <a class="footer-items__link>">Android Development Using Machine
+                Learning</a>
 
-          <div class="footer-items__content">
-            <a class="footer-items__link>"  >Android Development Using Machine
-              Learning</a>
-
-            <a class="footer-items__link>"  >Blockchain Development
-              Using Large Language Model</a>
-            <a class="footer-items__link>"  >Full Stack Development Using
-              Generative Ai</a>
-            <a class="footer-items__link>"  >Generative AI Modeling with Vertex AI
-              Studio</a>
-            <a class="footer-items__link>" >AI Engineering Specialization</a>
-            <a class="footer-items__link>"  >Generative Ai Automation</a>
+              <a class="footer-items__link>">Blockchain Development
+                Using Large Language Model</a>
+              <a class="footer-items__link>">Full Stack Development Using
+                Generative Ai</a>
+              <a class="footer-items__link>">Generative AI Modeling with Vertex AI
+                Studio</a>
+              <a class="footer-items__link>">AI Engineering Specialization</a>
+              <a class="footer-items__link>">Generative Ai Automation</a>
+            </div>
           </div>
-        </div>
 
 
 
-        <div class="footer__social">
-          <h3 class="footer-items__heading" style="color: #fff;">
-            Follow us on
-          </h3>
+          <div class="footer__social">
+            <h3 class="footer-items__heading" style="color: #fff;">
+              Follow us on
+            </h3>
 
-          <div class="footer-items__social">
-            <a class="footer-items__link" target="_blank"
-              href="https://www.facebook.com/people/Aiml-Campus/61558682807070/">
-              <img src="./assets/images/icons8-facebook.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://www.youtube.com/@aimlcampus">
-              <img src="./assets/images/icons8-youtube.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://www.linkedin.com/company/aiml-campus">
-              <img src="./assets/images/icons8-linkedin.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://x.com/Aimlcampus">
-              <img src="./assets/images/icons8-twitter.svg" width=20 height=20 />
-            </a>
-            <a class="footer-items__link" target="_blank" href="https://www.instagram.com/aimlcampus/">
-              <img src="./assets/images/icons8-instagram.svg" width=20 height=20 />
-            </a>
+            <div class="footer-items__social">
+              <a class="footer-items__link" target="_blank"
+                href="https://www.facebook.com/people/Aiml-Campus/61558682807070/">
+                <img src="./assets/images/icons8-facebook.svg" width=20 height=20 />
+              </a>
+              <a class="footer-items__link" target="_blank" href="https://www.youtube.com/@aimlcampus">
+                <img src="./assets/images/icons8-youtube.svg" width=20 height=20 />
+              </a>
+              <a class="footer-items__link" target="_blank" href="https://www.linkedin.com/company/aiml-campus">
+                <img src="./assets/images/icons8-linkedin.svg" width=20 height=20 />
+              </a>
+              <a class="footer-items__link" target="_blank" href="https://x.com/Aimlcampus">
+                <img src="./assets/images/icons8-twitter.svg" width=20 height=20 />
+              </a>
+              <a class="footer-items__link" target="_blank" href="https://www.instagram.com/aimlcampus/">
+                <img src="./assets/images/icons8-instagram.svg" width=20 height=20 />
+              </a>
 
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
 
-        <div class="footer-items">
-          <h3 class="footer-items__heading"style="color: #fff;">
-            Company
-          </h3>
+          <div class="footer-items">
+            <h3 class="footer-items__heading" style="color: #fff;">
+              Company
+            </h3>
 
-          <div class="footer-items__content">
-            <a class="footer-items__link>"
-              href="https://medium.com/@aimlcampus/aiml-campus-school-of-machine-learning-418f3d7d1685"
-              target="_blank">Blog</a>
-            <a class="footer-items__link>" href="about.html" target="_blank">About us</a>
-            <a class="footer-items__link>" href="contact.html" target="_blank">Contact Us</a>
-            <a class="footer-items__link>" href="carreer.html" target="_blank">Careers</a>
+            <div class="footer-items__content">
+              <a class="footer-items__link>"
+                href="https://medium.com/@aimlcampus/aiml-campus-school-of-machine-learning-418f3d7d1685"
+                target="_blank">Blog</a>
+              <a class="footer-items__link>" href="about.html" target="_blank">About us</a>
+              <a class="footer-items__link>" href="contact.html" target="_blank">Contact Us</a>
+              <a class="footer-items__link>" href="carreer.html" target="_blank">Careers</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer__copyright">
-    ©️ 2024 AiML Campus School of Machine Learning All Rights Reserved.
-  </div>
-  </div>
-</section>
+    <div class="footer__copyright">
+      ©️ 2024 AiML Campus School of Machine Learning All Rights Reserved.
+    </div>
+    </div>
+  </section>
 
 </body>
 
+<script type="module" src="./assets/js/firebase.js"></script>
+<!-- Replace <PACKAGE> with the name of the Firebase SDK component you need, such as auth, database, etc. -->
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-<PACKAGE>.js"></script>
 
 </html>
