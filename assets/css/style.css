@@ -10377,6 +10377,7 @@ h3 {
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    min-height: 290px;
     align-items: center;
     border: 0.1rem solid #370909;
     border-radius: 1.6rem;
@@ -13591,6 +13592,7 @@ h3 {
     font-size: 2rem;
     text-align: center;
     padding: 0 2rem;
+    color
     margin-top: -75px;
 }
 
@@ -14015,7 +14017,7 @@ h3 {
 }
 
 .certificate__container:nth-child(2) {
-    background: radial-gradient(124.06% 124.06% at 49.24% 101.53%, #370909 0%, #8F5C77 100%)
+    background: radial-gradient(124.06% 124.06% at 49.24% 101.53%, #28A177 0%, #1A2324 100%)
 }
 
 .certificate__container:nth-child(2) .certificate__highlight {
@@ -14025,7 +14027,7 @@ h3 {
 }
 
 .certificate__container:nth-child(3) {
-    background: radial-gradient(124.06% 124.06% at 49.24% 101.53%, #5DE0E6 0%, #004AAD 100%)
+    background: radial-gradient(124.06% 124.06% at 49.24% 101.53%, #173D91 0%, #475B72 100%)
 }
 
 .certificate__container:nth-child(3) .certificate__highlight {
@@ -14033,7 +14035,15 @@ h3 {
     background-repeat: no-repeat;
     background-position-y: calc(100% + 0.2rem)
 }
+.certificate__container:nth-child(4) {
+    background: radial-gradient(124.06% 124.06% at 49.24% 101.53%, #041B33 0%, #6EC6E5 100%)
+}
 
+.certificate__container:nth-child(4) .certificate__highlight {
+    background-image: url(https://assets-v2.scaler.com/assets/programs/undergrad/svg/certificate-hightlighter-3-f1952c6573ec183a95ad348c1594a2e27b6a5d29c94fdc3bca04d74bfc3c801b.svg);
+    background-repeat: no-repeat;
+    background-position-y: calc(100% + 0.2rem)
+}
 .certificate__container .sr-modal__body {
     padding: 3.2rem
 }

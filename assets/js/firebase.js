@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       await addDoc(collection(db, "applications"), application);
-      // formSuccessMessage.innerHTML = "Your application has been submitted successfully. Our team will contact you soon. Thank you.";
+      formSuccessMessage.style.color = "#370909";
+      formSuccessMessage.innerHTML = "Successfully Submitted. See You at AiML Campus!!!";
       applyForm.reset();
     } catch (error) {
       formErrorMessage.innerHTML = "Error submitting form: " + error.message;
@@ -79,7 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       await addDoc(collection(db, "contactData"), contactData);
-      // formSuccessMessage.innerHTML = "Your application has been submitted successfully. Our team will contact you soon. Thank you.";
+      formSuccessMessage.style.color = "#370909";
+      formSuccessMessage.innerHTML = "Successfully Submitted. See You at AiML Campus!!!";
       contactForm.reset();
     } catch (error) {
       formErrorMessage.innerHTML = "Error submitting form: " + error.message;
