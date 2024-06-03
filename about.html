@@ -64,8 +64,9 @@
         min-height: 150px;
       }
 
+      
       .a-row__image2 {
-        display: none;
+        display: none !important;
       }
 
       .footer__logo img {
@@ -94,6 +95,12 @@
         font-size: 2.9rem;
         margin-top: -32px;
 
+      }
+    }
+
+    @media only screen and (max-width: 950px) {
+      .a-row__image2 {
+        display: none;
       }
     }
   </style>
@@ -142,112 +149,114 @@
 
 
 
-  <div id="about-page">
+  <div id="about-page" style="margin-top: -25px;">
     <img src="./assets/images/aboutHeader.jpeg" width="100%" alt="">
 
 
-    <div class="a-row intro">
+    <div class="a-row intro" style="margin-top: 22px;">
       <div class="a-row__container sr-container">
         <div class="a-row__blocks">
           <div class="a-row__content a-row__content--padded">
             <h2 class="a-row__title">
               What is AiML Campus?
             </h2>
-            <div class="a-row__description" style="text-align: justify;"">
-              <div class=" intro__description">
-              Welcome to AiML Campus School of Machine Learning, where innovation meets education! Our one-year
-              specialization program offers a unique blend of comprehensive learning and practical experience,
-              tailored for highly motivated individuals with a passion for Machine Learning. Located in the heart of
-              India's vibrant tech hubs - Bangalore and Mumbai, our fully hybrid program combines online learning with
-              hands-on workshops and immersive projects. With selective admissions, we aim to nurture the next
-              generation of AI and ML leaders, providing a transformative learning journey that includes a six-month
-              integral internship. Open to all passionate about ML, AI, and Data Science, AiML Campus is proud to be
-              affiliated with the prestigious MACUL and honored as a member of the AICTSD. With glowing reviews on
-              Google, boasting a 4.5 out of 5 rating, we stand as India's first School of Machine Learning, dedicated
-              to shaping future innovators and industry pioneers. Join us on this exciting journey as we redefine the
-              boundaries of machine learning education!</div>
-
-          </div>
-        </div>
-        <div class="a-row__image">
-          <div class="a-row__background" style="background-color: #370909;">
-          </div>
-          <img src="./assets/images/about12.jpeg" alt="" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <section class="section" id="founders">
-
-    <div class="a-row a-row--alternate ">
-      <div class="sr-container a-row__container">
-        <div class="a-row__blocks">
-          <div class="a-row__content a-row__content--padded">
-            <h2 class="a-row__title">
-              First School Of Machine Learning In India.
-            </h2>
             <div class="a-row__description" style="text-align: justify;">
+              <div class=" intro__description">
+                Welcome to AiML Campus School of Machine Learning, where innovation meets education! Our one-year
+                specialization program offers a unique blend of comprehensive learning and practical experience,
+                tailored for highly motivated individuals with a passion for Machine Learning. Located in the heart of
+                India's vibrant tech hubs - Bangalore and Mumbai, our fully hybrid program combines online learning with
+                hands-on workshops and immersive projects. With selective admissions, we aim to nurture the next
+                generation of AI and ML leaders, providing a transformative learning journey that includes a six-month
+                integral internship. Open to all passionate about ML, AI, and Data Science, AiML Campus is proud to be
+                affiliated with the prestigious MACUL and honored as a member of the AICTSD. With glowing reviews on
+                Google, boasting a 4.5 out of 5 rating, we stand as India's first School of Machine Learning, dedicated
+                to shaping future innovators and industry pioneers. Join us on this exciting journey as we redefine the
+                boundaries of machine learning education!</div>
 
-              AiML Campus, the first school of machine learning in India, stands as a pioneering institution dedicated
-              to advancing education in artificial intelligence and machine learning. With a comprehensive curriculum
-              that spans from beginner to advanced levels, our programs cover various facets of AI, data science, and
-              machine learning, facilitated by a faculty of seasoned industry experts and researchers. We pride
-              ourselves on our innovative teaching methodologies, including hands-on projects and access
-              to high-performance computing resources, and our strong industry partnerships that provide students with
-              real-world exposure. Our state-of-the-art facilities and vibrant community create an ideal environment for
-              learning and networking. Through AiML Campus, students engage in cutting-edge research and gain the skills
-              needed to excel in the rapidly evolving field of machine learning, with many alumni achieving notable
-              success in prestigious organizations.
             </div>
           </div>
           <div class="a-row__image">
-            <div class="a-row__background" style="background-color: #370909;" style="background-color: #370909;">
+            <div class="a-row__background" style="background-color: #370909;">
             </div>
-            <img src="./assets/images/about11.jpeg" alt="" />
+            <img src="./assets/images/about12.jpeg" alt="" />
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section class="section mission" id="mission">
-    <div class="sr-container mission__container">
-      <div class="mission__blocks">
-        <div class="mission__content">
-          <h2 class="mission__title">
-            What we do at?
-          </h2>
-          <div class="mission__description" style="text-align: justify;">
-            At AiML Campus School of Machine Learning, we offer a dynamic learning environment designed to empower
-            aspiring machine learning professionals with the knowledge and skills needed to thrive in today's
-            fast-paced technological landscape. Through our comprehensive curriculum, expert instruction, and hands-on
-            projects, students gain practical experience and develop a deep understanding of machine learning concepts
-            and techniques. Our selective admission process ensures that we enroll highly motivated learners who are
-            passionate about machine learning and committed to excellence. With internship opportunities, hybrid
-            learning options, and industry recognition, we provide a transformative educational experience that
-            prepares students for success in the field of machine learning. Whether online or in-person, we are
-            dedicated to nurturing the next generation of machine learning innovators and leaders.
-          </div>
-        </div>
-        <div class="a-row__image">
-          <div class="a-row__background" style="background-color: #370909;">
-          </div>
-          <img src="./assets/images/about15.jpeg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="motivation">
 
-    <div class="a-row a-row--alternate ">
-      <div class="sr-container a-row__container">
-        <div class="a-row__blocks">
-          <div class="a-row__content a-row__content--padded">
-            <h2 class="a-row__title">
-              Why do we do?
+
+    <section class="section" id="founders" style="margin-top: -15px;">
+
+      <div class="a-row a-row--alternate ">
+        <div class="sr-container a-row__container">
+          <div class="a-row__blocks">
+            <div class="a-row__content a-row__content--padded">
+              <h2 class="a-row__title">
+                First School Of Machine Learning In India.
+              </h2>
+              <div class="a-row__description" style="text-align: justify;">
+
+                AiML Campus, the first school of machine learning in India, stands as a pioneering institution dedicated
+                to advancing education in artificial intelligence and machine learning. With a comprehensive curriculum
+                that spans from beginner to advanced levels, our programs cover various facets of AI, data science, and
+                machine learning, facilitated by a faculty of seasoned industry experts and researchers. We pride
+                ourselves on our innovative teaching methodologies, including hands-on projects and access
+                to high-performance computing resources, and our strong industry partnerships that provide students with
+                real-world exposure. Our state-of-the-art facilities and vibrant community create an ideal environment
+                for
+                learning and networking. Through AiML Campus, students engage in cutting-edge research and gain the
+                skills
+                needed to excel in the rapidly evolving field of machine learning, with many alumni achieving notable
+                success in prestigious organizations.
+              </div>
+            </div>
+            <div class="a-row__image">
+              <div class="a-row__background" style="background-color: #370909;">
+              </div>
+              <img src="./assets/images/about11.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="margin-top: -35px;" class="section mission" id="mission">
+      <div class="sr-container mission__container">
+        <div class="mission__blocks">
+          <div class="mission__content">
+            <h2 class="mission__title">
+              What we do at?
             </h2>
-            <div class="a-row__description" style="text-align: justify;"">
+            <div class="mission__description" style="text-align: justify;">
+              At AiML Campus School of Machine Learning, we offer a dynamic learning environment designed to empower
+              aspiring machine learning professionals with the knowledge and skills needed to thrive in today's
+              fast-paced technological landscape. Through our comprehensive curriculum, expert instruction, and hands-on
+              projects, students gain practical experience and develop a deep understanding of machine learning concepts
+              and techniques. Our selective admission process ensures that we enroll highly motivated learners who are
+              passionate about machine learning and committed to excellence. With internship opportunities, hybrid
+              learning options, and industry recognition, we provide a transformative educational experience that
+              prepares students for success in the field of machine learning. Whether online or in-person, we are
+              dedicated to nurturing the next generation of machine learning innovators and leaders.
+            </div>
+          </div>
+          <div class="a-row__image">
+            <div class="a-row__background" style="background-color: #370909;">
+            </div>
+            <img src="./assets/images/about15.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="motivation">
+
+      <div class="a-row a-row--alternate ">
+        <div class="sr-container a-row__container">
+          <div class="a-row__blocks">
+            <div class="a-row__content a-row__content--padded">
+              <h2 class="a-row__title">
+                Why do we do?
+              </h2>
+              <div class="a-row__description" style="text-align: justify;"">
 
                 At AiML Campus School of Machine Learning, we are driven by a deep understanding of the transformative
                 potential of Artificial Intelligence (AI) and Machine Learning (ML) in shaping our world. With the
@@ -263,62 +272,63 @@
               </div>
             </div>
             <div class=" a-row__image">
-              <div class="a-row__background" style="background-color: #370909;">
+                <div class="a-row__background" style="background-color: #370909;">
+                </div>
+                <img src="./assets/images/about14.jpeg" alt="" />
               </div>
-              <img src="./assets/images/about14.jpeg" alt="" />
             </div>
           </div>
         </div>
-      </div>
-  </section>
-  <section class="section investors" id="mission">
+    </section>
+    <section class="section investors" id="mission">
 
-    <div class="a-row  ">
-      <div class="sr-container a-row__container">
-        <div class="a-row__blocks">
-          <div class="a-row__content a-row__content--padded">
-            <h2 class="a-row__title">
-              Our Affilation And Recognize
-            </h2>
-            <div class="a-row__description" style="text-align: justify;">
+      <div class="a-row  ">
+        <div class="sr-container a-row__container">
+          <div class="a-row__blocks">
+            <div class="a-row__content a-row__content--padded">
+              <h2 class="a-row__title">
+                Our Affilation And Recognize
+              </h2>
+              <div class="a-row__description" style="text-align: justify;">
 
-              <div class="investors__description">
-                At AiML Campus, we proudly maintain affiliations with top-tier organizations, enhancing the quality
-                and credibility of our Specialization Programme's.
+                <div class="investors__description">
+                  At AiML Campus, we proudly maintain affiliations with top-tier organizations, enhancing the quality
+                  and credibility of our Specialization Programme's.
+                </div>
+                <div class="investors__ventures">
+
+                  <div class="investors__venture">
+                    <span>
+                      <img src="./assets/images/about1.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="investors__venture">
+                    <span>
+                      <img src="./assets/images/about2.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="investors__venture">
+                    <span>
+                      <img src="./assets/images/about3.svg" alt="">
+                    </span>
+                  </div>
+
+                </div>
+
               </div>
-              <div class="investors__ventures">
-
-                <div class="investors__venture">
-                  <span>
-                    <img src="./assets/images/about1.svg" alt="">
-                  </span>
-                </div>
-                <div class="investors__venture">
-                  <span>
-                    <img src="./assets/images/about2.svg" alt="">
-                  </span>
-                </div>
-                <div class="investors__venture">
-                  <span>
-                    <img src="./assets/images/about3.svg" alt="">
-                  </span>
-                </div>
-
+            </div>
+            <div class="a-row__image a-row__image2">
+              <div class="a-row__background " style="background-color: #370909;">
               </div>
-
+              <img src="./assets/images/about13.jpeg" alt="" />
             </div>
-          </div>
-          <div class="a-row__image2">
-            <div class="a-row__background " style="background-color: #370909;">
-            </div>
-            <img src="./assets/images/about13.jpeg" alt="" />
+             
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- <section data-gtm-section="false" id=news class="section news" data-cy="" data-variant-key="" data-variant-value=""
+    <!-- <section data-gtm-section="false" id=news class="section news" data-cy="" data-variant-key="" data-variant-value=""
       style="padding-bottom: 30px;">
       <div class="sr-container ">
 
