@@ -632,7 +632,6 @@
 
     window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
 
-    // added so that the files that are common on both ib and scaler can handle their respective ga calls
     window.trackGaEvent = function (...args) {
       const gaArgs = [gaSendMethod, 'event', ...args];
       window.ga(...gaArgs);
@@ -709,6 +708,5 @@
 
 </body>
 
-<!-- Mirrored from www.scaler.com/event/nset-bootcamp-maths-learning-ability-c464f933-cb75-485b-9aa1-41d20dcfbe89/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 May 2024 09:08:51 GMT -->
 
 </html>
